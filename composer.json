@@ -1,9 +1,11 @@
 {
-  "require": {
-    "ec-europa/ssk": "dev-master"
-  },
-  "scripts": {
-    "phingexec": "./ssk/phing",
-    "post-update-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --no-suggest --ansi"
-  }
+    "name": "verbruggenalex/subsite",
+    "require": {
+        "ec-europa/ssk": "dev-master as 3.0.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --ignore-platform-reqs --no-suggest --ansi",
+        "post-install-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --ignore-platform-reqs --no-suggest --ansi",
+        "post-update-cmd": "PROJECT=$(pwd) composer install --working-dir=vendor/ec-europa/ssk/includes/composer --no-interaction --ignore-platform-reqs --no-suggest --ansi"
+    }
 }
