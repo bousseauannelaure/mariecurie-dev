@@ -1,0 +1,22 @@
+{
+  "name": "mariecurie",
+  "version": "0.0.1",
+  "description": "Mariecurie slicing helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kbedra",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^2.6.2"
+  }
+}
