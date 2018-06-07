@@ -23,12 +23,7 @@ regions[sidebar_second] = Sidebar second
 regions[footer_middle] = Footer middle
 regions[footer_right] = Footer right
 
-;-------------- F E A T U R E S -------------
-features[] = logo
-features[] = name
-features[] = slogan
-features[] = favicon
 
-scripts[] = assets/scripts/europa.js
+scripts[] = assets/scripts/mariecurie.js
 
 stylesheets[all][] = assets/styles/mariecurie.css
