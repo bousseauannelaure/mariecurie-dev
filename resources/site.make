@@ -10,6 +10,8 @@ core = 7.x
 ; Contributed modules
 ; ===================
 
+projects[paragraphs][subdir] = "contrib"
+projects[paragraphs][version] = "1.0-rc5"
 
 ; =========
 ; Libraries
@@ -19,3 +21,4 @@ core = 7.x
 ; ======
 ; Themes
 ; ======
+
