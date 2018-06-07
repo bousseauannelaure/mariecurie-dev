@@ -2,19 +2,19 @@
 # ---------------------
 
 # The site name.
-subsite.name = My Project
+subsite.name = Marie Curie
 
 # The make file containing the dependencies of the subsite.
 subsite.make = ${subsite.resources.dir}/site.make
 
 # Modules to enable after installation. Separate multiple modules with spaces.
-subsite.install.modules = myproject_core
+#subsite.install.modules = myproject_core
 
 # Subsite clone configuration.
 #-----------------------------
 
 # Project ID used to generate other properties.
-project.id = <project>
+project.id = mariecurie
 
 # Project database url scheme.
 project.database.url.scheme = https
@@ -111,7 +111,7 @@ platform.profile.name = multisite_drupal_standard
 # For most projects you would want to follow 'master' so that you always have
 # the latest version that is deployed on production. Use 'develop' to check if
 # your project is compatible with the upcoming release.
-platform.package.reference = 2.2.152
+platform.package.reference = 2.5.38
 
 # The provider that hosts the platform repository.
 platform.package.provider = git-hub
