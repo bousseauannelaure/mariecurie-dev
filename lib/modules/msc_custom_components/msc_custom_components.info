@@ -1,0 +1,8 @@
+name = Marie Curie Custom Components
+description = Manage functionallity for paragraphs and other components
+dependencies[] = paragraphs
+dependencies[] = classy_paragraphs
+package = MSC
+core = 7.x
+
+configure = admin/config/TODO-SECTION/msc_custom_components
