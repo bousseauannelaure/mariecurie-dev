@@ -1,0 +1,4 @@
+name = MarieCurie custom alters and preprocess
+description = Marie custom alters and preprocess
+package = MSC
+core = 7.x

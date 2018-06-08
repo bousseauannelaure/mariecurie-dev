@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Components Content Type Controler feature.
+ */
+
+include_once 'components_content_type_controler.features.inc';
