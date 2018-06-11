@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'ECSquareSansProRegular';
+  src: url("../../assets/fonts/ecsquaresanspro-regular-web.eot");
+  src: url("../../assets/fonts/ecsquaresanspro-regular-web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ecsquaresanspro-regular-web.woff") format("woff"), url("../../assets/fonts/ecsquaresanspro-regular-web.ttf") format("truetype"), url("../../assets/fonts/ecsquaresanspro-regular-web.svg#ECSquareSansProRegular") format("svg");
+}
+@font-face {
+  font-family: 'ECSquareSansProItalic';
+  src: url("../../assets/fonts/ecsquaresanspro-italic-web.eot");
+  src: url("../../assets/fonts/ecsquaresanspro-italic-web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ecsquaresanspro-italic-web.woff") format("woff"), url("../../assets/fonts/ecsquaresanspro-italic-web.ttf") format("truetype"), url("../../assets/fonts/ecsquaresanspro-italic-web.svg#ECSquareSansProitalic") format("svg");
+}
+@font-face {
+  font-family: 'ECSquareSansProMedium';
+  src: url("../../assets/fonts/ecsquaresanspro-medium-web.eot");
+  src: url("../../assets/fonts/ecsquaresanspro-medium-web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ecsquaresanspro-medium-web.woff") format("woff"), url("../../assets/fonts/ecsquaresanspro-medium-web.ttf") format("truetype"), url("../../assets/fonts/ecsquaresanspro-medium-web.svg#ECSquareSansProRegular") format("svg");
+}
+@font-face {
+  font-family: 'ECSquareSansProBold';
+  src: url("../../assets/fonts/ecsquaresanspro-bold-web.eot");
+  src: url("../../assets/fonts/ecsquaresanspro-bold-web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ecsquaresanspro-bold-web.woff") format("woff"), url("../../assets/fonts/ecsquaresanspro-bold-web.ttf") format("truetype"), url("../../assets/fonts/ecsquaresanspro-bold-web.svg#ECSquareSansProRegular") format("svg");
+}
+
+$ec-square: 'ECSquareSansProRegular', Arial, Verdana, Geneva, sans-serif;
+$ec-square-medium: 'ECSquareSansProMedium', Arial, Verdana, Geneva, sans-serif;
+$ec-square-bold: 'ECSquareSansProBold', Arial, Verdana, Geneva, sans-serif;
+$ec-square-italic: 'ECSquareSansProItalic', Arial, Verdana, Geneva, sans-serif;
+
+h1 {
+  font-family: $ec-square;
+}
