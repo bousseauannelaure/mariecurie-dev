@@ -1,3 +1,6 @@
-html {
-    background: white;
-}
+@import "typography";
+@import "variables";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+@import "header_menu";
+@import "footer";
