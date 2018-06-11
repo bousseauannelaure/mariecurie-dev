@@ -59,6 +59,8 @@ projects[replicate][subdir] = "contrib"
 
 projects[realistic_dummy_content][subdir] = "contrib"
 
+projects[special_menu_items][subdir] = "contrib"
+
 projects[module_filter][subdir] = "contrib"
 
 projects[module_builder][subdir] = "contrib"
