@@ -24,6 +24,30 @@ $ec-square-medium: 'ECSquareSansProMedium', Arial, Verdana, Geneva, sans-serif;
 $ec-square-bold: 'ECSquareSansProBold', Arial, Verdana, Geneva, sans-serif;
 $ec-square-italic: 'ECSquareSansProItalic', Arial, Verdana, Geneva, sans-serif;
 
-h1 {
+.text-blue-light { color: $color-blue-light!important; }
+.text-blue { color: $color-blue!important; }
+.text-blue-dark { color: $color-blue-dark!important; }
+.text-purple { color: $color-purple!important; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
   font-family: $ec-square;
+
+  strong {
+    font-family: $ec-square-bold;
+  }
 }
+
+
+
+
