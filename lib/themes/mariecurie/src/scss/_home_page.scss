@@ -1,0 +1,183 @@
+#home_page {
+    .ecl-heading--h1 {
+        color: $color-blue;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .ecl-heading--h2 {
+        color: $color-blue;
+        font-size: 60px;
+    }
+
+
+    .module-flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        line-height:30px;
+    }
+    .module-flex-item {
+        background: $color-blue;
+        margin: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-align: center;
+        flex: 1 0 17%;
+        height:auto;
+
+        .upper-half {
+            height: 50%;
+            width: 100%;
+            position: relative;
+            .img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: $color-blue;
+                opacity: .5;
+            }
+        }
+        .lower-half {
+            text-align: center;
+            height:50%;
+            width: 100%;
+            border-top: 2px solid white;
+        }
+    }
+
+    .module-flex-item:nth-child(even) {
+        background: $color-purple;
+        .upper-half {
+            &:before {
+                background: $color-purple;
+            }
+        }
+    }
+
+
+
+
+
+    .module-flex-item:before {
+        content:'';
+        float:left;
+        padding-top:100%;
+    }
+
+    .module-item {
+        .module-circle{
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .module-title{
+            color: $color-blue-light;
+        }
+
+        .module-description {
+            font-size: 20px;
+            color: $color-blue;
+        }
+
+        .module-link {
+            font-size: 20px;
+            font-family: $ec-square-medium;
+            color: $color-blue-light;
+            text-decoration: underline;
+        }
+    }
+
+
+
+    .circle-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .circle-col {
+            flex: 0 0;
+
+            .circle {
+                margin-right: 40px;
+                width: 200px;
+                height: 200px;
+                border: 2px solid $color-purple;
+                border-radius: 50%;
+                text-align: center;
+                font-family: $ec-square-bold;
+                line-height: 85px;
+                p {
+                    color: $color-purple;
+                    font-family: $ec-square-medium;
+                    font-size: 60px;
+                }
+
+            }
+            .circle-description {
+                width: 200px;
+                text-align: center;
+                font-size: 25px;
+                p {
+                    color: $color-purple;
+                }
+            }
+        }
+    }
+
+
+    .newsletter-frame {
+        border: 1px solid $color-blue-light;
+
+        .ecl-paragraph {
+            font-size: 30px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+            color: $color-blue-light;
+            font-family: $ec-square-medium;
+
+        }
+        ecl-col {
+            text-align: center;
+        }
+        .ecl-text-input {
+            font-family: $ec-square-medium;
+            text-align: center;
+            color: $color-blue-light;
+            display: inline-block;
+            width:40%;
+
+            &::placeholder {
+                font-family: $ec-square-medium;
+                color: $color-blue-light;
+            }
+            border:1px solid $color-blue-light;
+        }
+        .ecl-button {
+            padding: .53rem 1rem;
+        }
+    }
+}
+
