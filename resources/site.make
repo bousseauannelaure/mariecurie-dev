@@ -27,8 +27,6 @@ projects[date][subdir] = "contrib"
 
 projects[advanced_link][subdir] = "contrib"
 
-projects[entityreference][subdir] = "contrib"
-
 projects[field_group][subdir] = "contrib"
 
 projects[file_entity][subdir] = "contrib"

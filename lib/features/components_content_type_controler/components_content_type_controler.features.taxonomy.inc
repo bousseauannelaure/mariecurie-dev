@@ -9,13 +9,16 @@
  */
 function components_content_type_controler_taxonomy_default_vocabularies() {
   return array(
-    'section' => array(
+    'section' => (object) array(
       'name' => 'Module Section',
       'machine_name' => 'section',
       'description' => 'Module related section',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 0,
+      'entity_type' => 'taxonomy_vocabulary',
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',

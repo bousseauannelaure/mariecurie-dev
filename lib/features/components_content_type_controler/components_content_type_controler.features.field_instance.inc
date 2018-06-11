@@ -51,6 +51,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Voting behavior',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -101,6 +102,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Poll choice',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -153,6 +155,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Close poll',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -205,6 +208,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Cookie duration',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => 1,
       'prefix' => '',
@@ -260,6 +264,7 @@ function components_content_type_controler_field_default_field_instances() {
       'default_value2' => 'strtotime',
       'default_value_code' => '',
       'default_value_code2' => '+30 days',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -319,6 +324,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Maximum choices',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => 1,
       'prefix' => '',
@@ -375,6 +381,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Vote storage mode',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -427,6 +434,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Voting options',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -479,6 +487,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Display results',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -536,6 +545,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -585,6 +595,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -647,6 +658,7 @@ function components_content_type_controler_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'value',
       'title_allowed_values' => '',
@@ -715,6 +727,7 @@ function components_content_type_controler_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'media',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -807,6 +820,7 @@ function components_content_type_controler_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -858,6 +872,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Section',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -896,6 +911,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -937,6 +953,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Section',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -976,6 +993,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'media/modules',
       'file_extensions' => '',
       'max_filesize' => '',
@@ -1036,6 +1054,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1107,6 +1126,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => -13,
       ),
       'default_edit_mode' => 'closed',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -1147,6 +1167,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1189,6 +1210,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1240,6 +1262,7 @@ function components_content_type_controler_field_default_field_instances() {
       'default_value2' => 'strtotime',
       'default_value_code' => '',
       'default_value_code2' => '+1 days',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1286,6 +1309,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1327,6 +1351,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Section',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1396,6 +1421,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 13,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -1435,6 +1461,7 @@ function components_content_type_controler_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'media/webinars',
       'file_extensions' => '',
       'max_filesize' => '',
@@ -1502,6 +1529,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1548,6 +1576,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1623,6 +1652,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 4,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -1670,6 +1700,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Intro',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1711,6 +1742,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1752,7 +1784,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Link to Page',
     'required' => 0,
     'settings' => array(
-      'absolute_url' => 1,
+      'absolute_url' => 0,
       'attributes' => array(
         'class' => '',
         'configurable_class' => 0,
@@ -1765,15 +1797,15 @@ function components_content_type_controler_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'rel_remove_internal',
       'title' => 'required',
-      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
+      'validate_url' => 0,
     ),
     'widget' => array(
       'active' => 1,
@@ -1820,6 +1852,7 @@ function components_content_type_controler_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'images/modules/communities',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1883,6 +1916,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Short Text',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1931,6 +1965,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1977,6 +2012,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2044,6 +2080,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 4,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -2091,6 +2128,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Intro',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2139,6 +2177,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2185,6 +2224,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2254,6 +2294,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 4,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -2301,6 +2342,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Intro',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2350,12 +2392,15 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Form Reference',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 1,
     ),
@@ -2402,6 +2447,7 @@ function components_content_type_controler_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'images/modules/background',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -2472,6 +2518,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -2523,6 +2570,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Display on home page',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2569,7 +2617,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Link to Module',
     'required' => 0,
     'settings' => array(
-      'absolute_url' => 1,
+      'absolute_url' => 0,
       'attributes' => array(
         'class' => '',
         'configurable_class' => 0,
@@ -2582,15 +2630,15 @@ function components_content_type_controler_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 0,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'none',
-      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
+      'validate_url' => 0,
     ),
     'widget' => array(
       'active' => 1,
@@ -2638,6 +2686,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2683,6 +2732,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Module Description',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2734,6 +2784,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Under Construction',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2781,6 +2832,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2827,6 +2879,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2902,6 +2955,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 4,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -2949,6 +3003,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Intro',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2997,6 +3052,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3045,6 +3101,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Numbers',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3093,6 +3150,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3139,6 +3197,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Look and Feel',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3214,6 +3273,7 @@ function components_content_type_controler_field_default_field_instances() {
         'video_component' => 4,
       ),
       'default_edit_mode' => 'open',
+      'entity_translation_sync' => FALSE,
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
@@ -3261,6 +3321,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Intro',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3345,6 +3406,7 @@ function components_content_type_controler_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'images/background',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -3436,6 +3498,7 @@ function components_content_type_controler_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3526,6 +3589,7 @@ function components_content_type_controler_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'rel_remove_internal',
       'title' => 'required',
       'title_allowed_values' => '',
@@ -3607,6 +3671,7 @@ Go',
     'label' => 'Short Text',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3648,6 +3713,7 @@ Go',
     'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3693,6 +3759,7 @@ Go',
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'images/speakers',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -3756,6 +3823,7 @@ Go',
     'label' => 'Short Text',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3804,6 +3872,7 @@ Go',
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -3852,6 +3921,7 @@ Go',
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -3902,6 +3972,7 @@ Go',
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'media/welcome',
       'file_extensions' => '',
       'max_filesize' => '',
