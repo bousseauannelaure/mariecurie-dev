@@ -94,11 +94,13 @@ function components_content_type_controler_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'body',
-        1 => 'advpoll_choice',
+        0 => 'title',
+        1 => 'body',
+        2 => 'advpoll_choice',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'body' => 'ds_content',
       'advpoll_choice' => 'ds_content',
     ),

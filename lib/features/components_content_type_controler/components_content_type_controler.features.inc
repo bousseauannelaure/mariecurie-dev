@@ -87,7 +87,7 @@ function components_content_type_controler_node_info() {
     'webinar' => array(
       'name' => t('Webinar'),
       'base' => 'node_content',
-      'description' => t('MArie Curie Webinar element'),
+      'description' => t('Marie Curie Webinar element'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
