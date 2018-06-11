@@ -2823,7 +2823,7 @@ function components_content_type_controler_field_default_field_instances() {
         'default_titles' => '',
         'urls_allowed' => 'internal',
         'urls_filter' => '',
-        'urls_search' => 'contains',
+        'urls_search' => 'start',
       ),
       'type' => 'advanced_link',
       'weight' => 7,
@@ -2920,57 +2920,6 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_module_component-field_msc_under_construction'.
-  $field_instances['paragraphs_item-msc_module_component-field_msc_under_construction'] = array(
-    'bundle' => 'msc_module_component',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 4,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_under_construction',
-    'label' => 'Under Construction',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 8,
     ),
   );
 
@@ -4252,7 +4201,6 @@ Go',
   t('Slides');
   t('This value determines when to show the results of a poll.  By default, while voting is on going, users will see the results so long as they are no longer eligible to vote.  To display results without allowing an opportunity to vote, select \'After poll is closed\' and close the poll.');
   t('Title');
-  t('Under Construction');
   t('Video/image');
   t('Vote storage mode');
   t('Voting behavior');

@@ -24,17 +24,17 @@ function msc_custom_components_help($path, $arg) {
  * Implements hook_classy_paragraphs_list_options().
  */
 function msc_custom_components_classy_paragraphs_list_options($options, $field, $instance) {
-  $options['bg_grey'] = t('Backgrouns Grey');
-  $options['bg_white'] = t('Bacckground White');
-  $options['m_deactivated'] = t('Coming soon Module');
-  return $options;
-}
+  if (!in_array($instance['bundle'], ['msc_module_component'])) {
+    $options['bg_grey'] = t('Background Grey');
+    $options['bg_white'] = t('Background White');
+  }
+  else {
+    $options['m_blue'] = t('Blue Module');
+    $options['m_red'] = t('Red Module');
+    $options['m_deactivated'] = t('Coming soon Module');
+  }
 
-/**
- * Implements hook_classy_paragraphs_list_options_alter().
- */
-function msc_custom_components_classy_paragraphs_list_options_alter(&$options) {
-  $options['bg_grey'] = t('Call to action: Background Grey');
+  return $options;
 }
 
 /**
