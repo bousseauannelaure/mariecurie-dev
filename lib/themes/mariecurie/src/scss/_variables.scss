@@ -1,0 +1,15 @@
+$color-blue-light: #044292;
+$color-blue: #193951;
+$color-blue-dark: #142E41;
+
+$color-purple-light: #B22872;
+$color-purple: #872358;
+$color-purple-dark: #901356;
+
+%shadow {
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shadow {
+    @extend %shadow;
+}
