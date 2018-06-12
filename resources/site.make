@@ -22,10 +22,6 @@ projects[ckeditor][subdir] = "contrib"
 
 ; Controls library used for WYSIWYG system and format input texts
 
-projects[date][subdir] = "contrib"
-
-; FIELD date with flexible options for content types
-
 projects[charts][subdir] = "contrib"
 
 ; synchronizes drupal system with google charts api for displaying nice poll results
