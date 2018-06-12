@@ -30,6 +30,8 @@ projects[date][subdir] = "contrib"
 
 projects[advanced_link][subdir] = "contrib"
 
+projects[charts][subdir] = "contrib"
+
 projects[field_group][subdir] = "contrib"
 
 projects[file_entity][subdir] = "contrib"
