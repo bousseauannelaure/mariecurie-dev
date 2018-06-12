@@ -1,0 +1,11 @@
+.ecl-button--white {
+    border-color: #fff;
+    background-color: #fff;
+    color: $color-purple;
+    &:active,
+    &:hover {
+        background-color: $color-purple;
+        border-color: $color-purple;
+        color: #fff;
+    }
+}
