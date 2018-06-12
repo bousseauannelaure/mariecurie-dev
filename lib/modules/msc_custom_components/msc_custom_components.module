@@ -94,7 +94,7 @@ function msc_custom_components_permission() {
 }
 
 /**
- * Implements hook_preprocess_HOOK().
+ * Implements hook_preprocess().
  */
 function msc_custom_components_preprocess(&$variables) {
   if (!empty($variables['paragraphs_item'])) {
