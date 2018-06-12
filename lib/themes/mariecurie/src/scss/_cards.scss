@@ -1,0 +1,41 @@
+.card {
+  &.raised {
+    box-shadow: 3px 10px 6px 0 rgba(0, 0, 0, .16);
+  }
+
+  &.card-module {
+    .card-header {
+      height: 200px;
+      background-position: center center;
+      bacgkround-size: cover;
+      background-image: url("http://placehold.it/600x200");
+    }
+
+    .card-body {
+      padding: 20px;
+      padding-top: 50px;
+
+      header {
+        font-size: 35px;
+        color: #872358;
+        margin-bottom: 10px;
+      }
+
+      time {
+        color: #872358;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .excerpt {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+
+      .cta {
+        color: #872358;
+      }
+
+    }
+  }
+}
