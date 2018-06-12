@@ -1857,7 +1857,7 @@ function components_content_type_controler_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
@@ -1972,14 +1972,14 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
@@ -2055,7 +2055,7 @@ function components_content_type_controler_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
@@ -3277,7 +3277,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
-          'view_mode' => 'msc_full_width',
+          'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
         'weight' => 2,
