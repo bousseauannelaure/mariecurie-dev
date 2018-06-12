@@ -131,7 +131,9 @@
         </div>
       <?php endif; ?>
       <a id="main-content" tabindex="-1"></a>
+      <?php if (empty($hide_title)) : ?>
       <h1 class="ecl-heading ecl-heading--h1"><?php print render($title); ?></h1>
+      <?php endif; ?>
 
       <!-- Generic sections -->
       <div class="ecl-row">
