@@ -21,18 +21,44 @@ function msc_custom_components_help($path, $arg) {
 }
 
 /**
- * Implements hook_classy_paragraphs_list_options().
+ * Implements hook_list_option_info().
  */
-function msc_custom_components_classy_paragraphs_list_options($options, $field, $instance) {
-  if (!in_array($instance['bundle'], ['msc_module_component'])) {
-    $options['bg_grey'] = t('Background Grey');
-    $options['bg_white'] = t('Background White');
-  }
-  else {
-    $options['m_blue'] = t('Blue Module');
-    $options['m_red'] = t('Red Module');
-    $options['m_deactivated'] = t('Coming soon Module');
-  }
+function msc_custom_components_list_option_info() {
+  $info['look_and_feel'] = array(
+    'label' => t('Look and Feel'),
+    'callback' => 'msc_custom_components_look_and_feel_options',
+  );
+  $info['look_and_feel_module'] = array(
+    'label' => t('Look and Feel for Modules'),
+    'callback' => 'msc_custom_components_look_and_feel_module_options',
+  );
+  $info['look_and_feel_slides'] = array(
+    'label' => t('Look and Feel for Slides'),
+    'callback' => 'msc_custom_components_look_and_feel_slides_options',
+  );
+
+  return $info;
+}
+
+function msc_custom_components_look_and_feel_options() {
+  $options['bg_grey'] = t('Background Grey');
+  $options['bg_white'] = t('Background White');
+
+  return $options;
+}
+
+function msc_custom_components_look_and_feel_module_options() {
+  $options['m_blue'] = t('Blue Module');
+  $options['m_red'] = t('Red Module');
+  $options['m_deactivated'] = t('Coming soon Module');
+
+  return $options;
+}
+
+function msc_custom_components_look_and_feel_slides_options() {
+  $options['s_media_left'] = t('Media at left');
+  $options['s_media_right'] = t('Media at right');
+  $options['s_box_title'] = t('Box with title');
 
   return $options;
 }
@@ -65,4 +91,26 @@ function msc_custom_components_permission() {
   );
 
   return $permissions;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function msc_custom_components_preprocess(&$variables) {
+  if (!empty($variables['paragraphs_item'])) {
+    $suffix = '';
+    if (!empty($variables['field_msc_look_and_feel'])) {
+      $suffix = '__' . $variables['field_msc_look_and_feel'][0]['value'];
+    }
+    elseif (!empty($variables['field_msc_look_and_feel_modules'])) {
+      $suffix = '__' . $variables['field_msc_look_and_feel_modules'][0]['value'];
+    }
+    elseif (!empty($variables['field_msc_look_and_feel_slides'])) {
+      $suffix = '__' . $variables['field_msc_look_and_feel_slides'][0]['value'];
+    }
+
+    if (!empty($suffix)) {
+      $variables['theme_hook_suggestions'][] = $variables['theme_hook_suggestions'][0] . $suffix;
+    }
+  }
 }

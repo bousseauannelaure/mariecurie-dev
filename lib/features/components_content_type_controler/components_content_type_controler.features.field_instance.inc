@@ -1687,15 +1687,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_key',
         'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
@@ -1707,8 +1702,8 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
+    'label' => 'Look and feel',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -1718,7 +1713,7 @@ function components_content_type_controler_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -2154,15 +2149,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_key',
         'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
@@ -2174,8 +2164,8 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
+    'label' => 'Look and feel',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -2185,7 +2175,7 @@ function components_content_type_controler_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -2358,50 +2348,6 @@ function components_content_type_controler_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_container_slider_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-msc_container_slider_component-field_msc_multiple_component'.
   $field_instances['paragraphs_item-msc_container_slider_component-field_msc_multiple_component'] = array(
     'bundle' => 'msc_container_slider_component',
@@ -2413,7 +2359,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
-          'view_mode' => 'msc_full_width',
+          'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
         'weight' => 2,
@@ -2831,23 +2777,18 @@ function components_content_type_controler_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_module_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_module_component-field_msc_look_and_feel'] = array(
+  // 'paragraphs_item-msc_module_component-field_msc_look_and_feel_modules'.
+  $field_instances['paragraphs_item-msc_module_component-field_msc_look_and_feel_modules'] = array(
     'bundle' => 'msc_module_component',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Choose color template for this component',
+    'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_key',
         'weight' => 6,
       ),
       'paragraphs_editor_preview' => array(
@@ -2858,9 +2799,9 @@ function components_content_type_controler_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
+    'field_name' => 'field_msc_look_and_feel_modules',
+    'label' => 'Look and feel',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -2870,7 +2811,7 @@ function components_content_type_controler_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -2981,15 +2922,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_key',
         'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
@@ -3001,8 +2937,8 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
+    'label' => 'Look and feel',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -3012,7 +2948,7 @@ function components_content_type_controler_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -3299,15 +3235,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_key',
         'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
@@ -3319,8 +3250,8 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and Feel',
-    'required' => 1,
+    'label' => 'Look and feel',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -3330,7 +3261,7 @@ function components_content_type_controler_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -3564,7 +3495,7 @@ function components_content_type_controler_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -3634,7 +3565,7 @@ function components_content_type_controler_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
@@ -3737,6 +3668,113 @@ Go',
         'urls_search' => 'contains',
       ),
       'type' => 'advanced_link',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_slider_component-field_msc_look_and_feel_slides'.
+  $field_instances['paragraphs_item-msc_slider_component-field_msc_look_and_feel_slides'] = array(
+    'bundle' => 'msc_slider_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_key',
+        'weight' => 8,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_look_and_feel_slides',
+    'label' => 'Look and feel',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_slider_component-field_msc_picture'.
+  $field_instances['paragraphs_item-msc_slider_component-field_msc_picture'] = array(
+    'bundle' => 'msc_slider_component',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 5,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_picture',
+    'label' => 'Media',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'node' => 0,
+          'oembed' => 'oembed',
+          'private' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 'video',
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
       'weight' => 5,
     ),
   );
@@ -3807,7 +3845,75 @@ Go',
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_slider_component-field_msc_subtitle'.
+  $field_instances['paragraphs_item-msc_slider_component-field_msc_subtitle'] = array(
+    'bundle' => 'msc_slider_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_subtitle',
+    'label' => 'Subtitle',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'basic_html' => 'basic_html',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'basic_html' => array(
+              'weight' => 5,
+            ),
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => -8,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -4161,7 +4267,6 @@ Go',
   t('Add at least 2 choices for your poll.  Write-in values indicate user generated content.  If you approve of a choice that has been written in by a user, uncheck it and it will be integrated into the poll for others to vote upon.');
   t('Approval voting weighs each vote against each individual choice rather than pooling all votes.');
   t('Background Image');
-  t('Choose color template for this component');
   t('Close poll');
   t('Communities');
   t('Components');
@@ -4176,7 +4281,7 @@ Go',
   t('Link');
   t('Link to Module');
   t('Link to Page');
-  t('Look and Feel');
+  t('Look and feel');
   t('Maximum choices');
   t('Media');
   t('Module Description');
@@ -4199,6 +4304,7 @@ Go',
   t('Select the maximum number of choices that can be voted upon.');
   t('Short Text');
   t('Slides');
+  t('Subtitle');
   t('This value determines when to show the results of a poll.  By default, while voting is on going, users will see the results so long as they are no longer eligible to vote.  To display results without allowing an opportunity to vote, select \'After poll is closed\' and close the poll.');
   t('Title');
   t('Video/image');

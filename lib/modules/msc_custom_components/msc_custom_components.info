@@ -1,7 +1,7 @@
 name = Marie Curie Custom Components
 description = Manage functionallity for paragraphs and other components
 dependencies[] = paragraphs
-dependencies[] = classy_paragraphs
+dependencies[] = list_predefined_options
 package = MSC
 core = 7.x
 

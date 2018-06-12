@@ -503,14 +503,60 @@ function components_content_type_controler_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'classy_paragraphs',
+    'module' => 'list',
     'settings' => array(
       'allowed_values' => array(),
-      'allowed_values_function' => '',
+      'allowed_values_function' => 'msc_custom_components_look_and_feel_options',
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'cp_list',
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_msc_look_and_feel_modules'.
+  $field_bases['field_msc_look_and_feel_modules'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_msc_look_and_feel_modules',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(),
+      'allowed_values_function' => 'msc_custom_components_look_and_feel_module_options',
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_msc_look_and_feel_slides'.
+  $field_bases['field_msc_look_and_feel_slides'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_msc_look_and_feel_slides',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(),
+      'allowed_values_function' => 'msc_custom_components_look_and_feel_slides_options',
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_msc_multiple_component'.
@@ -671,6 +717,28 @@ function components_content_type_controler_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'paragraphs',
+  );
+
+  // Exported field_base: 'field_msc_subtitle'.
+  $field_bases['field_msc_subtitle'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_msc_subtitle',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 100,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_msc_video'.

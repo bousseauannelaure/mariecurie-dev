@@ -21,7 +21,10 @@ projects[bundle_copy][subdir] = "contrib"
 
 projects[ckeditor][subdir] = "contrib"
 
+; TODO: to be removed.
 projects[classy_paragraphs][subdir] = "contrib"
+
+projects[list_predefined_options][subdir] = "contrib"
 
 projects[date][subdir] = "contrib"
 
