@@ -25,7 +25,7 @@ function msc_custom_components_help($path, $arg) {
  */
 function msc_custom_components_list_option_info() {
   $info['look_and_feel'] = array(
-    'label' => t('Look and Feel'),
+    'label' => t('Default Look and Feel'),
     'callback' => 'msc_custom_components_look_and_feel_options',
   );
   $info['look_and_feel_module'] = array(
