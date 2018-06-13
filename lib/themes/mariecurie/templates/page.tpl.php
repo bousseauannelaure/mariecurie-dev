@@ -100,22 +100,22 @@ unset($contexts['context_name']);
 variable_set('context_status', $contexts);
 */
 ?>
-<?php if (!empty($page['header_top'])): ?>
-  <section class="header-top">
-    <div class="ecl-container">
-      <?php print render($page['header_top']); ?>
-    </div>
-  </section>
-<?php endif; ?>
+<?php //if (!empty($page['header_top'])): ?>
+<!--  <section class="header-top">-->
+<!--    <div class="ecl-container">-->
+<!--      --><?php //print render($page['header_top']); ?>
+<!--    </div>-->
+<!--  </section>-->
+<?php //endif; ?>
 
 <?php print render($site_header); ?>
-<?php print render($page['header']); ?>
-
-<?php if (!empty($page['navigation'])): ?>
-  <?php print render($page['navigation']); ?>
-<?php endif; ?>
-
-<?php print render($page_header); ?>
+<?php //print render($page['header']); ?>
+<!---->
+<?php //if (!empty($page['navigation'])): ?>
+<!--  --><?php //print render($page['navigation']); ?>
+<?php //endif; ?>
+<!---->
+<?php //print render($page_header); ?>
 
 <?php if (!empty($page['slider'])): ?>
   <?php print render($page['slider']); ?>
