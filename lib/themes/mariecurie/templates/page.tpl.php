@@ -83,6 +83,20 @@
  *
  * @ingroup themeable
  */
+
+$contexts = variable_get('context_status', array());
+dsm($contexts);
+var_dump($contexts);
+/*
+$contexts = variable_get('context_status', array());
+$contexts['context_name'] = TRUE;
+variable_set('context_status', $contexts);
+//To enable a context: unset the context name from context_status.
+
+$contexts = variable_get('context_status', array());
+unset($contexts['context_name']);
+variable_set('context_status', $contexts);
+*/
 ?>
 <?php if (!empty($page['header_top'])): ?>
   <section class="header-top">
@@ -100,6 +114,10 @@
 <?php endif; ?>
 
 <?php print render($page_header); ?>
+
+<?php if (!empty($page['slider'])): ?>
+  <?php print render($page['slider']); ?>
+<?php endif; ?>
 
 <main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>
   <a id="main-content" tabindex="-1"></a>

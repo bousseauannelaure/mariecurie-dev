@@ -26,7 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="slide active" style="background-image: url(<?php print trim(strip_tags(render($content['field_msc_back_img_component']))); ?>);">
+<div class="slide" style="background-image: url(<?php print trim(strip_tags(render($content['field_msc_back_img_component']))); ?>);">
   <div class="slide-content-wrapper">
     <?php print render($content['field_msc_component_title']); ?>
     <?php print render($content['field_msc_short_text']); ?>
