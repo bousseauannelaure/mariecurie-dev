@@ -1,0 +1,14 @@
+.ecl-pager__item--current {
+    border: 0;
+    background: $color-blue;
+    color: #fff;
+}
+
+.ecl-pager__link {
+    color: $color-blue;
+    font-family: $ec-square-medium;
+}
+
+.ecl-pager__wrapper {
+    border-top: 0;
+}

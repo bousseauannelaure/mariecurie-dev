@@ -367,16 +367,61 @@
                 </div>
             </div>
 
-            <span class="article-title">Title of the article</span>
-            <!--<span class="article-author">Written by <span rel="sioc:has_creator"><a class="ecl-link" href="/users/admin_en">admin</a></span></span>-->
-            <span class="article-date">Published on the <time datetime="2018-06-13T10:05:50+00:00"><span property="dc:date dc:created" content="2018-06-13T10:05:50+00:00" datatype="xsd:dateTime">Wed, 13/06/2018 - 10:05</span></time></span>
+            <nav class="ecl-pager__wrapper shadow" aria-label="pagination">
+                <ul class="ecl-pager">
+                    <li class="ecl-pager__item ecl-pager__item--previous">
+                        <a class="ecl-pager__link" title="Go to previous page" href="/page=6">‹ Previous</a>
+                    </li>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut purus sed metus finibus molestie. Fusce fringilla mauris est, eget rutrum quam sodales ut. Cras laoreet felis nec metus ultricies volutpat. Aliquam nisi arcu, scelerisque non laoreet ut, semper a quam. Donec a leo elementum, pellentesque felis sed, sodales odio. Fusce blandit ligula sit amet nisl dapibus cursus. Nullam turpis massa, tincidunt vel sapien quis, posuere tempus elit.</p>
+                    <li class="ecl-pager__item ecl-pager__item--first">
+                        <a class="ecl-pager__link" title="Go to page 1" href="/page=1">
+                            <span class="ecl-u-sr-only">Page </span>1
+                        </a>
+                    </li>
 
-            <img class="full-width-image" src="http://via.placeholder.com/350x200">
+                    <li class="ecl-pager__item ecl-pager__item--ellipsis">…</li>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut purus sed metus finibus molestie. Fusce fringilla mauris est, eget rutrum quam sodales ut. Cras laoreet felis nec metus ultricies volutpat. Aliquam nisi arcu, scelerisque non laoreet ut, semper a quam. Donec a leo elementum, pellentesque felis sed, sodales odio. Fusce blandit ligula sit amet nisl dapibus cursus. Nullam turpis massa, tincidunt vel sapien quis, posuere tempus elit.</p>
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 5" href="/page=5">
+                            <span class="ecl-u-sr-only">Page </span>5
+                        </a>
+                    </li>
 
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 6" href="/page=6">
+                            <span class="ecl-u-sr-only">Page </span>6
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--current" aria-current="page">
+                        <span class="ecl-pager__item-text">Page</span> 7
+                    </li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 8" href="/page=8">
+                            <span class="ecl-u-sr-only">Page </span>8
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 9" href="/page=9">
+                            <span class="ecl-u-sr-only">Page </span>9
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--ellipsis">…</li>
+
+                    <li class="ecl-pager__item ecl-pager__item--last">
+                        <a class="ecl-pager__link" title="Go to page 20" href="/page=20">
+                            <span class="ecl-u-sr-only">Page </span>20
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--next">
+                        <a class="ecl-pager__link" title="Go to next page" href="/page=8">Next ›</a>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
     </div>

@@ -31,26 +31,26 @@
         color: white;
         padding: 20px;
         text-decoration: none;
-        left: -100px;
+        left: 10%;
         margin-top: -34px;
         transition: all .3s;
-        opacity: 0;
+        opacity: 1;
         z-index: 10000;
         cursor:pointer;
     }
     .slider .next{
-        right: -100px;
+        right: 10%;
         content: "\f054";
         left: auto;
     }
     .slider:hover .previous, .slider:hover .next{
-        opacity: 1;
+        //opacity: 1;
     }
     .slider:hover .previous{
-        left: 10%;
+        //left: 10%;
     }
     .slider:hover .next{
-        right: 10%;
+        //right: 10%;
     }
     .slider .slides{
         height: 100%;
@@ -58,6 +58,7 @@
     .slide{
         color: white;
         background-size: cover;
+        background-color: $color-purple;
         padding: 10%;
         width: 100vw;
         text-align: center;
