@@ -1212,7 +1212,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
-          'view_mode' => 'msc_full_width',
+          'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
         'weight' => 0,
@@ -4265,21 +4265,16 @@ Go',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'smart_trim',
-        'settings' => array(
-          'more_link' => 0,
-          'more_text' => 'Read more',
-          'summary_handler' => 'full',
-          'trim_length' => 300,
-          'trim_link' => 0,
-          'trim_options' => array(
-            'text' => 'text',
-          ),
-          'trim_preserve_tags' => '<strong>',
-          'trim_suffix' => '...',
-          'trim_type' => 'chars',
-        ),
-        'type' => 'smart_trim_format',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 0,
       ),
       'msc_full_width' => array(
@@ -4303,26 +4298,26 @@ Go',
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'basic_html' => 0,
-          'filtered_html' => 'filtered_html',
+          'basic_html' => 'basic_html',
+          'filtered_html' => 0,
           'full_html' => 0,
           'plain_text' => 0,
         ),
         'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
+        'default_order_toggle' => 1,
         'default_order_wrapper' => array(
           'formats' => array(
             'basic_html' => array(
-              'weight' => 5,
+              'weight' => -50,
             ),
             'filtered_html' => array(
-              'weight' => -9,
+              'weight' => -48,
             ),
             'full_html' => array(
-              'weight' => -10,
+              'weight' => -49,
             ),
             'plain_text' => array(
-              'weight' => -8,
+              'weight' => -47,
             ),
           ),
         ),
@@ -4350,6 +4345,13 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -4399,6 +4401,15 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 2,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
