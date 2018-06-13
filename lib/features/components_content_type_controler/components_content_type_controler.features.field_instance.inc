@@ -10,72 +10,6 @@
 function components_content_type_controler_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-slider_block-field_msc_components'.
-  $field_instances['bean-slider_block-field_msc_components'] = array(
-    'bundle' => 'slider_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_msc_components',
-    'label' => 'Components',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'button',
-      'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => -1,
-        'msc_container_component' => -1,
-        'msc_container_slider_component' => 'msc_container_slider_component',
-        'msc_form_component' => -1,
-        'msc_module_component' => -1,
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => -1,
-        'msc_numbers_container_component' => -1,
-        'msc_slider_component' => -1,
-        'speakers_component' => -1,
-        'video_component' => -1,
-      ),
-      'bundle_weights' => array(
-        'msc_commu_container_component' => 3,
-        'msc_communities_component' => 2,
-        'msc_container_component' => 4,
-        'msc_container_slider_component' => 5,
-        'msc_form_component' => 6,
-        'msc_module_component' => 7,
-        'msc_module_container_component' => 8,
-        'msc_numbers_component' => 9,
-        'msc_numbers_container_component' => 10,
-        'msc_slider_component' => 11,
-        'speakers_component' => 12,
-        'video_component' => 13,
-      ),
-      'default_edit_mode' => 'open',
-      'entity_translation_sync' => FALSE,
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'node-advpoll-advpoll_behavior'.
   $field_instances['node-advpoll-advpoll_behavior'] = array(
     'bundle' => 'advpoll',
@@ -1234,7 +1168,7 @@ function components_content_type_controler_field_default_field_instances() {
         'msc_commu_container_component' => 'msc_commu_container_component',
         'msc_communities_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_container_slider_component' => 'msc_container_slider_component',
         'msc_form_component' => 'msc_form_component',
         'msc_module_component' => -1,
         'msc_module_container_component' => 'msc_module_container_component',
