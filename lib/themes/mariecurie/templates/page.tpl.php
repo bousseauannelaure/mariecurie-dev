@@ -101,6 +101,10 @@
 
 <?php print render($page_header); ?>
 
+<?php if (!empty($page['slider'])): ?>
+  <?php print render($page['slider']); ?>
+<?php endif; ?>
+
 <main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>
   <a id="main-content" tabindex="-1"></a>
   <div class="ecl-container ecl-u-mv-l">
