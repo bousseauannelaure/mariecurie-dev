@@ -84,9 +84,11 @@
  * @ingroup themeable
  */
 
+/*
 $contexts = variable_get('context_status', array());
 dsm($contexts);
 var_dump($contexts);
+*/
 /*
 $contexts = variable_get('context_status', array());
 $contexts['context_name'] = TRUE;
