@@ -10,7 +10,7 @@
  */
 function mariecurie_preprocess_region(&$variables) {
 
-  dsm($variables);
+  //dsm($variables);
 }
 
 /**
