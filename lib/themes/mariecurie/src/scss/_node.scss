@@ -1,0 +1,30 @@
+.page-node {
+    .ecl-heading--h1 {
+        color: $color-blue;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .article {
+        &-title {
+            display: block;
+            color: $color-blue-light;
+            font-size: 30px;
+            font-family: $ec-square-medium;
+            border-bottom: 1px solid $color-blue;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        &-date {
+            display: block;
+            font-size: 30px;
+            font-family: $ec-square-medium;
+            color: $color-blue;
+        }
+    }
+
+    p {
+        color: $color-blue;
+    }
+}
