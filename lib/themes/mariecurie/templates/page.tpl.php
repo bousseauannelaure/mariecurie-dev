@@ -95,11 +95,11 @@
 <?php print render($site_header); ?>
 <?php print render($page['header']); ?>
 
-<?php print render($page_header); ?>
-
 <?php if (!empty($page['navigation'])): ?>
   <?php print render($page['navigation']); ?>
 <?php endif; ?>
+
+<?php print render($page_header); ?>
 
 <main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>
   <a id="main-content" tabindex="-1"></a>
