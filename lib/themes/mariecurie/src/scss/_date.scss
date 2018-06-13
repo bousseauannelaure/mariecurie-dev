@@ -1,0 +1,54 @@
+
+.date-list {
+  margin: 0 1rem;
+
+  .ecl-list-item {
+    margin: 1rem .5rem 1rem 0;
+    @extend %shadow;
+
+    &__body {
+      padding-right: 1rem;
+    }
+
+    &__primary {
+      max-height: inherit;
+      max-width: 7rem;
+    }
+
+    &__link {
+      padding: 0;
+    }
+  }
+
+  .ecl-heading--h3 {
+    display: inline-block;
+    border-bottom: 1px solid $color-blue-dark;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .list-item--date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 7rem;
+    height: 100%;
+    padding: 1.5rem 1.2rem;
+    font-size: 1.1em;
+    background-color: $color-blue;
+    color: $color-white;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .date-list {
+    marign: 0;
+
+    &.ecl-listing--two-columns .ecl-list-item {
+      min-width: calc(50% - .51rem);
+      max-width: calc(50% - .51rem);
+    }
+  }
+}
+

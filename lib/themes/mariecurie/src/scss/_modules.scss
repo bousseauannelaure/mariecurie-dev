@@ -4,3 +4,34 @@
     font-size: 3.2em;
   }
 }
+
+.related-module {
+  margin: 0 1rem;
+
+  .ecl-list-item {
+    position: relative;
+
+    .ecl-list-item__body {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      background: transparent;
+      justify-content: center;
+
+      .ecl-list-item__link {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .related-module {
+    margin: 0;
+  }
+}
