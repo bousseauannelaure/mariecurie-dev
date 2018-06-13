@@ -44,6 +44,14 @@ function components_content_type_controler_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'msc_events' => array(
+      'name' => t('Events'),
+      'base' => 'node_content',
+      'description' => t('Events for mariecurie'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'msc_module' => array(
       'name' => t('Module'),
       'base' => 'node_content',
