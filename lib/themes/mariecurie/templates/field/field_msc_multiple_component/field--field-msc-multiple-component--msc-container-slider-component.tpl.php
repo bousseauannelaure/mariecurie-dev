@@ -52,5 +52,7 @@
  */
 ?>
 <?php foreach ($items as $delta => $item): ?>
-  <?php print render($item); ?>
+  <div class="slide<?php print ($delta === 0 ? ' active': ''); ?>">
+    <?php print render($item); ?>
+  </div>
 <?php endforeach; ?>
