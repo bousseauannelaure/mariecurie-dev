@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <meta content="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/mstile-310x150.png" name="msapplication-wide310x150logo">
+    <meta content="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/mstile-150x150.png" name="msapplication-square150x150logo">
+    <meta content="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/mstile-70x70.png" name="msapplication-square70x70logo">
+    <meta content="#034ea1" name="theme-color">
+    <meta content="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/mstile-144x144.png" name="msapplication-TileImage">
+    <meta content="#034ea1" name="msapplication-TileColor">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="slicing_tmp/misc/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <meta content="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/images/png/favicon/mstile-310x310.png" name="msapplication-square310x310logo">
+    <title>Welcome to Marie Curie | Marie Curie</title>
+    <style media="all" type="text/css">
+        @import url("slicing_tmp/modules/system/system.base.css");
+        @import url("slicing_tmp/modules/system/system.menus.css");
+        @import url("slicing_tmp/modules/system/system.messages.css");
+        @import url("slicing_tmp/modules/system/system.theme.css");
+    </style>
+    <style media="all" type="text/css">
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/features/cce_basic_config/cce_basic_config.css");
+        @import url("slicing_tmp/modules/comment/comment.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/date/date_popup/themes/datepicker.1.7.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/custom/ecas/ecas_import_users/css/ecas_import_users.css");
+        @import url("slicing_tmp/modules/field/theme/field.css");
+        @import url("slicing_tmp/modules/node/node.css");
+        @import url("slicing_tmp/modules/search/search.css");
+        @import url("slicing_tmp/modules/user/user.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/views/css/views.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/media/modules/media_wysiwyg/css/media_wysiwyg.base.css");
+    </style>
+    <style media="all" type="text/css">
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/ctools/css/ctools.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/rate/rate.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/tagclouds/tagclouds.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/video/css/video.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/modules/custom/multisite_drupal_toolbox/icons/style.css");
+    </style>
+    <style media="all" type="text/css">
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/styles/europa.css");
+        @import url("/assets/styles/mariecurie.css");
+        @import url("slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/textarea/textarea.css");
+    </style>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js@v=1.10.2" type="text/javascript"></script>
+    <script src="slicing_tmp/misc/jquery.once.js@v=1.2" type="text/javascript"></script>
+    <script src="slicing_tmp/misc/drupal.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/table/table.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/status_messages/status_messages.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/menu_tree/menu_tree.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/lang_select_site/lang_select_site.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/templates/vertical_tabs/vertical_tabs.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/modules/contrib/video/js/video.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/scripts/components/lang-select-site.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/modules/custom/language_selector_page/js/language_selector_page.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/scripts/misc/ajax.js" type="text/javascript"></script>
+    <script src="assets/scripts/europa.js" type="text/javascript"></script>
+    <script src="assets/scripts/mariecurie.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/scripts/init.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/scripts/europa_tabs.js" type="text/javascript"></script>
+    <script src="slicing_tmp/profiles/multisite_drupal_standard/themes/ec_europa/assets/scripts/components/table-responsive.js" type="text/javascript"></script>
+    <script type="text/javascript">jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mariecurie","theme_token":"0YHPAndW5gn_OExb6p5uI_KLJy5UnQD0tg1EZPrtOkA","js":{"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/table\/table.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/status_messages\/status_messages.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/menu_tree\/menu_tree.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/lang_select_site\/lang_select_site.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/vertical_tabs\/vertical_tabs.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/video\/js\/video.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/scripts\/components\/lang-select-site.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/custom\/language_selector_page\/js\/language_selector_page.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/scripts\/misc\/ajax.js":1,"slicing_tmp\/sites\/all\/themes\/mariecurie\/assets\/scripts\/europa.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/scripts\/init.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/scripts\/europa_tabs.js":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/scripts\/components\/table-responsive.js":1},"css":{"slicing_tmp\/modules\/system\/system.base.css":1,"slicing_tmp\/modules\/system\/system.menus.css":1,"slicing_tmp\/modules\/system\/system.messages.css":1,"slicing_tmp\/modules\/system\/system.theme.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/features\/cce_basic_config\/cce_basic_config.css":1,"slicing_tmp\/modules\/comment\/comment.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/custom\/ecas\/ecas_import_users\/css\/ecas_import_users.css":1,"slicing_tmp\/modules\/field\/theme\/field.css":1,"slicing_tmp\/modules\/node\/node.css":1,"slicing_tmp\/modules\/search\/search.css":1,"slicing_tmp\/modules\/user\/user.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/views\/css\/views.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/ctools\/css\/ctools.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/rate\/rate.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/tagclouds\/tagclouds.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/contrib\/video\/css\/video.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/modules\/custom\/multisite_drupal_toolbox\/icons\/style.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/assets\/styles\/europa.css":1,"slicing_tmp\/sites\/all\/themes\/mariecurie\/assets\/styles\/mariecurie.css":1,"slicing_tmp\/profiles\/multisite_drupal_standard\/themes\/ec_europa\/templates\/textarea\/textarea.css":1}},"urlIsAjaxTrusted":{"http:\/\/ec.europa.eu\/geninfo\/query\/resultaction.jsp":true}});</script>
+</head>
+<body class="front html i18n-en language- not-logged-in page-node">
+<div class="ecl-skip-link__wrapper" id="skip-link">
+    <a href="#main-content" class="ecl-skip-link">Skip to main content</a>
+</div>
+<section class="header-top">
+    <div class="ecl-container">
+        <aside class="region-header-top" role="complementary"><div class="block-language-selector-site block-language-selector-site-language-selector-site ecl-clearfix ecl-lang-select-sites first lang-select-site odd weight-0" id="block-language-selector-site-language-selector-site">
+            <a href="/splash_en?node" class="ecl-lang-select-sites__link">
+                <span class="ecl-lang-select-sites__label">English</span>
+                <span class="ecl-lang-select-sites__code">
+      <span class="ecl-icon ecl-icon--language ecl-lang-select-sites__icon"></span>
+      <span class="ecl-lang-select-sites__code-text">en</span>
+    </span>
+            </a>
+        </div>
+            <div class="splash-page splash-page--overlay"></div>
+            <section class="block-menu block-menu-menu-service-tools ecl-clearfix even weight-1" id="block-menu-menu-service-tools" role="navigation">
+                <h3 class="block__title">Service tools</h3>
+
+                <div class="block__content">
+                    <ul class="ecl-footer__menu ecl-list--inline menu_tree-level-1"><li class="ecl-list-inline__item first leaf"><a class="ecl-link ecl-link--standalone" data-display-title="1" data-remove-class="1" href="http://ec.europa.eu/geninfo/legal_notices_en.htm">Legal notice</a>
+                    </li>
+                        <li class="ecl-list-inline__item leaf"><a class="ecl-link ecl-link--standalone" data-display-title="1" data-remove-class="1" href="http://ec.europa.eu/cookies/index_en.htm">Cookies</a>
+                        </li>
+                        <li class="ecl-list-inline__item leaf"><a class="ecl-link ecl-link--standalone" data-display-title="1" data-remove-class="1" href="http://ec.europa.eu/contact/index_en.htm">Contact on Europa</a>
+                        </li>
+                        <li class="ecl-list-inline__item last leaf"><a class="ecl-link ecl-link--standalone" data-display-title="1" data-remove-class="1" href="http://ec.europa.eu/geninfo/query/search_en.html">Search on Europa</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+    </div>
+</section>
+
+<header class="ecl-site-header" role="banner">
+    <div class="ecl-container">
+        <section class="block-system block-system-user-menu block__system__user-menu ecl-clearfix ecl-u-f-r first last odd weight-0" id="block-system-user-menu" role="navigation">
+            <nav class="ecl-navigation-list-wrapper">
+                <h2 class="ecl-u-sr-only">User menu</h2>
+                <ul class="ecl-navigation-list ecl-navigation-list--small menu_tree-level-1"><li class="ecl-navigation-list__item first leaf"><a class="btn btn-default ecl-link ecl-link--standalone ecl-navigation-list__link" data-container="body" data-image="log-in" data-placement="bottom" data-toggle="tooltip" href="/ecas" title="EU login">EU Login</a>
+                </li>
+                    <li class="ecl-navigation-list__item last leaf"><a class="btn btn-success ecl-link ecl-link--standalone ecl-navigation-list__link" data-container="body" data-display-title="0" data-image="plus" data-placement="bottom" data-toggle="tooltip" href="/account_request_en" title="Request new account">Create an EU Login account</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <div aria-label="breadcrumbs" class="ecl-site-switcher ecl-site-switcher--header">
+
+        <ul class="ecl-container ecl-site-switcher__list">
+            <li class="ecl-site-switcher__option first"><a class="ecl-link ecl-site-switcher__link" href="https://ec.europa.eu/commission/index_en">Commission and its priorities</a>
+            </li>
+            <li class="ecl-site-switcher__option ecl-site-switcher__option--is-selected last"><a class="ecl-link ecl-site-switcher__link" href="https://ec.europa.eu/info/index_en">Policies, information and services</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ecl-container ecl-site-header__banner">
+        <a class="ecl-logo ecl-logo--logotype ecl-site-header__logo" href="https://ec.europa.eu/info/index" title="Home - European Commission">
+            <span class="ecl-u-sr-only">Home - European Commission</span>
+        </a>
+        <div class="ecl-language-list ecl-language-list--overlay ecl-site-header__language-list">
+
+            <div id="ecl-overlay-language-list" class="ecl-dialog__overlay ecl-dialog__overlay--blue" aria-hidden="true"></div>
+
+
+            <div class="ecl-lang-select-sites ecl-link" data-ecl-dialog="ecl-dialog" id="ecl-lang-select-sites__overlay">
+                <a href="/language-selector/site-language_en?destination=node" class="ecl-lang-select-sites__link">
+                    <span class="ecl-lang-select-sites__label">English</span>
+                    <span class="ecl-lang-select-sites__code">
+      <span class="ecl-icon ecl-icon--language ecl-lang-select-sites__icon"></span>
+      <span class="ecl-lang-select-sites__code-text">en</span>
+    </span>
+                </a>
+            </div>
+
+            <div class="ecl-dialog ecl-dialog--transparent ecl-dialog--wide" id="ecl-dialog" aria-labelledby="ecl-dialog-title" aria-describedby="ecl-dialog-description" aria-hidden="true" role="dialog">
+                <h3 id="ecl-dialog-title" class="ecl-heading ecl-heading--h3 ecl-u-sr-only">Dialog</h3>
+                <div class="ecl-dialog__body">
+                    <section>
+                        <div class="">
+                            <div class="ecl-container">
+                                <div class="ecl-row">
+                                    <div class="ecl-col-lg-8 ecl-offset-lg-2">
+                                        <h2 lang="en" class="ecl-heading ecl-heading--h2 ecl-dialog__title">
+                                            <span class="ecl-icon ecl-icon--generic-lang"></span> Select your language
+                                        </h2>
+                                        <div class="ecl-row">
+                                            <div class="column-0 ecl-col-md-6"><a class="active ecl-button ecl-button--block ecl-button--default ecl-icon ecl-icon--icon-check ecl-language-list__button ecl-language-list__button--active ecl-link" href="/node_en" hreflang="en" lang="en" rel="alternate"><span class="ecl-icon ecl-icon--check ecl-u-f-r"></span>
+                                                English</a>
+                                            </div>
+                                            <button class="ecl-message__dismiss ecl-message__dismiss--inverted">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+
+        <form accept-charset="UTF-8" action="http://ec.europa.eu/geninfo/query/resultaction.jsp" class="ecl-form ecl-search-form search-form" id="nexteuropa-europa-search-search-form" method="get">
+            <label class="ecl-search-form__textfield-wrapper">
+                <span class="ecl-u-sr-only">Search this website</span>
+                <input class="ecl-search-form__textfield ecl-text-input form-text" id="edit-querytext" maxlength="128" name="QueryText" placeholder="Search" size="30" type="text" value=""/></label>
+            <button class="btn-search ecl-button ecl-button--form form-button-submit" id="edit-europa-search-submit" name="op" tabindex="-1" type="submit" value="Search">
+                Search</button>
+            <input class="form-hidden" id="edit-swlang" name="swlang" type="hidden" value="en"/>
+            <input class="form-hidden" id="form-FZT95rGOADZpwxAglblKJxcgP-DHfO20XzGlxlsNHnw" name="form_build_id" type="hidden" value="form-FZT95rGOADZpwxAglblKJxcgP-DHfO20XzGlxlsNHnw"/>
+            <input class="form-hidden" id="edit-nexteuropa-europa-search-search-form" name="form_id" type="hidden" value="nexteuropa_europa_search_search_form"/>
+        </form>
+    </div>
+</header>
+
+<div class="ecl-page-header">
+    <nav aria-label="breadcrumbs" class="ecl-breadcrumbs ecl-container">
+        <span class="ecl-u-sr-only">You are here</span>
+        <ol class="ecl-breadcrumbs__segments-wrapper">
+            <li class="ecl-breadcrumbs__segment ecl-breadcrumbs__segment--first"><a class="ecl-breadcrumbs__link ecl-link is-internal" href="http://ec.europa.eu/index_en.htm" rel="home">European Commission</a>
+            </li>  </ol>
+    </nav>
+    <div class="ecl-page-header__body">
+        <div class="ecl-container">
+            <div class="ecl-page-header__identity">
+                Marie Curie            </div>
+            <div class="ecl-page-header__title">
+                <h1 class="ecl-heading ecl-heading--h1 ecl-u-color-white">
+                    Welcome to Marie Curie            </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="ecl-navigation-menu" aria-label="Main Navigation">
+    <div class="ecl-container">
+        <button class="ecl-navigation-menu__toggle ecl-navigation-menu__hamburger ecl-navigation-menu__hamburger--squeeze" aria-controls="nav-menu-expandable-root" aria-expanded="false">
+      <span class="ecl-navigation-menu__hamburger-box">
+        <span class="ecl-navigation-menu__hamburger-inner"></span>
+      </span>
+            <span class="ecl-navigation-menu__hamburger-label">Menu</span>
+        </button>
+        <ul class="ecl-navigation-menu__root" id="nav-menu-expandable-root" aria-hidden="true">
+            <li class="ecl-navigation-menu__item">
+                <a href="../../example.html#home" class="ecl-navigation-menu__link">Home</a>
+            </li>
+            <li class="ecl-navigation-menu__item ecl-navigation-menu__item--active">
+                <a href="../../example.html#item1" class="ecl-navigation-menu__link" aria-controls="nav-menu-expandable-group-2" aria-expanded="false" aria-haspopup="true">Policy</a>
+                <div class="ecl-navigation-menu__group ecl-row" id="nav-menu-expandable-group-2">
+                    <div class="ecl-col">
+                        <ul class="ecl-navigation-menu__links ecl-list ecl-list--unstyled">
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item1-1-1" class="ecl-navigation-menu__link">Sub item 1</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item1-1-2" class="ecl-navigation-menu__link">Sub item 2 with a very very very (very) long label</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item1-1-3" class="ecl-navigation-menu__link">Sub item 3</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item1-1-4" class="ecl-navigation-menu__link ecl-navigation-menu__link--active">Sub item 4</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item1-1-5" class="ecl-navigation-menu__link">Sub item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </li>
+            <li class="ecl-navigation-menu__item">
+                <a href="../../example.html#item2" class="ecl-navigation-menu__link" aria-controls="nav-menu-expandable-group-3" aria-expanded="false" aria-haspopup="true">Advisor Bodies</a>
+                <div class="ecl-navigation-menu__group ecl-row" id="nav-menu-expandable-group-3">
+                    <div class="ecl-col">
+                        <div class="ecl-navigation-menu__title">Optional title 1</div>
+                        <ul class="ecl-navigation-menu__links ecl-list ecl-list--unstyled">
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item2-1-1" class="ecl-navigation-menu__link">Sub item 1</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item2-1-2" class="ecl-navigation-menu__link">Sub item 2 with a very very very (very) long label</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item2-1-3" class="ecl-navigation-menu__link">Sub item 3</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item2-1-4" class="ecl-navigation-menu__link">Sub item 4</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item2-1-5" class="ecl-navigation-menu__link">Sub item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </li>
+            <li class="ecl-navigation-menu__item">
+                <a href="../../example.html#item3" class="ecl-navigation-menu__link" aria-controls="nav-menu-expandable-group-4" aria-expanded="false" aria-haspopup="true">News & Events</a>
+                <div class="ecl-navigation-menu__group ecl-row" id="nav-menu-expandable-group-4">
+                    <div class="ecl-col">
+                        <div class="ecl-navigation-menu__title">Optional title 1</div>
+                        <ul class="ecl-navigation-menu__links ecl-list ecl-list--unstyled">
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item3-1-1" class="ecl-navigation-menu__link">Sub item 1</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item3-1-2" class="ecl-navigation-menu__link">Sub item 2 with a very very very (very) long label</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item3-1-3" class="ecl-navigation-menu__link">Sub item 3</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item3-1-4" class="ecl-navigation-menu__link">Sub item 4</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item3-1-5" class="ecl-navigation-menu__link">Sub item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="ecl-navigation-menu__item">
+                <a href="../../example.html#item4" class="ecl-navigation-menu__link" aria-controls="nav-menu-expandable-group-5" aria-expanded="false" aria-haspopup="true">Contracts and Fundings</a>
+                <div class="ecl-navigation-menu__group ecl-row" id="nav-menu-expandable-group-5">
+                    <div class="ecl-col">
+                        <div class="ecl-navigation-menu__title">Optional title 1</div>
+                        <ul class="ecl-navigation-menu__links ecl-list ecl-list--unstyled">
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item4-1-1" class="ecl-navigation-menu__link">Sub item 1</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item4-1-2" class="ecl-navigation-menu__link">Sub item 2 with a very very very (very) long label</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item4-1-3" class="ecl-navigation-menu__link">Sub item 3</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item4-1-4" class="ecl-navigation-menu__link">Sub item 4</a>
+                            </li>
+                            <li class="ecl-navigation-menu__item">
+                                <a href="../../example.html#item4-1-5" class="ecl-navigation-menu__link">Sub item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <a id="main-content" tabindex="-1"></a>
+    <div class="ecl-container ecl-u-mv-l">
+
+
+    </div>
+
+    <!-- Utility sections -->
+
+    <div class="page-content" id="node">
+        <div class="ecl-container ecl-u-mv-l">
+            <a id="main-content" tabindex="-1"></a>
+            <h1 class="ecl-heading ecl-heading--h1">Blog</h1>
+
+
+            <div class="row card-container">
+                <div class="col-12 col-md-6">
+                    <article class="card card-module raised">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <header>This is the card header</header>
+                            <time>This is de pub. date</time>
+                            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae cupiditate debitis eius eveniet facilis quis, soluta ut voluptate? Accusantium aperiam asperiores at cum dignissimos eligendi iusto molestiae sequi ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur, aut debitis dicta ea eaque fugit in magni obcaecati odio optio placeat quia quos, reprehenderit temporibus totam, ullam vel vitae.</p>
+                            <a href="#" class="cta"><strong>Read more</strong></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article class="card card-module raised">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <header>This is the card header</header>
+                            <time>This is de pub. date</time>
+                            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius illum laboriosam molestias omnis quod voluptatem! Animi, ducimus explicabo harum iste laborum, nesciunt nihil nulla pariatur qui quos soluta suscipit, tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem earum iste repudiandae. Autem corporis eius excepturi iste iure molestiae provident quis sint vel voluptas? Facilis id provident repellendus tempora.</p>
+                            <a href="#" class="cta"><strong>Read more</strong></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <nav class="ecl-pager__wrapper shadow" aria-label="pagination">
+                <ul class="ecl-pager">
+                    <li class="ecl-pager__item ecl-pager__item--previous">
+                        <a class="ecl-pager__link" title="Go to previous page" href="/page=6">‹ Previous</a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--first">
+                        <a class="ecl-pager__link" title="Go to page 1" href="/page=1">
+                            <span class="ecl-u-sr-only">Page </span>1
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--ellipsis">…</li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 5" href="/page=5">
+                            <span class="ecl-u-sr-only">Page </span>5
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 6" href="/page=6">
+                            <span class="ecl-u-sr-only">Page </span>6
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--current" aria-current="page">
+                        <span class="ecl-pager__item-text">Page</span> 7
+                    </li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 8" href="/page=8">
+                            <span class="ecl-u-sr-only">Page </span>8
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item">
+                        <a class="ecl-pager__link" title="Go to page 9" href="/page=9">
+                            <span class="ecl-u-sr-only">Page </span>9
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--ellipsis">…</li>
+
+                    <li class="ecl-pager__item ecl-pager__item--last">
+                        <a class="ecl-pager__link" title="Go to page 20" href="/page=20">
+                            <span class="ecl-u-sr-only">Page </span>20
+                        </a>
+                    </li>
+
+                    <li class="ecl-pager__item ecl-pager__item--next">
+                        <a class="ecl-pager__link" title="Go to next page" href="/page=8">Next ›</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+</main>
+
+<footer class="ecl-footer">
+
+    <section class="footer-top">
+        <div class="container-fluid">
+            <div class="region region-footer-top">
+                <section id="block-block-4" class="block block-block mc-footer1 clearfix">
+
+
+                    <div class="block__content">
+                        <div class="footer-one-wrapper col-md-12 col-xs-12">
+                            <div class="col-md-3 col-xs-6 footer-global--box">
+                                <h4>Opportunities</h4>
+                                <ul class="footer-menu footer-menu-1"><li><a href="https://ec.europa.eu/research/mariecurieactions/msca-actions_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> About</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/msca-actions_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Actions</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/how-quick-guide_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> How to...</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/news_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> News</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/events_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Events</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/msca-numbers_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> MSCA in Numbers</a></li>
+                                </ul></div>
+                            <div class="col-md-3 col-xs-6 footer-global--box">
+                                <h4>Quick links</h4>
+                                <ul class="footer-menu footer-menu-2"><li><a href="https://ec.europa.eu/research/mariecurieactions/how-to/find-job_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Jobs for researchers</a></li>
+                                    <li><a href="https://ec.europa.eu/research/mariecurieactions/funded-projects_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> MSCA funded projects</a></li>
+                                    <li><a href="http://ec.europa.eu/research/participants/portal/desktop/en/home.html" target="_blank"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Participant Portal</a></li>
+                                    <li><a href="http://ec.europa.eu/research/participants/portal/desktop/en/organisations/partner_search.html" target="_blank"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Find a partner</a></li>
+                                    <li><a href="https://www.mariecuriealumni.eu/" target="_blank"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Marie Curie Alumni</a></li>
+                                    <li><a href="https://www.iprhelpdesk.eu/" target="_blank"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> European IPR Helpdesk</a></li>
+                                </ul></div>
+                            <div class="col-md-3 col-xs-12 footer-global--box keep-in-touch">
+                                <h4>Keep in touch with MSCA</h4>
+                                <ul class="sm-list"><li class="sm-item facebook"><a href="https://www.facebook.com/Marie.Curie.Actions/" style="font-size:1.2em" target="_blank"><span aria-hidden="true" class="fa fa-facebook">&nbsp;</span> </a></li>
+                                    <li class="sm-item twitter jquery-once-1-processed"><a href="https://twitter.com/MSCActions" style="font-size:1.2em" target="_blank"><span aria-hidden="true" class="fa fa-twitter">&nbsp;</span></a></li>
+                                </ul></div>
+                            <div class="col-md-3 col-xs-12 footer-global--box last-one">
+                                <ul class="picto-list"><li class="faq"><a href="https://ec.europa.eu/research/mariecurieactions/report-bug_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Report a bug</a></li>
+                                    <li class="faq"><a href="http://ec.europa.eu/research/participants/portal/desktop/en/support/faq.html#c,faqs=categoryMachineName/t/pp_roles_and_rights/0/1/1/category&amp;tagList/t/MSCA/1/1/1/tag" target="_blank"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> FAQ</a></li>
+                                    <li class="newsletter"><a href="http://ec.europa.eu/newsroom/eac/subscription-quick-generic-form-fullpage.cfm?service_id=253"><span aria-hidden="true" class="fa fa-caret-right" target="_blank">&nbsp;</span> Newsletter</a></li>
+                                    <!-- li class="sitemap"><a href="#">Sitemap</a></li --><!-- li class="bug"><a href="https://ec.europa.eu/programmes/erasmus-plus/help/report-bug_en">Report a bug</a></li --><li><a href="https://ec.europa.eu/research/mariecurieactions/contact_en"><span aria-hidden="true" class="fa fa-caret-right">&nbsp;</span> Contact</a></li>
+                                </ul></div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div class="ecl-footer__site-identity">
+        <div class="ecl-container">
+            <div class="ecl-row">
+                <div class="ecl-col-sm ecl-footer__column">
+                    <h4 class="ecl-h4 ecl-heading ecl-heading--h4"><a class="active ecl-footer__link ecl-link" href="/node_en">Marie Curie</a>
+                    </h4>
+                </div>
+                <div class="ecl-col-sm ecl-footer__column">
+                </div>
+                <div class="ecl-col-sm ecl-footer__column">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ecl-footer__site-corporate">
+        <div class="ecl-container">
+            <div class="ecl-row">
+                <div class="ecl-col-sm ecl-footer__column">
+                </div>
+                <div class="ecl-col-sm ecl-footer__column">
+                </div>
+                <div class="ecl-col-sm ecl-footer__column">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ecl-footer__ec">
+        <div class="ecl-container">
+            <div class="ecl-row">
+                <div class="ecl-col-sm">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
 .card {
   &.raised {
-    box-shadow: 3px 10px 6px 0 rgba(0, 0, 0, .16);
+    box-shadow: 3px 10px 6px 0 rgba(0, 0, 0, .05);
   }
 
   &.card-module {
@@ -14,11 +14,13 @@
     }
 
     .card-body {
+      border: 1px solid $color-border;
+      border-top:0;
       padding: 20px;
       padding-top: 50px;
 
       header {
-        font-size: 35px;
+        font-size: 1.8em;
         color: #872358;
         margin-bottom: 10px;
       }
