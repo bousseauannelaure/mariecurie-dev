@@ -115,12 +115,17 @@
                 border-radius: 50%;
                 text-align: center;
                 font-family: $ec-square-bold;
-                line-height: 85px;
+                display: table;
+
+
                 p {
                     color: $color-purple;
                     font-family: $ec-square-medium;
                     font-size: 3.2em;
+                    display: table-cell;
+                    vertical-align: middle;
                     line-height: inherit;
+
                 }
 
             }
@@ -140,7 +145,7 @@
         border: 1px solid $color-blue-light;
 
         .ecl-paragraph {
-            font-size: 1.6px;
+            font-size: 1.6em;
             margin-top: 0;
             margin-bottom: 40px;
             width: 100%;
