@@ -34,6 +34,12 @@ $ec-square-italic: 'ECSquareSansProItalic', Arial, Verdana, Geneva, sans-serif;
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  .text-md-center {
+    text-align: center;
+  }
+}
+
 p,
 a,
 h1,
