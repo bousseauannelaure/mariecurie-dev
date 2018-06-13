@@ -42,6 +42,10 @@ projects[image_resize_filter][subdir] = "contrib"
 
 ; automate image resizing for fitting into different content types
 
+projects[image_url_formatter][subdir] = "contrib"
+
+; field formatter for images as file url
+
 projects[list_predefined_options][subdir] = "contrib"
 
 ; provide listing options field used with custom module for letting user choose different display templating for same content type ( without using view modes )
