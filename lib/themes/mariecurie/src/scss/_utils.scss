@@ -13,6 +13,6 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
-.full-width-image {
-  width: 100%;
+.h-100 {
+  height: 100%!important;
 }

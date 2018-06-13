@@ -47,3 +47,13 @@ h6{
     font-family: $ec-square-bold;
   }
 }
+
+html {
+  font-size: 15px;
+}
+
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 18px;
+  }
+}
