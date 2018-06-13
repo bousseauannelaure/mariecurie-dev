@@ -49,5 +49,11 @@ h6{
 }
 
 html {
-  font-size: 30px;
+  font-size: 15px;
+}
+
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 18px;
+  }
 }

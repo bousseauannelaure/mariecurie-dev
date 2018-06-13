@@ -4,6 +4,8 @@
   }
 
   &.card-module {
+    margin-bottom: 30px;
+
     .card-header {
       height: 200px;
       background-position: center center;
@@ -36,6 +38,110 @@
         color: #872358;
       }
 
+    }
+  }
+
+  &.card-news {
+    margin-bottom: 100px;
+
+    .row {
+      height: 300px;
+    }
+
+    &.card-purple {
+      header,
+      time,
+      .cta {
+        color: #872358;
+      }
+    }
+
+    &.card-blue {
+      header,
+      time,
+      .cta {
+        color: #044292;
+      }
+    }
+
+    header {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    time {
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .excerpt {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    .card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .card-header {
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .card {
+    &.card-news {
+      margin-bottom: 20px;
+
+      .row {
+        height: auto;
+      }
+
+      .card-header,
+      .card-sm-header {
+        height: 150px;
+      }
+
+      .card-sm-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        header {
+          font-size: 25px;
+        }
+
+        date {
+          font-size: 20px;
+        }
+      }
+
+      .card-body {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .card {
+    &.card-news {
+      .card-sm-header {
+        header {
+          font-size: 20px;
+        }
+
+        date {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
