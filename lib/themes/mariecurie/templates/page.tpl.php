@@ -83,6 +83,19 @@
  *
  * @ingroup themeable
  */
+
+$contexts = variable_get('context_status', array());
+dsm($contexts);
+/*
+$contexts = variable_get('context_status', array());
+$contexts['context_name'] = TRUE;
+variable_set('context_status', $contexts);
+//To enable a context: unset the context name from context_status.
+
+$contexts = variable_get('context_status', array());
+unset($contexts['context_name']);
+variable_set('context_status', $contexts);
+*/
 ?>
 <?php if (!empty($page['header_top'])): ?>
   <section class="header-top">
