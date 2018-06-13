@@ -2155,6 +2155,12 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'list_key',
         'weight' => 3,
       ),
+      'msc_full_width' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2927,6 +2933,12 @@ function components_content_type_controler_field_default_field_instances() {
         'settings' => array(),
         'type' => 'list_key',
         'weight' => 3,
+      ),
+      'msc_full_width' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
