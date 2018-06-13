@@ -24,7 +24,7 @@
         transform-style: preserve-3d;
     }
     .slider .previous, .slider .next{
-        font-family: "FontAwesome";
+        font-family: "EuropaIcons";
         font-size: 4.4em;
         position: absolute;
         top: 50%;
@@ -40,7 +40,6 @@
     }
     .slider .next{
         right: 10%;
-        content: "\f054";
         left: auto;
     }
     .slider:hover .previous, .slider:hover .next{

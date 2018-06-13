@@ -29,8 +29,8 @@
 <div class="slider-wrapper <?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="content slider"<?php print $content_attributes; ?>>
     <div class="arrows">
-      <a class="previous">&#xf053;</a>
-      <a class="next">&#xf054;</a>
+        <a class="previous ecl-icon ecl-icon--left"></a>
+        <a class="next ecl-icon ecl-icon--right"></a>
     </div>
     <div class="slides">
       <?php print render($content); ?>
