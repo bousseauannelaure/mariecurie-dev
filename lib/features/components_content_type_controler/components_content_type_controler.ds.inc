@@ -44,41 +44,6 @@ function components_content_type_controler_ds_field_settings_info() {
 }
 
 /**
- * Implements hook_ds_custom_fields_info().
- */
-function components_content_type_controler_ds_custom_fields_info() {
-  $export = array();
-
-  $ds_field = new stdClass();
-  $ds_field->api_version = 1;
-  $ds_field->field = 'see_results';
-  $ds_field->label = 'See results';
-  $ds_field->field_type = 7;
-  $ds_field->entities = array(
-    'node' => 'node',
-  );
-  $ds_field->ui_limit = 'advpoll|*';
-  $ds_field->properties = array(
-    'default' => array(),
-    'settings' => array(
-      'show_title' => array(
-        'type' => 'checkbox',
-      ),
-      'title_wrapper' => array(
-        'type' => 'textfield',
-        'description' => 'Eg: h1, h2, p',
-      ),
-      'ctools' => array(
-        'type' => 'ctools',
-      ),
-    ),
-  );
-  $export['see_results'] = $ds_field;
-
-  return $export;
-}
-
-/**
  * Implements hook_ds_layout_settings_info().
  */
 function components_content_type_controler_ds_layout_settings_info() {
@@ -215,11 +180,13 @@ function components_content_type_controler_ds_layout_settings_info() {
       'field_msc_multiple_component' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-    'layout_link_attribute' => FALSE,
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'layout_disable_css' => FALSE,
   );
@@ -467,6 +434,42 @@ function components_content_type_controler_ds_layout_settings_info() {
     'layout_disable_css' => 0,
   );
   $export['paragraphs_item|speakers_component|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|video_component|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'video_component';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_2col_fluid';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'left' => array(
+        0 => 'field_msc_component_title',
+        1 => 'field_msc_desc',
+      ),
+      'right' => array(
+        2 => 'field_msc_video',
+      ),
+    ),
+    'fields' => array(
+      'field_msc_component_title' => 'left',
+      'field_msc_desc' => 'left',
+      'field_msc_video' => 'right',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => 0,
+  );
+  $export['paragraphs_item|video_component|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
