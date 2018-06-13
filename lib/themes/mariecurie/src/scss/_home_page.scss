@@ -1,4 +1,7 @@
 #home_page {
+    .ecl-editor p {
+        max-width: none;
+    }
 
     .module-flex-container {
         padding: 0;
@@ -75,8 +78,11 @@
 
     .module-item {
         .module-circle{
-            border-radius: 50%;
-            margin-right: 20px;
+            img {
+                border-radius: 50%;
+                margin-right: 20px;
+                max-width: 200px;
+            }
         }
 
         .module-title{
