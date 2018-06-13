@@ -32,7 +32,6 @@ function mariecurie_preprocess_form(&$variables) {
 function mariecurie_preprocess_fieldset(&$variables) {
   switch ($variables['element']['#webform_component']['form_key']) {
     case 'register_newsletter':
-    case 'register_to_the_newsletter':
       $variables['theme_hook_suggestions'][] = 'fieldset__form__webform_client__register_newsletter';
       break;
   }
