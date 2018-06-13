@@ -1,0 +1,35 @@
+.page-content {
+    .ecl-heading--h1 {
+        color: $color-blue;
+        font-size: 3.2em;
+        text-align: center;
+    }
+
+    .ecl-heading--h2 {
+        color: $color-blue;
+        font-size: 3.2em;
+    }
+
+    .article {
+        &-title {
+            display: block;
+            color: $color-blue-light;
+            font-size: 1.6em;
+            font-family: $ec-square-medium;
+            border-bottom: 1px solid $color-blue;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        &-date {
+            display: block;
+            font-size: 1.6em;
+            font-family: $ec-square-medium;
+            color: $color-blue;
+        }
+    }
+
+    p {
+        color: $color-blue;
+    }
+}

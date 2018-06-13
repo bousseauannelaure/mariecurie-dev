@@ -108,11 +108,11 @@ variable_set('context_status', $contexts);
 <?php print render($site_header); ?>
 <?php print render($page['header']); ?>
 
-<?php print render($page_header); ?>
-
 <?php if (!empty($page['navigation'])): ?>
   <?php print render($page['navigation']); ?>
 <?php endif; ?>
+
+<?php print render($page_header); ?>
 
 <main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>
   <a id="main-content" tabindex="-1"></a>
@@ -126,25 +126,12 @@ variable_set('context_status', $contexts);
     <?php endif; ?>
   </div>
 
-  <!-- Utility sections -->
-  <?php if (!empty($page['utility'])): ?>
-    <div class="utility">
-      <div class="ecl-container">
-        <?php print render($page['utility']); ?>
-      </div>
-    </div>
-  <?php endif; ?>
-
   <div class="page-content">
     <div class="ecl-container ecl-u-mv-l">
-      <?php if (!empty($page['content_top'])): ?>
-        <a id="top-content" tabindex="-2"></a>
-        <div class="content_top">
-          <?php print render($page['content_top']); ?>
-        </div>
-      <?php endif; ?>
       <a id="main-content" tabindex="-1"></a>
+      <?php if (empty($hide_title)) : ?>
       <h1 class="ecl-heading ecl-heading--h1"><?php print render($title); ?></h1>
+      <?php endif; ?>
 
       <!-- Generic sections -->
       <div class="ecl-row">

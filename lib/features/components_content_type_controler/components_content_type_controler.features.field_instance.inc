@@ -2155,6 +2155,12 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'list_key',
         'weight' => 3,
       ),
+      'msc_full_width' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2928,6 +2934,12 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'list_key',
         'weight' => 3,
       ),
+      'msc_full_width' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3401,12 +3413,24 @@ function components_content_type_controler_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => 0,
         ),
-        'type' => 'image',
+        'type' => 'image_url',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image_url_formatter',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+          'url_type' => 0,
+        ),
+        'type' => 'image_url',
         'weight' => 0,
       ),
       'full_width_1_col' => array(
@@ -3431,12 +3455,13 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => '',
         ),
-        'type' => 'image',
+        'type' => 'image_url',
         'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
@@ -3508,6 +3533,13 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -3586,6 +3618,13 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
@@ -3687,6 +3726,20 @@ Go',
         'type' => 'list_key',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_key',
+        'weight' => 8,
+      ),
+      'msc_full_width' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_key',
+        'weight' => 6,
+      ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3719,7 +3772,7 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -3727,6 +3780,26 @@ Go',
         ),
         'type' => 'image',
         'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 5,
+      ),
+      'msc_full_width' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 4,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -3791,7 +3864,14 @@ Go',
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
+        'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
         'weight' => 2,
       ),
       'full_width_1_col' => array(
@@ -3858,11 +3938,25 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 7,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 7,
+      ),
+      'msc_full_width' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -4102,11 +4196,23 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'label' => 'hidden',
+        'module' => 'smart_trim',
+        'settings' => array(
+          'more_link' => 0,
+          'more_text' => 'Read more',
+          'summary_handler' => 'full',
+          'trim_length' => 300,
+          'trim_link' => 0,
+          'trim_options' => array(
+            'text' => 'text',
+          ),
+          'trim_preserve_tags' => '<strong>',
+          'trim_suffix' => '...',
+          'trim_type' => 'chars',
+        ),
+        'type' => 'smart_trim_format',
+        'weight' => 0,
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
@@ -4150,7 +4256,7 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -4188,7 +4294,7 @@ Go',
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -4199,11 +4305,13 @@ Go',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 2,
       ),
       'msc_full_width' => array(
         'label' => 'hidden',
@@ -4257,7 +4365,7 @@ Go',
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 

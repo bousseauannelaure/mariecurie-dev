@@ -1,6 +1,56 @@
 #modules {
   .ecl-heading--h2 {
     color: $color-blue;
-    font-size: 60px;
+    font-size: 3.2em;
+  }
+}
+
+.related-module {
+  margin: 0 1rem;
+
+  .ecl-list-item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .ecl-list-item__body {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      background: transparent;
+      justify-content: center;
+
+      .ecl-list-item__link {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .related-module {
+    margin: 0;
+
+    &.ecl-listing--two-columns .ecl-list-item {
+      min-width: calc(50% - .51rem);
+      max-width: calc(50% - .51rem);
+      margin-bottom: 4rem;
+
+      &:nth-child(odd) {
+        padding-right: 3rem;
+      }
+
+      &:nth-child(even) {
+        padding-left: 3rem;
+
+        .ecl-list-item__body {
+          margin-left: 3rem;
+        }
+      }
+    }
   }
 }

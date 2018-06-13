@@ -184,12 +184,9 @@ function components_content_type_controler_views_default_views() {
     'msc_article' => 'msc_article',
   );
 
-  /* Display: Blog-list */
-  $handler = $view->new_display('block', 'Blog-list', 'block');
-  $handler->display->display_options['display_description'] = 'blog list block';
-
   /* Display: Block-promoted */
   $handler = $view->new_display('block', 'Block-promoted', 'block_1');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['display_description'] = 'related section promoted block';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -229,6 +226,10 @@ function components_content_type_controler_views_default_views() {
   $handler->display->display_options['filters']['sticky']['table'] = 'node';
   $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
   $handler->display->display_options['filters']['sticky']['value'] = '1';
+
+  /* Display: Page-blog */
+  $handler = $view->new_display('page', 'Page-blog', 'page_1');
+  $handler->display->display_options['path'] = 'blog';
   $export['blog'] = $view;
 
   $view = new view();
@@ -343,6 +344,7 @@ function components_content_type_controler_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -382,6 +384,14 @@ function components_content_type_controler_views_default_views() {
   /* Display: Related Block */
   $handler = $view->new_display('block', 'Related Block', 'block');
   $handler->display->display_options['display_description'] = 'Related Content Block';
+
+  /* Display: Short Related Block */
+  $handler = $view->new_display('block', 'Short Related Block', 'block_1');
+  $handler->display->display_options['display_description'] = 'Related Content Block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $export['related'] = $view;
 
   return $export;

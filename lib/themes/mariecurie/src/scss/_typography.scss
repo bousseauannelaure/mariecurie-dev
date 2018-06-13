@@ -24,6 +24,7 @@ $ec-square-medium: 'ECSquareSansProMedium', Arial, Verdana, Geneva, sans-serif;
 $ec-square-bold: 'ECSquareSansProBold', Arial, Verdana, Geneva, sans-serif;
 $ec-square-italic: 'ECSquareSansProItalic', Arial, Verdana, Geneva, sans-serif;
 
+.text-white { color: $color-white!important; }
 .text-blue-light { color: $color-blue-light!important; }
 .text-blue { color: $color-blue!important; }
 .text-blue-dark { color: $color-blue-dark!important; }
@@ -32,6 +33,12 @@ $ec-square-italic: 'ECSquareSansProItalic', Arial, Verdana, Geneva, sans-serif;
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
+
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  .text-md-center {
+    text-align: center;
+  }
+}
 
 p,
 a,
@@ -48,6 +55,28 @@ h6{
   }
 }
 
+.text-lg {
+  font-size: 3.2em!important;
+}
 
+.text-md {
+  font-size: 2.2em!important;
+}
 
+.text-sm {
+  font-size: 1.6em!important;
+}
 
+.text-xs {
+  font-size: 1em!important;
+}
+
+html {
+  font-size: 15px;
+}
+
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 18px;
+  }
+}
