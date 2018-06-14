@@ -26,7 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="ecl-col module-item">
+<div class="ecl-col">
     <?php print render($content['field_msc_component_title']); ?>
     <?php print render($content['field_msc_short_text']); ?>
     <?php print render($content['field_msc_list_reference']); ?>
