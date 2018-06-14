@@ -123,44 +123,73 @@
 
 
 
-    .circle-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-
+    .interesting-numbers {
         .circle-col {
-            flex: 0 0;
+            align-items: center;
+        }
+        .circle {
+            margin: auto;
+            width: 110px;
+            height: 110px;
+            border: 2px solid $color-purple;
+            border-radius: 50%;
+            text-align: center;
+            font-family: $ec-square-bold;
+            position: relative;
 
+
+            p {
+                color: $color-purple;
+                font-family: $ec-square-medium;
+                font-size: 2.2em;
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                margin:0;
+                line-height: inherit;
+                &.circle-sm {
+                    font-size: 1.4em!important;
+                }
+
+                &.circle-md {
+                    font-size: 1.6em!important;
+                }
+            }
+
+        }
+        .circle-description {
+            text-align: center;
+            p {
+                color: $color-purple;
+                font-size: 2em;
+            }
+        }
+
+
+
+        @media (min-width: 480px) {
             .circle {
-                margin-right: 40px;
+                width: 180px;
+                height: 180px;
+                p {
+                    font-size: 3.2em;
+                    &.circle-sm {
+                        font-size: 2.2em!important;
+                    }
+
+                    &.circle-md {
+                        font-size: 2.6em!important;
+                    }
+                }
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            .circle {
                 width: 200px;
                 height: 200px;
-                border: 2px solid $color-purple;
-                border-radius: 50%;
-                text-align: center;
-                font-family: $ec-square-bold;
-                display: table;
-
-
-                p {
-                    color: $color-purple;
-                    font-family: $ec-square-medium;
-                    font-size: 3.2em;
-                    display: table-cell;
-                    vertical-align: middle;
-                    line-height: inherit;
-
-                }
-
-            }
-            .circle-description {
-                width: 200px;
-                text-align: center;
-                font-size: 25px;
-                p {
-                    color: $color-purple;
-                }
             }
         }
     }
