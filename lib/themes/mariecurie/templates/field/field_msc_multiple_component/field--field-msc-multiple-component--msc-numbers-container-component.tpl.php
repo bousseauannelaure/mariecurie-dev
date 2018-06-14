@@ -51,9 +51,9 @@
  * @ingroup themeable
  */
 ?>
-<div class="circle-row">
+<div class="ecl-row interesting-numbers justify-content-center">
 <?php foreach ($items as $delta => $item): ?>
-  <div class="circle-col">
+  <div class="circle-col ecl-col-6 ecl-col-lg-3">
     <?php print render($item); ?>
   </div>
 <?php endforeach; ?>
