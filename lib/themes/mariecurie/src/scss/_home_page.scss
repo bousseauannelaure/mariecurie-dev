@@ -54,6 +54,9 @@
             height:50%;
             width: 100%;
             border-top: 2px solid white;
+            p {
+                color: #fff;
+            }
         }
     }
 
@@ -66,9 +69,25 @@
         }
     }
 
+    .module-flex-item {
+        &.module-purple {
+            background: $color-purple;
+            .upper-half {
+                &:before {
+                    background: $color-purple;
+                }
+            }
+        }
 
-
-
+        &.module-blue {
+            background: $color-blue;
+            .upper-half {
+                &:before {
+                    background: $color-blue;
+                }
+            }
+        }
+    }
 
     .module-flex-item:before {
         content:'';
