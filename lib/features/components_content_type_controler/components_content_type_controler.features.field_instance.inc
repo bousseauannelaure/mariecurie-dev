@@ -10,72 +10,6 @@
 function components_content_type_controler_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-slider_block-field_msc_components'.
-  $field_instances['bean-slider_block-field_msc_components'] = array(
-    'bundle' => 'slider_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_msc_components',
-    'label' => 'Components',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'button',
-      'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => -1,
-        'msc_container_component' => -1,
-        'msc_container_slider_component' => 'msc_container_slider_component',
-        'msc_form_component' => -1,
-        'msc_module_component' => -1,
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => -1,
-        'msc_numbers_container_component' => -1,
-        'msc_slider_component' => -1,
-        'speakers_component' => -1,
-        'video_component' => -1,
-      ),
-      'bundle_weights' => array(
-        'msc_commu_container_component' => 3,
-        'msc_communities_component' => 2,
-        'msc_container_component' => 4,
-        'msc_container_slider_component' => 5,
-        'msc_form_component' => 6,
-        'msc_module_component' => 7,
-        'msc_module_container_component' => 8,
-        'msc_numbers_component' => 9,
-        'msc_numbers_container_component' => 10,
-        'msc_slider_component' => 11,
-        'speakers_component' => 12,
-        'video_component' => 13,
-      ),
-      'default_edit_mode' => 'open',
-      'entity_translation_sync' => FALSE,
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'comment-comment_node_advpoll-comment_body'.
   $field_instances['comment-comment_node_advpoll-comment_body'] = array(
     'bundle' => 'comment_node_advpoll',
@@ -1349,6 +1283,18 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'paragraphs_view',
         'weight' => 0,
       ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1368,6 +1314,7 @@ function components_content_type_controler_field_default_field_instances() {
         'msc_container_component' => -1,
         'msc_container_slider_component' => -1,
         'msc_form_component' => 'msc_form_component',
+        'msc_list_component' => 'msc_list_component',
         'msc_module_component' => -1,
         'msc_module_container_component' => 'msc_module_container_component',
         'msc_numbers_component' => -1,
@@ -1382,6 +1329,7 @@ function components_content_type_controler_field_default_field_instances() {
         'msc_container_component' => -20,
         'msc_container_slider_component' => -16,
         'msc_form_component' => -12,
+        'msc_list_component' => 19,
         'msc_module_component' => -19,
         'msc_module_container_component' => -15,
         'msc_numbers_component' => -18,
@@ -1419,6 +1367,18 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1445,6 +1405,93 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-msc_page-field_msc_slider'.
+  $field_instances['node-msc_page-field_msc_slider'] = array(
+    'bundle' => 'msc_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 0,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_msc_slider',
+    'label' => 'Slider',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'msc_commu_container_component' => -1,
+        'msc_communities_component' => -1,
+        'msc_container_component' => -1,
+        'msc_container_slider_component' => -1,
+        'msc_form_component' => -1,
+        'msc_module_component' => -1,
+        'msc_module_container_component' => -1,
+        'msc_numbers_component' => -1,
+        'msc_numbers_container_component' => -1,
+        'msc_slider_component' => 'msc_slider_component',
+        'speakers_component' => -1,
+        'video_component' => -1,
+      ),
+      'bundle_weights' => array(
+        'msc_commu_container_component' => 3,
+        'msc_communities_component' => 2,
+        'msc_container_component' => 4,
+        'msc_container_slider_component' => 5,
+        'msc_form_component' => 6,
+        'msc_module_component' => 7,
+        'msc_module_container_component' => 8,
+        'msc_numbers_component' => 9,
+        'msc_numbers_container_component' => 10,
+        'msc_slider_component' => 11,
+        'speakers_component' => 12,
+        'video_component' => 13,
+      ),
+      'default_edit_mode' => 'closed',
+      'entity_translation_sync' => FALSE,
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 1,
     ),
   );
 
@@ -2505,176 +2552,6 @@ function components_content_type_controler_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_container_slider_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Optional title',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_component_title',
-    'label' => 'Title',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_multiple_component'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_multiple_component'] = array(
-    'bundle' => 'msc_container_slider_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 2,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'msc_full_width',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 2,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_multiple_component',
-    'label' => 'Slides',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'button',
-      'allowed_bundles' => array(
-        'msc_communities_component' => -1,
-        'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
-        'msc_module_component' => -1,
-        'msc_numbers_component' => -1,
-        'msc_slider_component' => 'msc_slider_component',
-        'video_component' => -1,
-      ),
-      'bundle_weights' => array(
-        'msc_communities_component' => 10,
-        'msc_container_component' => 13,
-        'msc_container_slider_component' => 2,
-        'msc_module_component' => 7,
-        'msc_numbers_component' => 8,
-        'msc_slider_component' => 3,
-        'video_component' => 4,
-      ),
-      'default_edit_mode' => 'open',
-      'entity_translation_sync' => FALSE,
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_container_slider_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_short_text',
-    'label' => 'Intro',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 2,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-msc_form_component-field_msc_form_reference'.
   $field_instances['paragraphs_item-msc_form_component-field_msc_form_reference'] = array(
     'bundle' => 'msc_form_component',
@@ -2730,6 +2607,45 @@ function components_content_type_controler_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_list_component-field_msc_list_reference'.
+  $field_instances['paragraphs_item-msc_list_component-field_msc_list_reference'] = array(
+    'bundle' => 'msc_list_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewreference',
+        'settings' => array(),
+        'type' => 'viewreference_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_list_reference',
+    'label' => 'List reference',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewreference',
+      'settings' => array(),
+      'type' => 'viewreference_select',
       'weight' => 1,
     ),
   );
@@ -4697,6 +4613,7 @@ Go',
   t('Link');
   t('Link to Module');
   t('Link to Page');
+  t('List reference');
   t('Look and feel');
   t('Maximum choices');
   t('Media');
@@ -4719,7 +4636,7 @@ Go',
   t('Select the date range that controls the availability of this poll.');
   t('Select the maximum number of choices that can be voted upon.');
   t('Short Text');
-  t('Slides');
+  t('Slider');
   t('Subtitle');
   t('This value determines when to show the results of a poll.  By default, while voting is on going, users will see the results so long as they are no longer eligible to vote.  To display results without allowing an opportunity to vote, select \'After poll is closed\' and close the poll.');
   t('Title');

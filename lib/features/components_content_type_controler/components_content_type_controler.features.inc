@@ -125,14 +125,14 @@ function components_content_type_controler_paragraphs_info() {
       'bundle' => 'msc_container_component',
       'locked' => '1',
     ),
-    'msc_container_slider_component' => array(
-      'name' => 'Slider Container Component',
-      'bundle' => 'msc_container_slider_component',
-      'locked' => '1',
-    ),
     'msc_form_component' => array(
       'name' => 'Form component',
       'bundle' => 'msc_form_component',
+      'locked' => '1',
+    ),
+    'msc_list_component' => array(
+      'name' => 'List elements',
+      'bundle' => 'msc_list_component',
       'locked' => '1',
     ),
     'msc_module_component' => array(

@@ -196,10 +196,6 @@ $realm_variables = array();
       0 => 'comment',
       1 => 'cid',
     ),
-    'bean' => array(
-      0 => 'bean',
-      1 => 'bid',
-    ),
     'flagging' => array(
       0 => 'flagging',
       1 => 'flagging_id',
@@ -384,7 +380,6 @@ $realm_variables = array();
       'taxonomy' => '92222e3ea0521466f954393d9abaed91',
       'dependencies' => '12613b031ef1b32210de65ac0c4f6c09',
       'views_view' => 'ea9b9d39cf40bffccab7848a269dbea1',
-      'bean_type' => '6ddaa9ff14841a33d71f89665ad96547',
     ),
   ),
   'features_ignored_orphans' => array(),
