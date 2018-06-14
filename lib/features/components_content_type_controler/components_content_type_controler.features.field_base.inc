@@ -702,6 +702,23 @@ function components_content_type_controler_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_msc_slider'.
+  $field_bases['field_msc_slider'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_msc_slider',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'paragraphs',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'paragraphs',
+  );
+
   // Exported field_base: 'field_msc_speakers'.
   $field_bases['field_msc_speakers'] = array(
     'active' => 1,

@@ -117,8 +117,8 @@ variable_set('context_status', $contexts);
 <!---->
 <?php //print render($page_header); ?>
 
-<?php if (!empty($page['slider'])): ?>
-  <?php print render($page['slider']); ?>
+<?php if (!empty($slider)): ?>
+  <?php print render($slider); ?>
 <?php endif; ?>
 
 <main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>

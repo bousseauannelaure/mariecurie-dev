@@ -1349,6 +1349,18 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'paragraphs_view',
         'weight' => 0,
       ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1419,6 +1431,18 @@ function components_content_type_controler_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1445,6 +1469,93 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-msc_page-field_msc_slider'.
+  $field_instances['node-msc_page-field_msc_slider'] = array(
+    'bundle' => 'msc_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'render_programmatically' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 0,
+      ),
+      'render_programmatically_' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_msc_slider',
+    'label' => 'Slider',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'msc_commu_container_component' => -1,
+        'msc_communities_component' => -1,
+        'msc_container_component' => -1,
+        'msc_container_slider_component' => -1,
+        'msc_form_component' => -1,
+        'msc_module_component' => -1,
+        'msc_module_container_component' => -1,
+        'msc_numbers_component' => -1,
+        'msc_numbers_container_component' => -1,
+        'msc_slider_component' => 'msc_slider_component',
+        'speakers_component' => -1,
+        'video_component' => -1,
+      ),
+      'bundle_weights' => array(
+        'msc_commu_container_component' => 3,
+        'msc_communities_component' => 2,
+        'msc_container_component' => 4,
+        'msc_container_slider_component' => 5,
+        'msc_form_component' => 6,
+        'msc_module_component' => 7,
+        'msc_module_container_component' => 8,
+        'msc_numbers_component' => 9,
+        'msc_numbers_container_component' => 10,
+        'msc_slider_component' => 11,
+        'speakers_component' => 12,
+        'video_component' => 13,
+      ),
+      'default_edit_mode' => 'closed',
+      'entity_translation_sync' => FALSE,
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 1,
     ),
   );
 
@@ -4719,6 +4830,7 @@ Go',
   t('Select the date range that controls the availability of this poll.');
   t('Select the maximum number of choices that can be voted upon.');
   t('Short Text');
+  t('Slider');
   t('Slides');
   t('Subtitle');
   t('This value determines when to show the results of a poll.  By default, while voting is on going, users will see the results so long as they are no longer eligible to vote.  To display results without allowing an opportunity to vote, select \'After poll is closed\' and close the poll.');

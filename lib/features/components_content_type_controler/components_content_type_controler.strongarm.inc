@@ -651,9 +651,22 @@ function components_content_type_controler_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'render_programmatically_' => array(
+        'custom_settings' => TRUE,
+      ),
+      'render_programmatically' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '4',
+        ),
+      ),
       'display' => array(),
     ),
   );
