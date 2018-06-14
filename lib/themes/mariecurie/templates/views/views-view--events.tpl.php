@@ -52,7 +52,9 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
+    <ul class="ecl-listing ecl-listing--two-columns date-list ecl-u-pb-l">
       <?php print $rows; ?>
+    </ul>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
