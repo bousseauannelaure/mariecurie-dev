@@ -623,7 +623,7 @@ function components_content_type_controler_field_default_field_instances() {
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -768,12 +768,13 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => 0,
         ),
-        'type' => 'image',
+        'type' => 'image_url',
         'weight' => 0,
       ),
     ),
@@ -976,10 +977,11 @@ function components_content_type_controler_field_default_field_instances() {
         'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -1024,9 +1026,17 @@ function components_content_type_controler_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
         'weight' => 0,
       ),
     ),
@@ -1535,6 +1545,49 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-title_field'.
+  $field_instances['node-page-title_field'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
     ),
   );
 
@@ -2612,6 +2665,74 @@ function components_content_type_controler_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'paragraphs_item-msc_list_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_list_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_list_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_component_title',
+    'label' => 'Title',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'basic_html' => 'basic_html',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'basic_html' => array(
+              'weight' => 5,
+            ),
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => -8,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
   // 'paragraphs_item-msc_list_component-field_msc_list_reference'.
   $field_instances['paragraphs_item-msc_list_component-field_msc_list_reference'] = array(
     'bundle' => 'msc_list_component',
@@ -2620,11 +2741,13 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'viewreference',
-        'settings' => array(),
-        'type' => 'viewreference_default',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'blockreference',
+        'settings' => array(
+          'show_empty_blocks' => 0,
+        ),
+        'type' => 'blockreference_without_title',
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -2636,17 +2759,125 @@ function components_content_type_controler_field_default_field_instances() {
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_list_reference',
     'label' => 'List reference',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
+      'blockreference_modules' => array(
+        'advpoll' => 0,
+        'autologout' => 0,
+        'backup_migrate' => 0,
+        'bean' => 0,
+        'block' => 0,
+        'cce_basic_config' => 0,
+        'comment' => 0,
+        'context_ui' => 0,
+        'current_search' => 0,
+        'devel' => 0,
+        'diff' => 0,
+        'easy_breadcrumb' => 0,
+        'ecas' => 0,
+        'facetapi' => 0,
+        'language_selector_page' => 0,
+        'language_selector_site' => 0,
+        'locale' => 0,
+        'menu' => 0,
+        'menu_block' => 0,
+        'msc_func_inc' => 0,
+        'multisite_create_button' => 0,
+        'nexteuropa_europa_search' => 0,
+        'node' => 0,
+        'print' => 0,
+        'print_mail' => 0,
+        'print_pdf' => 0,
+        'print_ui' => 0,
+        'quicktabs' => 0,
+        'search' => 0,
+        'system' => 0,
+        'tagclouds' => 0,
+        'taxonomy_browser' => 0,
+        'user' => 0,
+        'views' => 'views',
+        'webform' => 0,
+        'workbench' => 0,
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'viewreference',
-      'settings' => array(),
-      'type' => 'viewreference_select',
-      'weight' => 1,
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_list_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_list_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_list_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_short_text',
+    'label' => 'List intro',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'basic_html' => 'basic_html',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'basic_html' => array(
+              'weight' => 5,
+            ),
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => -8,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
     ),
   );
 
@@ -4613,6 +4844,7 @@ Go',
   t('Link');
   t('Link to Module');
   t('Link to Page');
+  t('List intro');
   t('List reference');
   t('Look and feel');
   t('Maximum choices');

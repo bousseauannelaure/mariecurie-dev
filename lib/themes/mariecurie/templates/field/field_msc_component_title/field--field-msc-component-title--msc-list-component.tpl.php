@@ -51,10 +51,6 @@
  * @ingroup themeable
  */
 ?>
-<div class="ecl-row interesting-numbers justify-content-center">
 <?php foreach ($items as $delta => $item): ?>
-  <div class="circle-col ecl-col-6 ecl-col-lg-3">
-    <?php print render($item); ?>
-  </div>
+    <span class="article-title"><?php print render($item); ?></span>
 <?php endforeach; ?>
-</div>

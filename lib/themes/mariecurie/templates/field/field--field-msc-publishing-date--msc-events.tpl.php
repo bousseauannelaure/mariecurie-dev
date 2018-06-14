@@ -51,10 +51,12 @@
  * @ingroup themeable
  */
 ?>
-<div class="ecl-row interesting-numbers justify-content-center">
-<?php foreach ($items as $delta => $item): ?>
-  <div class="circle-col ecl-col-6 ecl-col-lg-3">
-    <?php print render($item); ?>
-  </div>
-<?php endforeach; ?>
-</div>
+<!--
+This file is not used by Drupal core, which uses theme functions instead.
+See http://api.drupal.org/api/function/theme_field/7 for details.
+After copying this file to your theme's folder and customizing it, remove this
+HTML comment.
+-->
+<p class="ecl-list-item__detail ecl-paragraph">
+  <?php print render($item); ?>
+</p>
