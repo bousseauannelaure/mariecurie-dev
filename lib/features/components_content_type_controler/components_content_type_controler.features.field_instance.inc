@@ -2658,7 +2658,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -2747,7 +2747,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => 'Module\'s title',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -2833,7 +2833,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -2860,7 +2860,7 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_display_component',
-    'label' => 'Display on home page',
+    'label' => 'Hide module',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -2886,10 +2886,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'link_separate',
         'weight' => 3,
       ),
       'full' => array(
@@ -3008,7 +3008,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -4604,9 +4604,9 @@ Go',
   t('Cookie duration');
   t('Date');
   t('Description');
-  t('Display on home page');
   t('Display results');
   t('Form Reference');
+  t('Hide module');
   t('If the poll\'s voting availability is being controlled by a cookie, this value determine how long to wait between votes in minutes.');
   t('Information');
   t('Intro');
