@@ -613,7 +613,7 @@ function components_content_type_controler_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -670,7 +670,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -748,22 +748,19 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => '',
         ),
-        'type' => 'image',
+        'type' => 'image_url',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -852,7 +849,7 @@ function components_content_type_controler_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -930,7 +927,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'promoted_teaser' => array(
         'label' => 'above',
@@ -2889,7 +2886,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -2978,7 +2975,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => 'Module\'s title',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -3064,7 +3061,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -3091,7 +3088,7 @@ function components_content_type_controler_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_display_component',
-    'label' => 'Hide module',
+    'label' => 'Display on home page',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -3117,10 +3114,10 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'link',
         'settings' => array(),
-        'type' => 'link_separate',
+        'type' => 'link_default',
         'weight' => 3,
       ),
       'full' => array(
@@ -3239,7 +3236,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -4835,9 +4832,9 @@ Go',
   t('Cookie duration');
   t('Date');
   t('Description');
+  t('Display on home page');
   t('Display results');
   t('Form Reference');
-  t('Hide module');
   t('If the poll\'s voting availability is being controlled by a cookie, this value determine how long to wait between votes in minutes.');
   t('Information');
   t('Intro');
