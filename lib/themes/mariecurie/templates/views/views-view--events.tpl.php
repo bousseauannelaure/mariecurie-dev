@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
+<div>
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
@@ -52,7 +52,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <ul class="ecl-listing ecl-listing--two-columns date-list ecl-u-pb-l view-content">
+    <ul class="ecl-listing ecl-listing--two-columns date-list ecl-u-pb-l">
       <?php print $rows; ?>
     </ul>
   <?php elseif ($empty): ?>

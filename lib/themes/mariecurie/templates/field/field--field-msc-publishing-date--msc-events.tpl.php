@@ -58,19 +58,14 @@ After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
 
-
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if (!$label_hidden): ?>
-      <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
-  <?php endif; ?>
-    <div class="field-items"<?php print $content_attributes; ?>>
-      <?php foreach ($items as $delta => $item): ?>
-          <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-              <?php dpm(render($item)); ?>
-              <strong><?php date('Y',strtotime(render($item))); ?></strong>
-              <span>Sep 2018</span>
-              <span>5:02 PM</span>
-          </div>
-      <?php endforeach; ?>
-    </div>
-</div>
+<?php if (!$label_hidden): ?>
+  <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+<?php endif; ?>
+<?php foreach ($items as $delta => $item): ?>
+  <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+      <?php $fecha = date_create(render($item)); ?>
+      <strong><?php (date_format($fecha, 'd')); ?></strong>
+      <span><?php (date_format($fecha, 'M Y')); ?></span>
+      <span><?php (date_format($fecha, 'h:i A')); ?>5:02 PM</span>
+  </div>
+<?php endforeach; ?>
