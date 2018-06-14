@@ -64,8 +64,8 @@ HTML comment.
 <?php foreach ($items as $delta => $item): ?>
   <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
       <?php $fecha = date_create(render($item)); ?>
-      <strong><?php (date_format($fecha, 'd')); ?></strong>
-      <span><?php (date_format($fecha, 'M Y')); ?></span>
-      <span><?php (date_format($fecha, 'h:i A')); ?>5:02 PM</span>
+      <strong><?php print (date_format($fecha, 'd')); ?></strong>
+      <span><?php print (date_format($fecha, 'M Y')); ?></span>
+      <span><?php print (date_format($fecha, 'h:i A')); ?></span>
   </div>
 <?php endforeach; ?>
