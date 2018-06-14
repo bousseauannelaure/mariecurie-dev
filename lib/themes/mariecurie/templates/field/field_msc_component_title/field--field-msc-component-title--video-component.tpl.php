@@ -52,5 +52,5 @@
  */
 ?>
 <?php foreach ($items as $delta => $item): ?>
-  <h1 class="ecl-heading ecl-heading--h1"><?php print render($item); ?></h1>
+  <h1 class="ecl-heading ecl-heading--h1"><?php print trim(strip_tags(drupal_render($item), '<strong>')); ?></h1>
 <?php endforeach; ?>

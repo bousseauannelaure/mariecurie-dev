@@ -28,12 +28,14 @@
 ?>
 <div class="ecl-col module-item">
   <?php print render($content['field_msc_component_title']); ?>
-  <div class="ecl-row">
-    <div class="ecl-col">
-      <?php print render($content['field_msc_desc']); ?>
+  <div class="row mb-100">
+    <div class="col-xs-12 col-md-6 col-md-push-6 mb-30">
+      <div class="video raised">
+        <?php print render($content['field_msc_video']); ?>
+      </div>
     </div>
-    <div class="ecl-col">
-      <?php print render($content['field_msc_video']); ?>
+    <div class="col-xs-12 col-md-6 col-md-pull-6">
+      <?php print render($content['field_msc_desc']); ?>
     </div>
   </div>
 </div>
