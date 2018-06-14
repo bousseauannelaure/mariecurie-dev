@@ -18,6 +18,8 @@ projects[advpoll][subdir] = "contrib"
 
 ; Create content type for polling system with permission controls and offers several polling options
 
+projects[blockreference][subdir] = "contrib"
+
 projects[ckeditor][subdir] = "contrib"
 
 ; Controls library used for WYSIWYG system and format input texts
@@ -79,6 +81,7 @@ projects[special_menu_items][subdir] = "contrib"
 projects[views_bulk_operations][subdir] = "contrib"
 
 ; strong system for triggering actions to many contents at once
+
 
 projects[votingapi][subdir] = "contrib"
 
