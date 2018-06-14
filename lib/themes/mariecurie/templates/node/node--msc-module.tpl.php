@@ -11,3 +11,6 @@
 <div class="row mb-100">
     <?php print views_embed_view('articles_section', 'block_1'); ?>
 </div>
+<div class="row">
+    <?php print views_embed_view('articles_section', 'block'); ?>
+</div>
