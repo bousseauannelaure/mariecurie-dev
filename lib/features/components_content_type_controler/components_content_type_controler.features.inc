@@ -130,6 +130,11 @@ function components_content_type_controler_paragraphs_info() {
       'bundle' => 'msc_form_component',
       'locked' => '1',
     ),
+    'msc_list_component' => array(
+      'name' => 'List elements',
+      'bundle' => 'msc_list_component',
+      'locked' => '1',
+    ),
     'msc_module_component' => array(
       'name' => 'Module Component',
       'bundle' => 'msc_module_component',

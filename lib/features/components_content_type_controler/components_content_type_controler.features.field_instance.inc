@@ -1314,6 +1314,7 @@ function components_content_type_controler_field_default_field_instances() {
         'msc_container_component' => -1,
         'msc_container_slider_component' => -1,
         'msc_form_component' => 'msc_form_component',
+        'msc_list_component' => 'msc_list_component',
         'msc_module_component' => -1,
         'msc_module_container_component' => 'msc_module_container_component',
         'msc_numbers_component' => -1,
@@ -1328,6 +1329,7 @@ function components_content_type_controler_field_default_field_instances() {
         'msc_container_component' => -20,
         'msc_container_slider_component' => -16,
         'msc_form_component' => -12,
+        'msc_list_component' => 19,
         'msc_module_component' => -19,
         'msc_module_container_component' => -15,
         'msc_numbers_component' => -18,
@@ -2442,7 +2444,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
-          'view_mode' => 'full',
+          'view_mode' => 'msc_full_width',
         ),
         'type' => 'paragraphs_view',
         'weight' => 2,
@@ -2605,6 +2607,45 @@ function components_content_type_controler_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-msc_list_component-field_msc_list_reference'.
+  $field_instances['paragraphs_item-msc_list_component-field_msc_list_reference'] = array(
+    'bundle' => 'msc_list_component',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewreference',
+        'settings' => array(),
+        'type' => 'viewreference_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_msc_list_reference',
+    'label' => 'List reference',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewreference',
+      'settings' => array(),
+      'type' => 'viewreference_select',
       'weight' => 1,
     ),
   );
@@ -4572,6 +4613,7 @@ Go',
   t('Link');
   t('Link to Module');
   t('Link to Page');
+  t('List reference');
   t('Look and feel');
   t('Maximum choices');
   t('Media');
