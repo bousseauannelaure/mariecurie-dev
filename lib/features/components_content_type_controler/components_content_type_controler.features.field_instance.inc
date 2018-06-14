@@ -613,7 +613,7 @@ function components_content_type_controler_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -670,7 +670,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -748,22 +748,19 @@ function components_content_type_controler_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => '',
         ),
-        'type' => 'image',
+        'type' => 'image_url',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -852,7 +849,7 @@ function components_content_type_controler_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'promoted_teaser' => array(
         'label' => 'hidden',
@@ -930,7 +927,7 @@ function components_content_type_controler_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'promoted_teaser' => array(
         'label' => 'above',
