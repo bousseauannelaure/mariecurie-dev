@@ -28,7 +28,7 @@
 ?>
 <div class="slide-content-wrapper">
     <div class="ecl-row ecl-u-align-items-center ecl-u-justify-content-center">
-        <div class="ecl-col">
+        <div class="ecl-col-auto">
             <?php print render($content['field_msc_component_title']); ?>
             <?php print render($content['field_msc_subtitle']); ?>
             <?php print render($content['field_msc_short_text']); ?>

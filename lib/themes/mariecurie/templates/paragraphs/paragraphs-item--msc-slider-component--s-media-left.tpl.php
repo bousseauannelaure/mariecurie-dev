@@ -31,7 +31,7 @@
       <div class="ecl-col-2">
           <?php print render($content['field_msc_picture']); ?>
       </div>
-      <div class="ecl-col">
+      <div class="ecl-col-auto">
           <?php print render($content['field_msc_component_title']); ?>
           <?php print render($content['field_msc_subtitle']); ?>
           <?php print render($content['field_msc_short_text']); ?>

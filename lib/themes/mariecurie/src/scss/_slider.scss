@@ -90,35 +90,23 @@
         opacity: 0.3;
     }
     .slide a{
-        color: inherit;
-        border: 2px solid;
-        padding: 10px;
-        font-size: 1.3vw;
-        margin-top: 20px;
+        border: 2px solid #fff;
         display: inline-block;
-        transition: all .3s;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        position: relative;
+        font-family: Arial,sans-serif;
+        font-size: .89rem;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+        padding: .89rem 1rem;
+        text-decoration: none;
+        background-color: #fff;
+        color: #872358;
+        cursor: pointer;
     }
     .slide a:hover{
-        background: rgba(255, 255, 255, 0.2);
-        border: 2px solid transparent;
-        text-decoration: none;
-        letter-spacing: 2px;
-        padding-right: 30px;
-    }
-    .slide a:after{
-        content: " \f105";
-        font-family: "FontAwesome";
-        position: absolute;
-        margin-left: -10px;
-        transition: all .3s;
-        opacity: 0;
-    }
-    .slide a:hover:after{
-        margin-left: 10px;
-        opacity: 1;
+        background-color: #872358;
+        border-color: #872358;
+        color: #fff;
     }
     .slider .bullets{
         display: none;
