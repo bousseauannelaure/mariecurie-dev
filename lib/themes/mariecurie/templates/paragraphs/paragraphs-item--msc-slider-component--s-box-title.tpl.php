@@ -27,8 +27,14 @@
  */
 ?>
 <div class="slide-content-wrapper">
-  <?php print render($content['field_msc_component_title']); ?>
-  <?php print render($content['field_msc_subtitle']); ?>
-  <?php print render($content['field_msc_short_text']); ?>
-  <button class="ecl-button ecl-button--default ecl-button--white"><?php print render($content['field_msc_free_link']); ?></button>
+    <div class="ecl-row ecl-u-align-items-center ecl-u-justify-content-center">
+        <div class="ecl-col-2">
+            <?php print render($content['field_msc_short_text']); ?>
+        </div>
+        <div class="ecl-col-auto">
+            <?php print render($content['field_msc_component_title']); ?>
+            <?php print render($content['field_msc_subtitle']); ?>
+            <?php print render($content['field_msc_free_link']); ?>
+        </div>
+    </div>
 </div>
