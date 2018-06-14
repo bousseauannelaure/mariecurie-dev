@@ -28,10 +28,16 @@
 ?>
 <div style="background-image: url('<?php print trim(strip_tags(render($content['field_msc_back_img_component']))); ?>');">
   <div class="slide-content-wrapper">
-    <?php print render($content['field_msc_picture']); ?>
-    <?php print render($content['field_msc_component_title']); ?>
-    <?php print render($content['field_msc_subtitle']); ?>
-    <?php print render($content['field_msc_short_text']); ?>
-    <button class="ecl-button ecl-button--default ecl-button--white"><?php print render($content['field_msc_free_link']); ?></button>
+      <div class="ecl-row">
+          <div class="ecl-col">
+              <?php print render($content['field_msc_picture']); ?>
+          </div>
+          <div class="ecl-col">
+              <?php print render($content['field_msc_component_title']); ?>
+              <?php print render($content['field_msc_subtitle']); ?>
+              <?php print render($content['field_msc_short_text']); ?>
+              <button class="ecl-button ecl-button--default ecl-button--white"><?php print render($content['field_msc_free_link']); ?></button>
+          </div>
+      </div>
   </div>
 </div>
