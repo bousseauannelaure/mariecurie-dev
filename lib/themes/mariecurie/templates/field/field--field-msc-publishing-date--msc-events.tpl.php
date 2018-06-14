@@ -66,8 +66,8 @@ HTML comment.
     <div class="field-items"<?php print $content_attributes; ?>>
       <?php foreach ($items as $delta => $item): ?>
           <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-
-              <strong><?php date('y',strtotime(render($item))); ?></strong>
+              <?php dpm(render($item)); ?>
+              <strong><?php date('Y',strtotime(render($item))); ?></strong>
               <span>Sep 2018</span>
               <span>5:02 PM</span>
           </div>
