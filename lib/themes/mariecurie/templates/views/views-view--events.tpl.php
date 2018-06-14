@@ -27,18 +27,10 @@
  * @ingroup views_templates
  */
 ?>
-<div>
-  <?php print render($title_prefix); ?>
+
   <?php if ($title): ?>
     <?php print $title; ?>
   <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  <?php if ($header): ?>
-    <div class="view-header">
-      <?php print $header; ?>
-    </div>
-  <?php endif; ?>
-
   <?php if ($exposed): ?>
     <div class="view-filters">
       <?php print $exposed; ?>
@@ -52,9 +44,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <ul class="ecl-listing ecl-listing--two-columns date-list ecl-u-pb-l">
       <?php print $rows; ?>
-    </ul>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
@@ -75,16 +65,9 @@
     <?php print $more; ?>
   <?php endif; ?>
 
-  <?php if ($footer): ?>
-    <div class="view-footer">
-      <?php print $footer; ?>
-    </div>
-  <?php endif; ?>
-
   <?php if ($feed_icon): ?>
     <div class="feed-icon">
       <?php print $feed_icon; ?>
     </div>
   <?php endif; ?>
-
-</div><?php /* class view */ ?>
+<?php /* class view */ ?>
