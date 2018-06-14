@@ -1548,6 +1548,49 @@ function components_content_type_controler_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-title_field'.
+  $field_instances['node-page-title_field'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Exported field_instance: 'node-webinar-field_msc_date'.
   $field_instances['node-webinar-field_msc_date'] = array(
     'bundle' => 'webinar',
@@ -2699,10 +2742,12 @@ function components_content_type_controler_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'viewreference',
-        'settings' => array(),
-        'type' => 'viewreference_default',
-        'weight' => 0,
+        'module' => 'blockreference',
+        'settings' => array(
+          'show_empty_blocks' => 0,
+        ),
+        'type' => 'blockreference_without_title',
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -2714,17 +2759,57 @@ function components_content_type_controler_field_default_field_instances() {
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_msc_list_reference',
     'label' => 'List reference',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
+      'blockreference_modules' => array(
+        'advpoll' => 0,
+        'autologout' => 0,
+        'backup_migrate' => 0,
+        'bean' => 0,
+        'block' => 0,
+        'cce_basic_config' => 0,
+        'comment' => 0,
+        'context_ui' => 0,
+        'current_search' => 0,
+        'devel' => 0,
+        'diff' => 0,
+        'easy_breadcrumb' => 0,
+        'ecas' => 0,
+        'facetapi' => 0,
+        'language_selector_page' => 0,
+        'language_selector_site' => 0,
+        'locale' => 0,
+        'menu' => 0,
+        'menu_block' => 0,
+        'msc_func_inc' => 0,
+        'multisite_create_button' => 0,
+        'nexteuropa_europa_search' => 0,
+        'node' => 0,
+        'print' => 0,
+        'print_mail' => 0,
+        'print_pdf' => 0,
+        'print_ui' => 0,
+        'quicktabs' => 0,
+        'search' => 0,
+        'system' => 0,
+        'tagclouds' => 0,
+        'taxonomy_browser' => 0,
+        'user' => 0,
+        'views' => 'views',
+        'webform' => 0,
+        'workbench' => 0,
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'viewreference',
-      'settings' => array(),
-      'type' => 'viewreference_select',
-      'weight' => 1,
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
     ),
   );
 
