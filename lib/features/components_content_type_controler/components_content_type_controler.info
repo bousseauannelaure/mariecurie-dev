@@ -173,6 +173,7 @@ features[field_instance][] = paragraphs_item-speakers_component-field_msc_short_
 features[field_instance][] = paragraphs_item-video_component-field_msc_component_title
 features[field_instance][] = paragraphs_item-video_component-field_msc_desc
 features[field_instance][] = paragraphs_item-video_component-field_msc_video
+features[image][] = 552x335
 features[node][] = advpoll
 features[node][] = msc_article
 features[node][] = msc_events
