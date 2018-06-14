@@ -53,11 +53,7 @@
 
   <?php if ($rows): ?>
     <ul class="ecl-listing ecl-listing--two-columns date-list ecl-u-pb-l view-content">
-      <?php
-        foreach ($rows as $row){
-            print $row;
-        }
-      ?>
+      <?php print $rows; ?>
     </ul>
   <?php elseif ($empty): ?>
     <div class="view-empty">
