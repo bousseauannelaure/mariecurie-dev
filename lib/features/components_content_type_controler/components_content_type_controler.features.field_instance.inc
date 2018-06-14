@@ -1025,15 +1025,8 @@ function components_content_type_controler_field_default_field_instances() {
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'date',
-        'settings' => array(
-          'format_type' => 'list_eu',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => 0,
-        ),
-        'type' => 'date_default',
+        'settings' => array(),
+        'type' => 'date_plain',
         'weight' => 0,
       ),
     ),
