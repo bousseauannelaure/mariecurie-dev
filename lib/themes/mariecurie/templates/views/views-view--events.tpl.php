@@ -44,7 +44,9 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
+  <div class="ecl-row">
       <?php print $rows; ?>
+  </div>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
