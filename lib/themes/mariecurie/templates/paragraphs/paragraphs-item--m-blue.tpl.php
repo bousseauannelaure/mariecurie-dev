@@ -27,10 +27,15 @@
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
 ?>
+    <?php
+    $style_attr = '';
+    if (!empty($content['field_msc_picture'])) {
+        $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
+    }
+    ?>
 <div class="module-flex-item <?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print trim(strip_tags(render($content['field_msc_link_to_module']))); ?>">
-    <div class="upper-half">
-      <?php print render($content['field_msc_back_img_component']); ?>
+    <div class="upper-half" <?php print $style_attr; ?>></div>
     </div>
     <div class="lower-half">
       <?php print render($content['field_msc_component_title']); ?>
