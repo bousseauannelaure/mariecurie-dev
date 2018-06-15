@@ -57,7 +57,7 @@
   <?php endif; ?>
   <div class="field-items module-flex-container"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
+      <?php print render($item); ?>
     <?php endforeach; ?>
   </div>
 </div>
