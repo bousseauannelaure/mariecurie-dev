@@ -45,9 +45,9 @@
             <span class="ecl-navigation-menu__hamburger-label">Menu</span>
         </button>
         <?php
-          $main_menu = menu_tree_all_data('main-menu');
-          $main_menu = menu_navigation_links('main-menu');
-          print theme('links__menu_main_menu', array('links' => $main_menu));
+          menu_tree_all_data('main-menu');
+          $menu = menu_build_tree('main-menu');
+          print render(menu_tree_output($menu));
         ?>
     </div>
 </nav>
