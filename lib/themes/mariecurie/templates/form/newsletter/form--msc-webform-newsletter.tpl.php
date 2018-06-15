@@ -7,6 +7,8 @@
 ?>
 <div class="newsletter-frame ecl-u-pa-xxl">
   <form<?php print $atomium['attributes']['element']->append('class', 'ecl-form'); ?>>
-    <?php print render($element['#children']); ?>
+    <div class="text-center">
+      <?php print render($element['#children']); ?>
+    </div>
   </form>
 </div>
