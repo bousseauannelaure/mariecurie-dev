@@ -26,11 +26,15 @@
  * @see template_process()
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
+
+$style_attr = '';
+if (!empty($content['field_msc_picture'])) {
+    $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
+}
 ?>
     <div class="module-flex-item module-deactivated<?php print $classes; ?>"<?php print $attributes; ?>>
         <div class="front">
-            <div class="upper-half" style="background-image: url('http://via.placeholder.com/400x200');">
-                <?php print render($content['field_msc_back_img_component']); ?>
+            <div class="upper-half" style="<?php print $style_attr; ?>">
             </div>
             <div class="lower-half">
                 <?php print render($content['field_msc_component_title']); ?>
