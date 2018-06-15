@@ -29,3 +29,9 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   width: 100%;
   max-width: none;
 }
+
+.float {
+  &-right {
+    float: right!important;
+  }
+}
