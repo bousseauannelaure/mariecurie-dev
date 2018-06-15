@@ -25,7 +25,9 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   box-shadow: 3px 10px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.ecl-editor ul {
+.ecl-editor ul,
+.ecl-editor ol,
+.ecl-editor p {
   width: 100%;
   max-width: none;
 }
