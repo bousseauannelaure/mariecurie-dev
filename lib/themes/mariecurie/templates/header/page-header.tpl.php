@@ -44,7 +44,13 @@
       </span>
             <span class="ecl-navigation-menu__hamburger-label">Menu</span>
         </button>
+          <?php
+          $main_menu= menu_tree_all_data('main-menu');
+          $main_menu = menu_navigation_links('main-menu');
+          theme('links__menu_main_menu', array('links' => $main_menu));
+          ?>
         <ul class="ecl-navigation-menu__root" id="nav-menu-expandable-root" aria-hidden="true">
+
             <li class="ecl-navigation-menu__item">
                 <a href="../../example.html#home" class="ecl-navigation-menu__link">Home</a>
             </li>
