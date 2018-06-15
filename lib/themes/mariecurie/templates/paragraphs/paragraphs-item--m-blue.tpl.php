@@ -26,15 +26,27 @@
  * @see template_process()
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
+
+$style_attr = '';
+if (!empty($content['field_msc_picture'])) {
+    $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
+}
 ?>
-<div class="module-flex-item <?php print $classes; ?>"<?php print $attributes; ?>>
-  <a href="<?php print trim(strip_tags(render($content['field_msc_link_to_module']))); ?>">
-    <div class="upper-half">
-      <?php print render($content['field_msc_back_img_component']); ?>
+
+<div class="module-flex-item module-blue hover panel <?php print $classes; ?>"<?php print $attributes; ?>>
+    <div class="front">
+        <div class="upper-half" <?php print $style_attr; ?>>
+        </div>
+        <div class="lower-half">
+            <?php print render($content['field_msc_component_title']); ?>
+        </div>
     </div>
-    <div class="lower-half">
-      <?php print render($content['field_msc_component_title']); ?>
+    <div class="back">
+        <a href="<?php print trim(strip_tags(render($content['field_msc_link_to_module']))); ?>">
+            <div class="description">
+                <?php print render($content['field_msc_short_text']); ?>
+            </div>
+        </a>
     </div>
-  </a>
 </div>
 <?php endif; ?>

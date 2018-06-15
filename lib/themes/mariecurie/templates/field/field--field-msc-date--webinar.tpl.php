@@ -51,13 +51,12 @@
  * @ingroup themeable
  */
 ?>
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if (!$label_hidden): ?>
-    <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
-  <?php endif; ?>
-  <div class="field-items module-flex-container"<?php print $content_attributes; ?>>
-    <?php foreach ($items as $delta => $item): ?>
-      <?php print render($item); ?>
-    <?php endforeach; ?>
-  </div>
-</div>
+<!--
+This file is not used by Drupal core, which uses theme functions instead.
+See http://api.drupal.org/api/function/theme_field/7 for details.
+After copying this file to your theme's folder and customizing it, remove this
+HTML comment.
+-->
+<?php foreach ($items as $delta => $item): ?>
+<p><?php print t('Comming soon: ').render($item); ?></p>
+<?php endforeach; ?>
