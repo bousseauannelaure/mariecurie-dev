@@ -25,17 +25,11 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
-if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
 ?>
-    <div class="module-flex-item module-deactivated<?php print $classes; ?>"<?php print $attributes; ?>>
-        <div class="front">
-            <div class="upper-half" style="background-image: url('http://via.placeholder.com/400x200');">
-                <?php print render($content['field_msc_back_img_component']); ?>
-            </div>
-            <div class="lower-half">
-                <?php print render($content['field_msc_component_title']); ?>
-            </div>
-            <div class="deactivated">COMMING SOON</div>
-        </div>
-    </div>
-<?php endif; ?>
+<div class="ecl-col-5 ecl-col-md-4 ecl-col-lg-2">
+  <?php print render($content['field_msc_picture']); ?>
+</div>
+<div class="ecl-col-7 ecl-col-md-8 ecl-col-lg-10 ecl-u-d-flex ecl-u-d-md-block ecl-u-align-items-center ecl-u-align-items-md-start">
+    <h3 class="ecl-heading text-blue-light"><?php print render($content['field_msc_component_title']); ?></h3>
+    <div class="ecl-u-d-md-block ecl-u-d-none"><?php print render($content['field_msc_short_text']); ?></div>
+</div>
