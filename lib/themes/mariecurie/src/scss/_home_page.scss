@@ -324,12 +324,12 @@
             border:1px solid $color-blue-light;
         }
         .ecl-button {
-            border-color: $color-blue;
-            background-color: $color-blue;
+            border-color: $color-blue-light;
+            background-color: $color-blue-light;
             color: #fff;
             padding: .53rem 1rem;
             &:hover {
-                border-color: $color-blue;
+                border-color: $color-blue-light;
                 background-color: transparent;
                 color: $color-blue;
             }
