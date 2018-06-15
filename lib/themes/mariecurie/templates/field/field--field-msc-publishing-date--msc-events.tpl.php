@@ -57,6 +57,15 @@ See http://api.drupal.org/api/function/theme_field/7 for details.
 After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
-<p class="ecl-list-item__detail ecl-paragraph">
-  <?php print render($item); ?>
-</p>
+
+<?php if (!$label_hidden): ?>
+  <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+<?php endif; ?>
+<?php foreach ($items as $delta => $item): ?>
+  <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+      <?php $fecha = date_create(render($item)); ?>
+      <strong><?php print (date_format($fecha, 'd')); ?></strong>
+      <span><?php print (date_format($fecha, 'M Y')); ?></span>
+      <span><?php print (date_format($fecha, 'h:i A')); ?></span>
+  </div>
+<?php endforeach; ?>

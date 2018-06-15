@@ -62,7 +62,7 @@
         <?php
           $style_attr = '';
           if (!empty($item['entity']['paragraphs_item']) && ($slide = current($item['entity']['paragraphs_item'])) && !empty($slide['field_msc_back_img_component'])) {
-            $style_attr = ' style="background-image: url(\'' .  trim(strip_tags(drupal_render(current($item['entity']['paragraphs_item'])['field_msc_back_img_component']))) . '\');"';
+            $style_attr = ' style="background-image: url(\'' .  trim(strip_tags(drupal_render($slide['field_msc_back_img_component']))) . '\');"';
           }
         ?>
         <div class="slide<?php print ($delta === 0 ? ' active': ''); ?>"<?php print $style_attr; ?>>

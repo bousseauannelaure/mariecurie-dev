@@ -6,7 +6,7 @@ if (!empty($content['field_msc_picture'])) {
 ?>
 <div class="col-xs-12 col-md-6">
     <article class="card card-module raised">
-        <div class="" <?php print $style_attr; ?>></div>
+        <div class="card-header" <?php print $style_attr; ?>></div>
         <div class="card-body">
             <header><?php print $title; ?></header>
             <time class="hidden-xs"><?php print format_date($node->created, 'article'); ?></time>

@@ -27,6 +27,30 @@ function components_content_type_controler_views_api($module = NULL, $api = NULL
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function components_content_type_controler_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: 552x335.
+  $styles['552x335'] = array(
+    'label' => '552x335',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 552,
+          'height' => 335,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function components_content_type_controler_node_info() {
