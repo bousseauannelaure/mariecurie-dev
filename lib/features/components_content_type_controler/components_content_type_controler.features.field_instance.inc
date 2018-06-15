@@ -2143,7 +2143,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -2192,7 +2192,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -2267,7 +2267,7 @@ function components_content_type_controler_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
-          'url_type' => '',
+          'url_type' => 1,
         ),
         'type' => 'image_url',
         'weight' => 0,
@@ -2342,7 +2342,7 @@ function components_content_type_controler_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
