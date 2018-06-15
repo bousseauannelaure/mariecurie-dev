@@ -50,9 +50,17 @@
  *
  * @ingroup themeable
  */
+
+
+$style_attr = '';
+if (!empty($content['field_msc_picture'])) {
+    $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_picture']))) . ');"';
+}
+?>
+
 ?>
 <?php foreach ($items as $delta => $item): ?>
   <div class="module-circle ecl-u-f-l">
-    <?php print render($item); ?>
+      <div class="circle" <?php print $style_attr; ?>></div>
   </div>
 <?php endforeach; ?>
