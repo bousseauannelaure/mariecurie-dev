@@ -27,14 +27,15 @@
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
 ?>
-<div class="module-flex-item <?php print $classes; ?>"<?php print $attributes; ?>>
-  <a href="<?php print trim(strip_tags(render($content['field_msc_link_to_module']))); ?>">
-    <div class="upper-half">
-      <?php print render($content['field_msc_back_img_component']); ?>
+    <div class="module-flex-item module-deactivated<?php print $classes; ?>"<?php print $attributes; ?>>
+        <div class="front">
+            <div class="upper-half" style="background-image: url('http://via.placeholder.com/400x200');">
+                <?php print render($content['field_msc_back_img_component']); ?>
+            </div>
+            <div class="lower-half">
+                <?php print render($content['field_msc_component_title']); ?>
+            </div>
+            <div class="deactivated">COMMING SOON</div>
+        </div>
     </div>
-    <div class="lower-half">
-      <?php print render($content['field_msc_component_title']); ?>
-    </div>
-  </a>
-</div>
 <?php endif; ?>
