@@ -57,6 +57,5 @@
 <?php foreach ($items as $delta => $item): ?>
   <div class="module-circle ecl-u-f-l">
     <div class="circle" style="background-image: url('<?php print render($item); ?>');"></div>
-
   </div>
 <?php endforeach; ?>
