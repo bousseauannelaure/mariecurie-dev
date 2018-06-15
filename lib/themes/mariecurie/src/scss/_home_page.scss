@@ -54,13 +54,13 @@
 
         .upper-half {
             height: 50%;
-            background-size: contain;
+            background-size: cover;
             background-position: center center;
             position: relative;
             .img {
                 height: 100%;
                 width: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
 
             &:before {
