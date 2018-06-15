@@ -52,15 +52,11 @@
  */
 
 
-$style_attr = '';
-if (!empty($content['field_msc_picture'])) {
-    $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_picture']))) . ');"';
-}
 ?>
 
-?>
 <?php foreach ($items as $delta => $item): ?>
   <div class="module-circle ecl-u-f-l">
-      <div class="circle" <?php print $style_attr; ?>></div>
+    <div class="circle" style="background-image: url('');"></div>
+    <?php print render($item); ?>
   </div>
 <?php endforeach; ?>
