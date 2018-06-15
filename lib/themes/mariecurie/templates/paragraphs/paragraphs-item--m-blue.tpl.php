@@ -26,13 +26,13 @@
  * @see template_process()
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
-?>
-    <?php
+
     $style_attr = '';
     if (!empty($content['field_msc_back_img_component'])) {
         $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
     }
     ?>
+
 
 <div class="module-flex-item module-blue hover panel <?php print $classes; ?>"<?php print $attributes; ?>>
     <div class="front">

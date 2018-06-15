@@ -39,12 +39,14 @@
             font-family: $ec-square-medium;
             padding-top: 40px;
         }
+        a {
+            text-decoration: none;
+        }
 
         .description {
             padding: 10px;
             p {
                 color: #fff;
-                text-decoration: none;
                 font-size: 1em;
                 font-weight: normal;
             }
@@ -98,26 +100,30 @@
     }
 
     .module-flex-item {
-        .back,
-        .front {
             &.module-purple {
-                background: $color-purple;
-                .upper-half {
-                    &:before {
-                        background: $color-purple;
+                .back,
+                .front {
+                    background: $color-purple;
+                    .upper-half {
+                        &:before {
+                            background: $color-purple;
+                        }
                     }
                 }
             }
 
             &.module-blue {
-                background: $color-blue;
-                .upper-half {
-                    &:before {
-                        background: $color-blue;
+                .back,
+                .front {
+                    background: $color-blue;
+                    .upper-half {
+                        &:before {
+                            background: $color-blue;
+                        }
                     }
                 }
             }
-        }
+
     }
 
     .module-item {
