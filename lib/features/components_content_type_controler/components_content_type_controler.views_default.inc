@@ -230,6 +230,10 @@ function components_content_type_controler_views_default_views() {
   /* Display: Page-blog */
   $handler = $view->new_display('page', 'Page-blog', 'page_1');
   $handler->display->display_options['path'] = 'blog';
+
+  /* Display: Block-blog-list */
+  $handler = $view->new_display('block', 'Block-blog-list', 'block_2');
+  $handler->display->display_options['display_description'] = 'articles/blog list';
   $export['blog'] = $view;
 
   $view = new view();
@@ -253,7 +257,6 @@ function components_content_type_controler_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'node';

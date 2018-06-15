@@ -795,6 +795,9 @@ function components_content_type_controler_strongarm() {
       'msc_full_width' => array(
         'custom_settings' => FALSE,
       ),
+      'render_programmatically' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
