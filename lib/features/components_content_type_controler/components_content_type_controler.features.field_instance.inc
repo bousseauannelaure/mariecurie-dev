@@ -2883,12 +2883,13 @@ function components_content_type_controler_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'url_type' => '',
         ),
-        'type' => 'image',
+        'type' => 'image_url',
         'weight' => 2,
       ),
       'full' => array(
