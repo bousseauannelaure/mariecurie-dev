@@ -324,8 +324,17 @@
             border:1px solid $color-blue-light;
         }
         .ecl-button {
+            border-color: $color-blue;
+            background-color: $color-blue;
+            color: #fff;
             padding: .53rem 1rem;
+            &:hover {
+                border-color: $color-blue;
+                background-color: transparent;
+                color: $color-blue;
+            }
         }
+
     }
 }
 
