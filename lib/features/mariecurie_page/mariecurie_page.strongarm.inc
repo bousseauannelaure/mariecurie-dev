@@ -119,9 +119,6 @@ function mariecurie_page_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
-      'render_programmatically_' => array(
-        'custom_settings' => TRUE,
-      ),
       'render_programmatically' => array(
         'custom_settings' => TRUE,
       ),

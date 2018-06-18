@@ -32,12 +32,6 @@ function mariecurie_page_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 2,
       ),
-      'render_programmatically_' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -116,12 +110,6 @@ function mariecurie_page_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 1,
       ),
-      'render_programmatically_' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -165,15 +153,6 @@ function mariecurie_page_field_default_field_instances() {
         'weight' => 2,
       ),
       'render_programmatically' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 0,
-      ),
-      'render_programmatically_' => array(
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
