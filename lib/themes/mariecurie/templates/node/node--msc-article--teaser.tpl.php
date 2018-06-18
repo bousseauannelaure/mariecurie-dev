@@ -1,3 +1,7 @@
+<?php
+$alias = '/node/'.$node->nid;
+//$alias = drupal_get_path_alias('node/' . $node->nid);
+?>
 <div class="col-xs-12">
     <div class="card card-news card-purple raised">
         <div class="row">
@@ -10,7 +14,7 @@
                 <header class="hidden-xs"><?php print $title; ?></header>
                 <time class="hidden-xs"><?php print format_date($node->created, 'article'); ?></time>
                 <?php print render($content['field_msc_desc']); ?>
-                <a href="#" class="cta"><strong>Read more</strong></a>
+                <a href="<?php print $alias; ?>" class="cta"><strong>Read more</strong></a>
             </div>
         </div>
     </div>
