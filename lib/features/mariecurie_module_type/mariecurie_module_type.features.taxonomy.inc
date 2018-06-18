@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * components_content_type_controler.features.taxonomy.inc
+ * mariecurie_module_type.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function components_content_type_controler_taxonomy_default_vocabularies() {
+function mariecurie_module_type_taxonomy_default_vocabularies() {
   return array(
     'section' => (object) array(
       'name' => 'Module Section',

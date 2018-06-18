@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marie Curie page feature.
+ */
+
+include_once 'mariecurie_page.features.inc';

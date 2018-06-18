@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marie Curie Module Type feature.
+ */
+
+include_once 'mariecurie_module_type.features.inc';
