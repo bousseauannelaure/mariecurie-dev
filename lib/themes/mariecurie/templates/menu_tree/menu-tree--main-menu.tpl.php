@@ -21,5 +21,4 @@ if ( $variables['depth']==2) {
     <ul<?php print $atomium['attributes']['wrapper']; ?>><?php print render($tree); ?></ul>
 
     <?php
-    }
 }
