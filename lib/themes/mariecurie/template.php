@@ -21,9 +21,13 @@ function mariecurie_preprocess_page(&$variables) {
     $variables['msc_content_id'] = ' id="home_page"';
     $variables['hide_title'] = TRUE;
   }
-
-  if ($variables['node']->type == 'msc_article') {
-    $variables['hide_title'] = TRUE;
+  else {
+    switch ($variables['node']->type) {
+      case 'msc_article':
+      case 'advpoll':
+        $variables['hide_title'] = TRUE;
+        break;
+    }
   }
 }
 
@@ -64,6 +68,7 @@ function mariecurie_form_alter(&$form, &$form_state, $form_id) {
       }
       break;
     case ('advpoll_choice_form' === $form_id):
+    case ('advpoll_cancel_vote_form' === $form_id):
       $form['submit']['#attributes']['class'] = [
         'btn',
         'btn-purple',
