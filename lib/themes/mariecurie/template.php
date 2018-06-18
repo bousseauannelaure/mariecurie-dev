@@ -53,13 +53,25 @@ function mariecurie_preprocess_fieldset(&$variables) {
  * Implements hook_form_alter().
  */
 function mariecurie_form_alter(&$form, &$form_state, $form_id) {
-  if (preg_match('/^webform_client/', $form_id)) {
-    if ($form['#node']->title === 'Newsletter') {
-      unset($form['submitted']['email']['#theme_wrappers']);
-      $form['actions']['submit']['#attributes']['class'] = [
-        'ecl-button',
-        'ecl-button--primary',
+  switch (true){
+    case preg_match('/^webform_client/', $form_id):
+      if ($form['#node']->title === 'Newsletter') {
+        unset($form['submitted']['email']['#theme_wrappers']);
+        $form['actions']['submit']['#attributes']['class'] = [
+          'ecl-button',
+          'ecl-button--primary',
+        ];
+      }
+      break;
+    case ('advpoll_choice_form' === $form_id):
+      $form['submit']['#attributes']['class'] = [
+        'btn',
+        'btn-purple',
       ];
-    }
+      $form['actions']['show_results']['#attributes']['class'] = [
+        'btn',
+        'btn-purple',
+      ];
+      break;
   }
 }
