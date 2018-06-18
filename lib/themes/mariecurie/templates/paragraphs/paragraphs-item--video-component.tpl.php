@@ -28,7 +28,7 @@
 ?>
 <div class="ecl-col module-item">
   <?php print render($content['field_msc_component_title']); ?>
-  <div class="row mb-100">
+  <div class="row">
     <div class="col-xs-12 col-md-6 col-md-push-6 mb-30">
       <div class="video raised">
         <?php print render($content['field_msc_video']); ?>
