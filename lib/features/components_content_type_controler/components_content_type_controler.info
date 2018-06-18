@@ -34,7 +34,6 @@ dependencies[] = smart_trim
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = viewreference
 dependencies[] = views
 dependencies[] = webform_ajax
 features[ctools][] = ds:ds:1

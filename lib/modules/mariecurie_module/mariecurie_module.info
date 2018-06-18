@@ -1,8 +1,6 @@
-name = Marie Curie Custom Components
+name = Marie Curie Custom Module
 description = Manage functionallity for paragraphs and other components
 dependencies[] = paragraphs
 dependencies[] = list_predefined_options
-package = MSC
+package = MarieCurie
 core = 7.x
-
-configure = admin/config/TODO-SECTION/msc_custom_components
