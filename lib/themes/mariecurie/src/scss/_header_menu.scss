@@ -43,8 +43,12 @@
       background-color: $color-blue-dark;
   }
 
-  .ecl-navigation-menu__group:before {
+  .ecl-navigation-menu__group {
     background-color: $color-blue-dark;
+  }
+
+  .ecl-navigation-menu__group:before {
+    background-color: transparent;
   }
 
 }
