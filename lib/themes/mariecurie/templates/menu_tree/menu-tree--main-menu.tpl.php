@@ -5,9 +5,9 @@
  * Contains template file.
  */
 $variables['atomium']['attributes']['wrapper']
-    ->append('class', 'ecl-navigation-menu__links ecl-list ecl-list--unstyled');
+    ->append('class', 'ecl-col');
 ?>
-<div class="ecl-col">
-    <ul<?php print $atomium['attributes']['wrapper']; ?>><?php print render($tree); ?></ul>
+<div <?php print $atomium['attributes']['wrapper']; ?>>
+    <ul class="ecl-navigation-menu__links ecl-list ecl-list--unstyled"><?php print render($tree); ?></ul>
 </div>
 
