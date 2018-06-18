@@ -35,7 +35,11 @@
     background-color: $color-blue-dark;
   }
 
-  .active {
+  .ecl-navigation-menu__link[aria-haspopup=true] .ecl-navigation-menu__group{
+    display: block;
+  }
+
+  .ecl-navigation-menu__item--active {
       background-color: $color-blue-dark;
   }
 
