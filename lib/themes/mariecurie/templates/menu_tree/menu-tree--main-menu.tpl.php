@@ -4,9 +4,8 @@
  * @file
  * Contains template file.
  */
-$element = $variables['element'];
 
-if ($element['#below']) {
+if ( $variables['depth']==2) {
     $variables['atomium']['attributes']['wrapper']
         ->append('class', 'ecl-col');
     ?>
@@ -19,7 +18,7 @@ if ($element['#below']) {
     } else {
     ?>
 
-    <li<?php print $atomium['attributes']['wrapper']; ?>><?php print render($output); ?><?php print render($sub_menu); ?></li>
+    <ul<?php print $atomium['attributes']['wrapper']; ?>><?php print render($tree); ?></ul>
 
     <?php
     }
