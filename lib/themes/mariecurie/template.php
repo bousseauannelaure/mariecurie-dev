@@ -81,11 +81,3 @@ function mariecurie_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
-/**
- * Implements hook_preprocess_hook().
- */
-function mariecurie_preprocess_menu_link__main_menu(&$variables, $hook) {
-  if (!empty($variables['sub_menu']) && !empty($variables['output']['#options']['attributes']['aria-haspopup'])) {
-    unset($variables['output']['#options']['attributes']['aria-haspopup']);
-  }
-}

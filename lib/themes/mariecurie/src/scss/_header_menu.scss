@@ -26,6 +26,7 @@
   }
 
   .ecl-navigation-menu__link {
+    padding: 1rem;
     font-family: $ec-square;
     font-weight: normal;
     border-bottom-color: $color-blue-dark;
@@ -35,12 +36,20 @@
     background-color: $color-blue-dark;
   }
 
-  .active {
+  .ecl-navigation-menu__link[aria-haspopup=true] .ecl-navigation-menu__group{
+    display: block;
+  }
+
+  .ecl-navigation-menu__item--active {
       background-color: $color-blue-dark;
   }
 
-  .ecl-navigation-menu__group:before {
+  .ecl-navigation-menu__group {
     background-color: $color-blue-dark;
+  }
+
+  .ecl-navigation-menu__group:before {
+    background-color: transparent;
   }
 
 }
