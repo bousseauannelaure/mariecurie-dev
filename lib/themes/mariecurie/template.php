@@ -20,7 +20,7 @@ function mariecurie_preprocess_page(&$variables) {
     $variables['msc_content_id'] = ' id="home_page"';
     $variables['hide_title'] = TRUE;
   }
-  else {
+  else if (!empty($variables['node']->type)){
     switch ($variables['node']->type) {
       case 'msc_article':
       case 'advpoll':
