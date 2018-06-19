@@ -91,12 +91,12 @@ function mariecurie_page_paragraphs_info() {
       'locked' => '1',
     ),
     'msc_form_component' => array(
-      'name' => 'Form component',
+      'name' => 'Form Component',
       'bundle' => 'msc_form_component',
       'locked' => '1',
     ),
     'msc_list_elements_component' => array(
-      'name' => 'List elements',
+      'name' => 'List Elements Component',
       'bundle' => 'msc_list_elements_component',
       'locked' => '1',
     ),
@@ -120,18 +120,18 @@ function mariecurie_page_paragraphs_info() {
       'bundle' => 'msc_numbers_container_component',
       'locked' => '1',
     ),
-    'msc_slider_component' => array(
-      'name' => 'Slide component',
-      'bundle' => 'msc_slider_component',
+    'msc_slide_component' => array(
+      'name' => 'Slide Component',
+      'bundle' => 'msc_slide_component',
       'locked' => '1',
     ),
     'msc_speaker_component' => array(
-      'name' => 'Speakers component',
+      'name' => 'Speaker Component',
       'bundle' => 'msc_speaker_component',
       'locked' => '1',
     ),
     'msc_welcome_component' => array(
-      'name' => 'Welcome component',
+      'name' => 'Welcome Component',
       'bundle' => 'msc_welcome_component',
       'locked' => '1',
     ),

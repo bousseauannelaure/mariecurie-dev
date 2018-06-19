@@ -397,7 +397,7 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_slider_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_slide_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -427,7 +427,7 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_slider_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_slide_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
