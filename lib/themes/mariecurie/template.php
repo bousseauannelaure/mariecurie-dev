@@ -10,7 +10,6 @@
  */
 function mariecurie_preprocess_region(&$variables) {
 
-  //dsm($variables);
 }
 
 /**
@@ -57,8 +56,10 @@ function mariecurie_preprocess_fieldset(&$variables) {
  * Implements hook_form_alter().
  */
 function mariecurie_form_alter(&$form, &$form_state, $form_id) {
-  switch (true){
+  switch (TRUE) {
+
     case preg_match('/^webform_client/', $form_id):
+
       if ($form['#node']->title === 'Newsletter') {
         unset($form['submitted']['email']['#theme_wrappers']);
         $form['actions']['submit']['#attributes']['class'] = [
@@ -67,8 +68,11 @@ function mariecurie_form_alter(&$form, &$form_state, $form_id) {
         ];
       }
       break;
+
     case ('advpoll_choice_form' === $form_id):
+
     case ('advpoll_cancel_vote_form' === $form_id):
+
       $form['submit']['#attributes']['class'] = [
         'btn',
         'btn-purple',
@@ -80,4 +84,3 @@ function mariecurie_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
-

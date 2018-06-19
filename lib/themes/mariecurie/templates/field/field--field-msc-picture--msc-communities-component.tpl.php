@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file field.tpl.php
+ * @file
  * Default template implementation to display the value of a field.
  *
  * This file is not used by Drupal core, which uses theme functions instead for
@@ -50,8 +50,6 @@
  *
  * @ingroup themeable
  */
-
-
 ?>
 
 <?php foreach ($items as $delta => $item): ?>

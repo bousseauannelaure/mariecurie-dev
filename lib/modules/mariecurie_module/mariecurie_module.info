@@ -4,3 +4,5 @@ dependencies[] = paragraphs
 dependencies[] = list_predefined_options
 package = MarieCurie
 core = 7.x
+php = 5.6
+multisite_version = 2.5

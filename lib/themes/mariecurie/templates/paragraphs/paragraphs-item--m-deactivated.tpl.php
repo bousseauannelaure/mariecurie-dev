@@ -27,17 +27,17 @@
  */
 if (empty($content['field_msc_display_component']['#items'][0]['value'])) :
 
-$style_attr = '';
-if (!empty($content['field_msc_back_img_component'])) {
-    $style_attr = ' style="background-image: url(' .  trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
-}
-?>
+  $style_attr = '';
+  if (!empty($content['field_msc_back_img_component'])) {
+    $style_attr = ' style="background-image: url(' . trim(strip_tags(drupal_render($content['field_msc_back_img_component']))) . ');"';
+  }
+  ?>
     <div class="module-flex-item module-deactivated<?php print $classes; ?>"<?php print $attributes; ?>>
         <div class="front">
             <div class="upper-half" <?php print $style_attr; ?>>
             </div>
             <div class="lower-half">
-                <?php print render($content['field_msc_component_title']); ?>
+              <?php print render($content['field_msc_component_title']); ?>
             </div>
             <div class="deactivated">COMMING SOON</div>
         </div>

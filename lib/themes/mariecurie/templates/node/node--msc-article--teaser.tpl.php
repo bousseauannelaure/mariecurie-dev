@@ -1,6 +1,11 @@
 <?php
-$alias = '/node/'.$node->nid;
-//$alias = drupal_get_path_alias('node/' . $node->nid);
+
+/**
+ * @file
+ * Module page.
+ */
+
+$alias = '/node/' . $node->nid;
 ?>
 <div class="col-xs-12">
     <div class="card card-news card-purple raised">
@@ -13,8 +18,9 @@ $alias = '/node/'.$node->nid;
             <div class="col-xs-12 col-sm-9 card-body">
                 <header class="hidden-xs"><?php print $title; ?></header>
                 <time class="hidden-xs"><?php print format_date($node->created, 'article'); ?></time>
-                <?php print render($content['field_msc_desc']); ?>
-                <a href="<?php print $alias; ?>" class="cta"><strong>Read more</strong></a>
+              <?php print render($content['field_msc_desc']); ?>
+                <a href="<?php print $alias; ?>" class="cta"><strong>Read
+                        more</strong></a>
             </div>
         </div>
     </div>

@@ -28,7 +28,7 @@
 unset($content['field_msc_look_and_feel']);
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php print render($content); ?>
-  </div>
+    <div class="content"<?php print $content_attributes; ?>>
+      <?php print render($content); ?>
+    </div>
 </div>

@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Site header.
+ */
+?>
 <header class="ecl-site-header" role="banner">
     <div class="ecl-container">
         <?php print render($menu); ?>

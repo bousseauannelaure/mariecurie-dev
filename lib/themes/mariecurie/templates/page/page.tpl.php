@@ -83,29 +83,14 @@
  *
  * @ingroup themeable
  */
-
-/*
-$contexts = variable_get('context_status', array());
-dsm($contexts);
-var_dump($contexts);
-*/
-/*
-$contexts = variable_get('context_status', array());
-$contexts['context_name'] = TRUE;
-variable_set('context_status', $contexts);
-//To enable a context: unset the context name from context_status.
-
-$contexts = variable_get('context_status', array());
-unset($contexts['context_name']);
-variable_set('context_status', $contexts);
-*/
 ?>
+
 <?php if (!empty($page['header_top'])): ?>
- <section class="header-top">
-   <div class="ecl-container">
-     <?php print render($page['header_top']); ?>
-   </div>
- </section>
+    <section class="header-top">
+        <div class="ecl-container">
+          <?php print render($page['header_top']); ?>
+        </div>
+    </section>
 <?php endif; ?>
 
 <?php print render($site_header); ?>
@@ -116,62 +101,62 @@ variable_set('context_status', $contexts);
   <?php print render($slider); ?>
 <?php endif; ?>
 
-<main<?php print !empty($msc_content_id) ? $msc_content_id: ''; ?>>
-  <a id="main-content" tabindex="-1"></a>
-  <div class="ecl-container ecl-u-mv-l">
-    <?php if (!empty($page['highlighted'])): ?>
-      <div class="highlighted"><?php print render($page['highlighted']); ?></div>
-    <?php endif; ?>
-
-    <?php if (!empty($messages)): ?>
-      <?php print render($messages); ?>
-    <?php endif; ?>
-  </div>
-
-  <div class="page-content">
+<main<?php print !empty($msc_content_id) ? $msc_content_id : ''; ?>>
+    <a id="main-content" tabindex="-1"></a>
     <div class="ecl-container ecl-u-mv-l">
-      <a id="main-content" tabindex="-1"></a>
-      <?php if (empty($hide_title)) : ?>
-      <h1 class="ecl-heading ecl-heading--h1"><?php print render($title); ?></h1>
+      <?php if (!empty($page['highlighted'])): ?>
+          <div class="highlighted"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
 
-      <!-- Generic sections -->
-      <div class="ecl-row">
-        <div class="ecl-col">
-          <?php if (!empty($tabs)): ?>
-            <?php print render($tabs); ?>
-          <?php endif; ?>
-
-          <?php if (!empty($page['help'])): ?>
-            <?php print render($page['help']); ?>
-          <?php endif; ?>
-
-          <?php if (!empty($action_links)): ?>
-            <ul class="action-links"><?php print render($action_links); ?></ul>
-          <?php endif; ?>
-        </div>
-      </div>
-
-      <div class="ecl-row">
-        <?php if (!empty($page['sidebar_first'])): ?>
-          <aside class="ecl-col-sm-3" role="complementary">
-            <?php print render($page['sidebar_first']); ?>
-          </aside> <!-- /#sidebar-first -->
-        <?php endif; ?>
-
-        <section class="section <?php print $content_column_class; ?>">
-          <?php print render($page['content']); ?>
-          <?php print render($page['content_bottom']); ?>
-        </section>
-
-        <?php if (!empty($page['sidebar_second'])): ?>
-          <aside class="ecl-col-sm-3" role="complementary">
-            <?php print render($page['sidebar_second']); ?>
-          </aside>  <!-- /#sidebar-second -->
-        <?php endif; ?>
-      </div>
+      <?php if (!empty($messages)): ?>
+        <?php print render($messages); ?>
+      <?php endif; ?>
     </div>
-  </div>
+
+    <div class="page-content">
+        <div class="ecl-container ecl-u-mv-l">
+            <a id="main-content" tabindex="-1"></a>
+          <?php if (empty($hide_title)) : ?>
+              <h1 class="ecl-heading ecl-heading--h1"><?php print render($title); ?></h1>
+          <?php endif; ?>
+
+            <!-- Generic sections -->
+            <div class="ecl-row">
+                <div class="ecl-col">
+                  <?php if (!empty($tabs)): ?>
+                    <?php print render($tabs); ?>
+                  <?php endif; ?>
+
+                  <?php if (!empty($page['help'])): ?>
+                    <?php print render($page['help']); ?>
+                  <?php endif; ?>
+
+                  <?php if (!empty($action_links)): ?>
+                      <ul class="action-links"><?php print render($action_links); ?></ul>
+                  <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="ecl-row">
+              <?php if (!empty($page['sidebar_first'])): ?>
+                  <aside class="ecl-col-sm-3" role="complementary">
+                    <?php print render($page['sidebar_first']); ?>
+                  </aside> <!-- /#sidebar-first -->
+              <?php endif; ?>
+
+                <section class="section <?php print $content_column_class; ?>">
+                  <?php print render($page['content']); ?>
+                  <?php print render($page['content_bottom']); ?>
+                </section>
+
+              <?php if (!empty($page['sidebar_second'])): ?>
+                  <aside class="ecl-col-sm-3" role="complementary">
+                    <?php print render($page['sidebar_second']); ?>
+                  </aside>  <!-- /#sidebar-second -->
+              <?php endif; ?>
+            </div>
+        </div>
+    </div>
 </main>
 
 <?php print render($footer); ?>

@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Article page.
+ */
+?>
 <div class="ecl-container ecl-u-mv-l">
     <a id="main-content" tabindex="-1"></a>
     <h1 class="ecl-heading ecl-heading--h1">Blog / Articles</h1>
