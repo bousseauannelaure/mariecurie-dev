@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Marie Curie Global Configuration feature.
  */
+
+include_once 'marie_curie_global_configuration.features.inc';
