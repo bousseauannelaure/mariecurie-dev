@@ -70,9 +70,9 @@ function mariecurie_page_node_info() {
  */
 function mariecurie_page_paragraphs_info() {
   $items = array(
-    'msc_communities_container_component' => array(
+    'msc_commu_container_component' => array(
       'name' => 'Communities Container Component',
-      'bundle' => 'msc_communities_container_component',
+      'bundle' => 'msc_commu_container_component',
       'locked' => '1',
     ),
     'msc_community_component' => array(

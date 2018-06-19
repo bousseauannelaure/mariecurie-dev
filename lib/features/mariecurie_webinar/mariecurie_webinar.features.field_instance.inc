@@ -239,7 +239,7 @@ function mariecurie_webinar_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_communities_container_component' => -1,
+        'msc_commu_container_component' => -1,
         'msc_community_component' => -1,
         'msc_container_component' => -1,
         'msc_slider_container_component' => -1,
@@ -253,7 +253,7 @@ function mariecurie_webinar_field_default_field_instances() {
         'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_communities_container_component' => 3,
+        'msc_commu_container_component' => 3,
         'msc_community_component' => 2,
         'msc_container_component' => 4,
         'msc_slider_container_component' => 5,
