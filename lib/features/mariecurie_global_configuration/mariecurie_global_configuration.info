@@ -11,6 +11,7 @@ dependencies[] = mariecurie_module_type
 dependencies[] = mariecurie_page
 dependencies[] = mariecurie_podcast
 dependencies[] = mariecurie_poll
+dependencies[] = media_oembed
 dependencies[] = menu
 dependencies[] = strongarm
 dependencies[] = views
