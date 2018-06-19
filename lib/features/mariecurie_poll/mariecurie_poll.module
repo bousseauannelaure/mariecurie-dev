@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marie Curie Poll feature.
+ */
+
+include_once 'mariecurie_poll.features.inc';
