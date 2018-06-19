@@ -301,7 +301,7 @@ function mariecurie_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(),
-      'allowed_values_function' => 'msc_custom_components_look_and_feel_slides_options',
+      'allowed_values_function' => 'mariecurie_module_look_and_feel_slides_options',
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
