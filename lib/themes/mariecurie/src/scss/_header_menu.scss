@@ -15,8 +15,11 @@
     color: #fff;
   }
 
-  .ecl-navigation-menu__item--active:before {
-    background-color: $color-blue-dark;
+  .ecl-navigation-menu__item--active {
+    background-color: $color-blue;
+    &:before {
+      background-color: $color-blue;
+    }
   }
 
 
@@ -50,6 +53,12 @@
 
   .ecl-navigation-menu__group:before {
     background-color: transparent;
+  }
+
+  .ecl-navigation-menu__group {
+    ul li.leaf {
+      list-style: none;
+    }
   }
 
 }
