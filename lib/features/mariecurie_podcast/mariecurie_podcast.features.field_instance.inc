@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * components_content_type_controler.features.field_instance.inc
+ * mariecurie_podcast.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function components_content_type_controler_field_default_field_instances() {
+function mariecurie_podcast_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-msc_news-field_msc_desc'.
-  $field_instances['node-msc_news-field_msc_desc'] = array(
-    'bundle' => 'msc_news',
+  // Exported field_instance: 'node-msc_podcast-field_msc_desc'.
+  $field_instances['node-msc_podcast-field_msc_desc'] = array(
+    'bundle' => 'msc_podcast',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -22,7 +22,7 @@ function components_content_type_controler_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -49,7 +49,7 @@ function components_content_type_controler_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 32,
     ),
   );
 

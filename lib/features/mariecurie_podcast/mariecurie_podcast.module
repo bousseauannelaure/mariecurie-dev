@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Marie Curie Podcast feature.
+ */
+
+include_once 'mariecurie_podcast.features.inc';
