@@ -29,7 +29,7 @@ function mariecurie_article_views_api($module = NULL, $api = NULL) {
 function mariecurie_article_node_info() {
   $items = array(
     'msc_article' => array(
-      'name' => t('MSC Article'),
+      'name' => t('Marie Curie Article'),
       'base' => 'node_content',
       'description' => t('Marie Curie Article - used as BLOG entry'),
       'has_title' => '1',

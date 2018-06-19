@@ -19,7 +19,7 @@ function mariecurie_module_type_ctools_plugin_api($module = NULL, $api = NULL) {
 function mariecurie_module_type_node_info() {
   $items = array(
     'msc_module' => array(
-      'name' => t('Module'),
+      'name' => t('Marie Curie Module'),
       'base' => 'node_content',
       'description' => t('Learning Sessions'),
       'has_title' => '1',

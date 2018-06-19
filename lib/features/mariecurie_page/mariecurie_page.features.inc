@@ -53,7 +53,7 @@ function mariecurie_page_image_default_styles() {
 function mariecurie_page_node_info() {
   $items = array(
     'msc_page' => array(
-      'name' => t('MSC Page'),
+      'name' => t('Marie Curie Page'),
       'base' => 'node_content',
       'description' => t('Marie Curie Page'),
       'has_title' => '1',

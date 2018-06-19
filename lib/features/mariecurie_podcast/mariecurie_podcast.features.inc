@@ -19,7 +19,7 @@ function mariecurie_podcast_ctools_plugin_api($module = NULL, $api = NULL) {
 function mariecurie_podcast_node_info() {
   $items = array(
     'msc_podcast' => array(
-      'name' => t('Podcast'),
+      'name' => t('Marie Curie Podcast'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

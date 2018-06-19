@@ -29,7 +29,7 @@ function mariecurie_events_views_api($module = NULL, $api = NULL) {
 function mariecurie_events_node_info() {
   $items = array(
     'msc_events' => array(
-      'name' => t('Events'),
+      'name' => t('Marie Curie Events'),
       'base' => 'node_content',
       'description' => t('Events for mariecurie'),
       'has_title' => '1',
