@@ -9,11 +9,117 @@
  * Implements hook_install().
  */
 function mariecurie_module_install() {
-
+  // Enable theme configurations.
+  theme_enable(['ec_europa', 'mariecurie']);
   variable_set('theme_default', 'mariecurie');
   variable_set('node_admin_theme', 1);
   module_enable(['nexteuropa_ecl_migrate']);
   _nexteuropa_ecl_migrate_blocks();
+
+  // Enable custom feature.
   module_enable(['mariecurie_global_configuration']);
 
+  // Create webform for newsletter.
+  $node = new stdClass();
+  $node->type = 'webform';
+  node_object_prepare($node);
+  $node->title = 'Newsletter';
+  $node->language = LANGUAGE_NONE;
+  $node->body[LANGUAGE_NONE][0]['value']   = '';
+  $node->body[LANGUAGE_NONE][0]['format']  = 'full_html';
+  $node->uid = 1;
+  $node->promote = 0;
+  $node->comment = 0;
+
+  // Create the webform components.
+  $components = array(
+    array(
+      'name' => 'Register to the Newsletter',
+      'form_key' => 'register_newsletter',
+      'type' => 'fieldset',
+      'weight' => 0,
+      'pid' => 0,
+      'extra' => array(
+        'description_above' => 0,
+        'private' => 0,
+        'css_classes' => '',
+        'title_display' => 0,
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'description' => '',
+      ),
+    ),
+    array(
+      'name' => 'Email address',
+      'form_key' => 'email',
+      'type' => 'email',
+      'required' => 1,
+      'page_num' => 1,
+      'weight' => 25,
+      'pid' => 0,
+      'value' => '[current-user:mail]',
+      'extra' => array(
+        'title_display' => 'none',
+        'description_above' => 0,
+        'private' => 0,
+        'wrapper_classes' => 'text-center',
+        'css_classes' => 'ecl-text-input',
+        'placeholder' => 'Email Address',
+        'unique' => 1,
+        'multiple' => 0,
+        'format' => 'short',
+        'width' => '',
+        'disabled' => 0,
+        'description' => '',
+        'attributes' =>
+          array (
+          ),
+        'analysis' => false,
+      ),
+    ),
+  );
+
+  // Setup notification email.
+  $emails = array(
+    array(
+      'subject' => 'Registered to Marie Curie Newsletter',
+      'from_name' => 'default',
+      'from_address' => 'default',
+      'template' => 'You are registered on [submission:date:long]',
+      'excluded_components' => array(),
+      'html' => '0',
+      'attachments' => '0',
+      'exclude_empty' => '0',
+      'extra' => false,
+      'status' => '1',
+    ),
+  );
+
+  // Attach the webform to the node.
+  $node->webform = array(
+    'confirmation' => '<p>You are registered to newsletter</p>',
+    'confirmation_format' => 'full_html',
+    'redirect_url' => '<none>',
+    'status' => '1',
+    'block' => '0',
+    'teaser' => '0',
+    'allow_draft' => '0',
+    'auto_save' => '0',
+    'submit_notice' => '1',
+    'submit_text' => '',
+    'submit_limit' => '-1', // User can submit more than once.
+    'submit_interval' => '-1',
+    'total_submit_limit' => '-1',
+    'total_submit_interval' => '-1',
+    'record_exists' => TRUE,
+    'roles' => array(
+      0 => '1',
+      1 => '2',
+    ),
+    'emails' => $emails,
+    'components' => $components,
+  );
+
+  // Save the node.
+  node_save($node);
 }

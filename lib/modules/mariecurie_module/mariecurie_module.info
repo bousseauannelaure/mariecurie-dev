@@ -1,7 +1,8 @@
 name = Marie Curie Custom Module
 description = Manage functionallity for paragraphs and other components
-dependencies[] = paragraphs
 dependencies[] = list_predefined_options
+dependencies[] = paragraphs
+dependencies[] = webform
 package = MarieCurie
 core = 7.x
 php = 5.6
