@@ -680,49 +680,6 @@ function components_content_type_controler_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-title_field'.
-  $field_instances['node-page-title_field'] = array(
-    'bundle' => 'page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'title_field',
-    'label' => 'Title',
-    'required' => TRUE,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'hide_label' => array(
-        'entity' => FALSE,
-        'page' => FALSE,
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -5,
-    ),
-  );
-
   // Exported field_instance: 'node-webinar-field_msc_date'.
   $field_instances['node-webinar-field_msc_date'] = array(
     'bundle' => 'webinar',
@@ -1072,15 +1029,18 @@ function components_content_type_controler_field_default_field_instances() {
   t('Comment');
   t('Cookie duration');
   t('Date');
+  t('Description');
   t('Display results');
   t('If the poll\'s voting availability is being controlled by a cookie, this value determine how long to wait between votes in minutes.');
   t('Maximum choices');
   t('Permission settings are necessary for allowing write-in voting, visibility of individual votes and administration of electoral lists.');
   t('Poll availability');
   t('Poll choice');
+  t('Section');
   t('Select the date range that controls the availability of this poll.');
   t('Select the maximum number of choices that can be voted upon.');
   t('This value determines when to show the results of a poll.  By default, while voting is on going, users will see the results so long as they are no longer eligible to vote.  To display results without allowing an opportunity to vote, select \'After poll is closed\' and close the poll.');
+  t('Video/image');
   t('Vote storage mode');
   t('Voting behavior');
   t('Voting options');
