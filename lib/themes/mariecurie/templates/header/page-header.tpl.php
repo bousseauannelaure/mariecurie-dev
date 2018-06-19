@@ -48,7 +48,8 @@
           menu_tree_all_data('main-menu');
           $menu = menu_build_tree('main-menu');
           menu_tree_add_active_path($menu);
-          print render(menu_tree_output($menu));
+          $output_menu = menu_tree_output($menu);
+          print render($output_menu);
         ?>
     </div>
 </nav>
