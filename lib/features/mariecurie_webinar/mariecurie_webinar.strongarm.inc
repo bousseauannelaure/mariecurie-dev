@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * marie_curie_webinar.strongarm.inc
+ * mariecurie_webinar.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function marie_curie_webinar_strongarm() {
+function mariecurie_webinar_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

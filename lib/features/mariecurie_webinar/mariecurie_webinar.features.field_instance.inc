@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * marie_curie_webinar.features.field_instance.inc
+ * mariecurie_webinar.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function marie_curie_webinar_field_default_field_instances() {
+function mariecurie_webinar_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-webinar-field_msc_date'.
