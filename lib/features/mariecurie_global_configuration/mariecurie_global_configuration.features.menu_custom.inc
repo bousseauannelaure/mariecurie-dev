@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * marie_curie_global_configuration.features.menu_custom.inc
+ * mariecurie_global_configuration.features.menu_custom.inc
  */
 
 /**
  * Implements hook_menu_default_menu_custom().
  */
-function marie_curie_global_configuration_menu_default_menu_custom() {
+function mariecurie_global_configuration_menu_default_menu_custom() {
   $menus = array();
 
   // Exported menu: menu-left-footer-menu.

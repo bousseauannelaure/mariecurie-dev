@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * marie_curie_global_configuration.strongarm.inc
+ * mariecurie_global_configuration.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function marie_curie_global_configuration_strongarm() {
+function mariecurie_global_configuration_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

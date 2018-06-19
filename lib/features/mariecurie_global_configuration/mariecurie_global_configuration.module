@@ -4,4 +4,4 @@
  * Code for the Marie Curie Global Configuration feature.
  */
 
-include_once 'marie_curie_global_configuration.features.inc';
+include_once 'mariecurie_global_configuration.features.inc';
