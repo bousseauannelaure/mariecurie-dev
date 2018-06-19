@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * marie_curie_webinar.features.field_base.inc
+ * mariecurie_webinar.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function marie_curie_webinar_field_default_field_bases() {
+function mariecurie_webinar_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_msc_date'.

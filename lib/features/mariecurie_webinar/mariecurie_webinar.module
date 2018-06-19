@@ -4,4 +4,4 @@
  * Code for the Marie Curie Webinar feature.
  */
 
-include_once 'marie_curie_webinar.features.inc';
+include_once 'mariecurie_webinar.features.inc';
