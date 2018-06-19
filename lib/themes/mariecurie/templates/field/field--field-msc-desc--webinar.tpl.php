@@ -51,8 +51,6 @@
  * @ingroup themeable
  */
 ?>
-<!--
-
 <?php foreach ($items as $delta => $item): ?>
     <span class="article-title ecl-u-pt-l"><?php print 'WEBINAR OVERVIEW';?></span>
     <?php print render($item); ?>

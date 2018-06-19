@@ -3,6 +3,7 @@ core = 7.x
 package = Marie Curie Features
 version = 7.x-1.0
 dependencies[] = ctools
+dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = file_entity
 dependencies[] = mariecurie_page
