@@ -93,7 +93,7 @@ function mariecurie_module_preprocess(&$variables) {
       $suffix = '__' . $variables['field_msc_look_and_feel_modules'][0]['value'];
     }
     elseif (!empty($variables['field_msc_look_and_feel_slides'])) {
-      $suffix = '__msc_slider_component__' . $variables['field_msc_look_and_feel_slides'][0]['value'];
+      $suffix = '__msc_slide_component__' . $variables['field_msc_look_and_feel_slides'][0]['value'];
     }
 
     if (!empty($suffix)) {
