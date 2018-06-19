@@ -10,9 +10,9 @@
 function mariecurie_webinar_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-webinar-field_msc_date'.
-  $field_instances['node-webinar-field_msc_date'] = array(
-    'bundle' => 'webinar',
+  // Exported field_instance: 'node-msc_webinar-field_msc_date'.
+  $field_instances['node-msc_webinar-field_msc_date'] = array(
+    'bundle' => 'msc_webinar',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -80,9 +80,9 @@ function mariecurie_webinar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-webinar-field_msc_desc'.
-  $field_instances['node-webinar-field_msc_desc'] = array(
-    'bundle' => 'webinar',
+  // Exported field_instance: 'node-msc_webinar-field_msc_desc'.
+  $field_instances['node-msc_webinar-field_msc_desc'] = array(
+    'bundle' => 'msc_webinar',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -156,9 +156,9 @@ function mariecurie_webinar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-webinar-field_msc_section_ref'.
-  $field_instances['node-webinar-field_msc_section_ref'] = array(
-    'bundle' => 'webinar',
+  // Exported field_instance: 'node-msc_webinar-field_msc_section_ref'.
+  $field_instances['node-msc_webinar-field_msc_section_ref'] = array(
+    'bundle' => 'msc_webinar',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -200,9 +200,9 @@ function mariecurie_webinar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-webinar-field_msc_speakers'.
-  $field_instances['node-webinar-field_msc_speakers'] = array(
-    'bundle' => 'webinar',
+  // Exported field_instance: 'node-msc_webinar-field_msc_speakers'.
+  $field_instances['node-msc_webinar-field_msc_speakers'] = array(
+    'bundle' => 'msc_webinar',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -281,9 +281,9 @@ function mariecurie_webinar_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-webinar-field_msc_video'.
-  $field_instances['node-webinar-field_msc_video'] = array(
-    'bundle' => 'webinar',
+  // Exported field_instance: 'node-msc_webinar-field_msc_video'.
+  $field_instances['node-msc_webinar-field_msc_video'] = array(
+    'bundle' => 'msc_webinar',
     'deleted' => 0,
     'description' => '',
     'display' => array(

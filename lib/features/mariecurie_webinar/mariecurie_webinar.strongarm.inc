@@ -13,77 +13,77 @@ function mariecurie_webinar_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_webinar';
+  $strongarm->name = 'comment_anonymous_msc_webinar';
   $strongarm->value = '0';
-  $export['comment_anonymous_webinar'] = $strongarm;
+  $export['comment_anonymous_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_webinar';
+  $strongarm->name = 'comment_default_mode_msc_webinar';
   $strongarm->value = 1;
-  $export['comment_default_mode_webinar'] = $strongarm;
+  $export['comment_default_mode_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_webinar';
+  $strongarm->name = 'comment_default_per_page_msc_webinar';
   $strongarm->value = '50';
-  $export['comment_default_per_page_webinar'] = $strongarm;
+  $export['comment_default_per_page_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_webinar';
+  $strongarm->name = 'comment_form_location_msc_webinar';
   $strongarm->value = 1;
-  $export['comment_form_location_webinar'] = $strongarm;
+  $export['comment_form_location_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_webinar';
+  $strongarm->name = 'comment_preview_msc_webinar';
   $strongarm->value = '1';
-  $export['comment_preview_webinar'] = $strongarm;
+  $export['comment_preview_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_webinar';
+  $strongarm->name = 'comment_subject_field_msc_webinar';
   $strongarm->value = 1;
-  $export['comment_subject_field_webinar'] = $strongarm;
+  $export['comment_subject_field_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_webinar';
+  $strongarm->name = 'comment_msc_webinar';
   $strongarm->value = '1';
-  $export['comment_webinar'] = $strongarm;
+  $export['comment_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_webinar';
+  $strongarm->name = 'diff_enable_revisions_page_node_msc_webinar';
   $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_webinar'] = $strongarm;
+  $export['diff_enable_revisions_page_node_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_webinar';
+  $strongarm->name = 'diff_show_preview_changes_node_msc_webinar';
   $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_webinar'] = $strongarm;
+  $export['diff_show_preview_changes_node_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_webinar';
+  $strongarm->name = 'diff_view_mode_preview_node_msc_webinar';
   $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_webinar'] = $strongarm;
+  $export['diff_view_mode_preview_node_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__webinar';
+  $strongarm->name = 'field_bundle_settings_node__msc_webinar';
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
@@ -125,60 +125,60 @@ function mariecurie_webinar_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__webinar'] = $strongarm;
+  $export['field_bundle_settings_node__msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_webinar';
+  $strongarm->name = 'language_content_type_msc_webinar';
   $strongarm->value = '0';
-  $export['language_content_type_webinar'] = $strongarm;
+  $export['language_content_type_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_webinar';
+  $strongarm->name = 'menu_options_msc_webinar';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_webinar'] = $strongarm;
+  $export['menu_options_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_webinar';
+  $strongarm->name = 'menu_parent_msc_webinar';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_webinar'] = $strongarm;
+  $export['menu_parent_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_webinar';
+  $strongarm->name = 'node_options_msc_webinar';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_webinar'] = $strongarm;
+  $export['node_options_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_webinar';
+  $strongarm->name = 'node_preview_msc_webinar';
   $strongarm->value = '1';
-  $export['node_preview_webinar'] = $strongarm;
+  $export['node_preview_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_webinar';
+  $strongarm->name = 'node_submitted_msc_webinar';
   $strongarm->value = 0;
-  $export['node_submitted_webinar'] = $strongarm;
+  $export['node_submitted_msc_webinar'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_webinar_pattern';
+  $strongarm->name = 'pathauto_node_msc_webinar_pattern';
   $strongarm->value = '';
-  $export['pathauto_node_webinar_pattern'] = $strongarm;
+  $export['pathauto_node_msc_webinar_pattern'] = $strongarm;
 
   return $export;
 }

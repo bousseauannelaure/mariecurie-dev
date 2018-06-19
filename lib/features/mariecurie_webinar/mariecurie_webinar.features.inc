@@ -18,7 +18,7 @@ function mariecurie_webinar_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function mariecurie_webinar_node_info() {
   $items = array(
-    'webinar' => array(
+    'msc_webinar' => array(
       'name' => t('Marie Curie Webinar'),
       'base' => 'node_content',
       'description' => t('Marie Curie Webinar element'),
