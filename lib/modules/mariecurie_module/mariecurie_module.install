@@ -13,5 +13,5 @@ function mariecurie_module_install() {
   variable_set('theme_default','mariecurie');
   module_enable(['nexteuropa_ecl_migrate']);
   _nexteuropa_ecl_migrate_blocks();
-  module_enable(['marie_curie_global_configuration']);
+  module_enable(['mariecurie_global_configuration']);
 }

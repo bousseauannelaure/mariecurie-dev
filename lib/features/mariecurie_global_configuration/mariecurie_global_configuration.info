@@ -22,4 +22,5 @@ features[menu_custom][] = menu-left-footer-menu
 features[menu_custom][] = menu-middle-footer-menu
 features[menu_custom][] = menu-right-footer-menu
 features[variable][] = admin_theme
+features[views_view][] = related
 project path = ../lib/features
