@@ -45,9 +45,9 @@ function mariecurie_page_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'paragraphs_item|speakers_component|default';
+  $ds_layout->id = 'paragraphs_item|msc_speaker_component|default';
   $ds_layout->entity_type = 'paragraphs_item';
-  $ds_layout->bundle = 'speakers_component';
+  $ds_layout->bundle = 'msc_speaker_component';
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col_fluid';
   $ds_layout->settings = array(
@@ -77,13 +77,13 @@ function mariecurie_page_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['paragraphs_item|speakers_component|default'] = $ds_layout;
+  $export['paragraphs_item|msc_speaker_component|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'paragraphs_item|video_component|msc_full_width';
+  $ds_layout->id = 'paragraphs_item|msc_welcome_component|msc_full_width';
   $ds_layout->entity_type = 'paragraphs_item';
-  $ds_layout->bundle = 'video_component';
+  $ds_layout->bundle = 'msc_welcome_component';
   $ds_layout->view_mode = 'msc_full_width';
   $ds_layout->layout = 'ds_2col_stacked_fluid';
   $ds_layout->settings = array(
@@ -117,7 +117,7 @@ function mariecurie_page_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['paragraphs_item|video_component|msc_full_width'] = $ds_layout;
+  $export['paragraphs_item|msc_welcome_component|msc_full_width'] = $ds_layout;
 
   return $export;
 }

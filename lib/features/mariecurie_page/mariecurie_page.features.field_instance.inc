@@ -46,34 +46,34 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_commu_container_component' => 'msc_commu_container_component',
-        'msc_communities_component' => -1,
+        'msc_communities_container_component' => 'msc_communities_container_component',
+        'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_form_component' => 'msc_form_component',
-        'msc_list_component' => 'msc_list_component',
+        'msc_list_elements_component' => 'msc_list_elements_component',
         'msc_module_component' => -1,
-        'msc_module_container_component' => 'msc_module_container_component',
-        'msc_numbers_component' => -1,
+        'msc_modules_container_component' => 'msc_modules_container_component',
+        'msc_number_component' => -1,
         'msc_numbers_container_component' => 'msc_numbers_container_component',
         'msc_slider_component' => -1,
-        'speakers_component' => -1,
-        'video_component' => 'video_component',
+        'msc_speaker_component' => -1,
+        'msc_welcome_component' => 'msc_welcome_component',
       ),
       'bundle_weights' => array(
-        'msc_commu_container_component' => -17,
-        'msc_communities_component' => -21,
+        'msc_communities_container_component' => -17,
+        'msc_community_component' => -21,
         'msc_container_component' => -20,
-        'msc_container_slider_component' => -16,
+        'msc_slider_container_component' => -16,
         'msc_form_component' => -12,
-        'msc_list_component' => 19,
+        'msc_list_elements_component' => 19,
         'msc_module_component' => -19,
-        'msc_module_container_component' => -15,
-        'msc_numbers_component' => -18,
+        'msc_modules_container_component' => -15,
+        'msc_number_component' => -18,
         'msc_numbers_container_component' => -14,
         'msc_slider_component' => -22,
-        'speakers_component' => 12,
-        'video_component' => -13,
+        'msc_speaker_component' => 12,
+        'msc_welcome_component' => -13,
       ),
       'default_edit_mode' => 'closed',
       'entity_translation_sync' => FALSE,
@@ -175,32 +175,32 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => -1,
+        'msc_communities_container_component' => -1,
+        'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_form_component' => -1,
         'msc_module_component' => -1,
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => -1,
+        'msc_modules_container_component' => -1,
+        'msc_number_component' => -1,
         'msc_numbers_container_component' => -1,
         'msc_slider_component' => 'msc_slider_component',
-        'speakers_component' => -1,
-        'video_component' => -1,
+        'msc_speaker_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_commu_container_component' => 3,
-        'msc_communities_component' => 2,
+        'msc_communities_container_component' => 3,
+        'msc_community_component' => 2,
         'msc_container_component' => 4,
-        'msc_container_slider_component' => 5,
+        'msc_slider_container_component' => 5,
         'msc_form_component' => 6,
         'msc_module_component' => 7,
-        'msc_module_container_component' => 8,
-        'msc_numbers_component' => 9,
+        'msc_modules_container_component' => 8,
+        'msc_number_component' => 9,
         'msc_numbers_container_component' => 10,
         'msc_slider_component' => 11,
-        'speakers_component' => 12,
-        'video_component' => 13,
+        'msc_speaker_component' => 12,
+        'msc_welcome_component' => 13,
       ),
       'default_edit_mode' => 'closed',
       'entity_translation_sync' => FALSE,
@@ -218,9 +218,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_commu_container_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_commu_container_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_commu_container_component',
+  // 'paragraphs_item-msc_communities_container_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_communities_container_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_communities_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Optional title',
@@ -267,9 +267,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_commu_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_commu_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_commu_container_component',
+  // 'paragraphs_item-msc_communities_container_component-field_msc_look_and_feel'.
+  $field_instances['paragraphs_item-msc_communities_container_component-field_msc_look_and_feel'] = array(
+    'bundle' => 'msc_communities_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -306,9 +306,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_commu_container_component-field_msc_multiple_component'.
-  $field_instances['paragraphs_item-msc_commu_container_component-field_msc_multiple_component'] = array(
-    'bundle' => 'msc_commu_container_component',
+  // 'paragraphs_item-msc_communities_container_component-field_msc_multiple_component'.
+  $field_instances['paragraphs_item-msc_communities_container_component-field_msc_multiple_component'] = array(
+    'bundle' => 'msc_communities_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -345,28 +345,28 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => 'msc_communities_component',
+        'msc_communities_container_component' => -1,
+        'msc_community_component' => 'msc_community_component',
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_module_component' => -1,
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => -1,
+        'msc_modules_container_component' => -1,
+        'msc_number_component' => -1,
         'msc_numbers_container_component' => -1,
         'msc_slider_component' => -1,
-        'video_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_commu_container_component' => 2,
-        'msc_communities_component' => 10,
+        'msc_communities_container_component' => 2,
+        'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_container_slider_component' => 15,
+        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
-        'msc_module_container_component' => 17,
-        'msc_numbers_component' => 8,
+        'msc_modules_container_component' => 17,
+        'msc_number_component' => 8,
         'msc_numbers_container_component' => 19,
         'msc_slider_component' => 3,
-        'video_component' => 4,
+        'msc_welcome_component' => 4,
       ),
       'default_edit_mode' => 'open',
       'entity_translation_sync' => FALSE,
@@ -384,9 +384,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_commu_container_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_commu_container_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_commu_container_component',
+  // 'paragraphs_item-msc_communities_container_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_communities_container_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_communities_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -433,9 +433,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_communities_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_communities_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_communities_component',
+  // 'paragraphs_item-msc_community_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_community_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_community_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -482,9 +482,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_communities_component-field_msc_link_to_module'.
-  $field_instances['paragraphs_item-msc_communities_component-field_msc_link_to_module'] = array(
-    'bundle' => 'msc_communities_component',
+  // 'paragraphs_item-msc_community_component-field_msc_link_to_module'.
+  $field_instances['paragraphs_item-msc_community_component-field_msc_link_to_module'] = array(
+    'bundle' => 'msc_community_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -553,9 +553,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_communities_component-field_msc_picture'.
-  $field_instances['paragraphs_item-msc_communities_component-field_msc_picture'] = array(
-    'bundle' => 'msc_communities_component',
+  // 'paragraphs_item-msc_community_component-field_msc_picture'.
+  $field_instances['paragraphs_item-msc_community_component-field_msc_picture'] = array(
+    'bundle' => 'msc_community_component',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -632,9 +632,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_communities_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_communities_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_communities_component',
+  // 'paragraphs_item-msc_community_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_community_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_community_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -814,20 +814,20 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_communities_component' => 'msc_communities_component',
+        'msc_community_component' => 'msc_community_component',
         'msc_container_component' => -1,
         'msc_module_component' => 'msc_module_component',
-        'msc_numbers_component' => 'msc_numbers_component',
+        'msc_number_component' => 'msc_number_component',
         'msc_slider_component' => 'msc_slider_component',
-        'video_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_communities_component' => 10,
+        'msc_community_component' => 10,
         'msc_container_component' => 2,
         'msc_module_component' => 7,
-        'msc_numbers_component' => 8,
+        'msc_number_component' => 8,
         'msc_slider_component' => 3,
-        'video_component' => 4,
+        'msc_welcome_component' => 4,
       ),
       'default_edit_mode' => 'open',
       'entity_translation_sync' => FALSE,
@@ -894,9 +894,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_container_slider_component',
+  // 'paragraphs_item-msc_slider_container_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_slider_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Optional title',
@@ -943,9 +943,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_multiple_component'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_multiple_component'] = array(
-    'bundle' => 'msc_container_slider_component',
+  // 'paragraphs_item-msc_slider_container_component-field_msc_multiple_component'.
+  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_multiple_component'] = array(
+    'bundle' => 'msc_slider_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -982,22 +982,22 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_communities_component' => -1,
+        'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_module_component' => -1,
-        'msc_numbers_component' => -1,
+        'msc_number_component' => -1,
         'msc_slider_component' => 'msc_slider_component',
-        'video_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_communities_component' => 10,
+        'msc_community_component' => 10,
         'msc_container_component' => 13,
-        'msc_container_slider_component' => 2,
+        'msc_slider_container_component' => 2,
         'msc_module_component' => 7,
-        'msc_numbers_component' => 8,
+        'msc_number_component' => 8,
         'msc_slider_component' => 3,
-        'video_component' => 4,
+        'msc_welcome_component' => 4,
       ),
       'default_edit_mode' => 'open',
       'entity_translation_sync' => FALSE,
@@ -1015,9 +1015,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_container_slider_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_container_slider_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_container_slider_component',
+  // 'paragraphs_item-msc_slider_container_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_slider_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1124,9 +1124,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_list_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_list_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_list_component',
+  // 'paragraphs_item-msc_list_elements_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_list_elements_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_list_elements_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1192,9 +1192,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_list_component-field_msc_list_reference'.
-  $field_instances['paragraphs_item-msc_list_component-field_msc_list_reference'] = array(
-    'bundle' => 'msc_list_component',
+  // 'paragraphs_item-msc_list_elements_component-field_msc_list_reference'.
+  $field_instances['paragraphs_item-msc_list_elements_component-field_msc_list_reference'] = array(
+    'bundle' => 'msc_list_elements_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1273,9 +1273,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_list_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_list_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_list_component',
+  // 'paragraphs_item-msc_list_elements_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_list_elements_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_list_elements_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1747,9 +1747,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_module_container_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_module_container_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_module_container_component',
+  // 'paragraphs_item-msc_modules_container_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_modules_container_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_modules_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Optional title',
@@ -1796,9 +1796,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_module_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_module_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_module_container_component',
+  // 'paragraphs_item-msc_modules_container_component-field_msc_look_and_feel'.
+  $field_instances['paragraphs_item-msc_modules_container_component-field_msc_look_and_feel'] = array(
+    'bundle' => 'msc_modules_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1841,9 +1841,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_module_container_component-field_msc_multiple_component'.
-  $field_instances['paragraphs_item-msc_module_container_component-field_msc_multiple_component'] = array(
-    'bundle' => 'msc_module_container_component',
+  // 'paragraphs_item-msc_modules_container_component-field_msc_multiple_component'.
+  $field_instances['paragraphs_item-msc_modules_container_component-field_msc_multiple_component'] = array(
+    'bundle' => 'msc_modules_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1880,28 +1880,28 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => -1,
+        'msc_communities_container_component' => -1,
+        'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_module_component' => 'msc_module_component',
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => -1,
+        'msc_modules_container_component' => -1,
+        'msc_number_component' => -1,
         'msc_numbers_container_component' => -1,
         'msc_slider_component' => -1,
-        'video_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_commu_container_component' => 13,
-        'msc_communities_component' => 10,
+        'msc_communities_container_component' => 13,
+        'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_container_slider_component' => 15,
+        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
-        'msc_module_container_component' => 2,
-        'msc_numbers_component' => 8,
+        'msc_modules_container_component' => 2,
+        'msc_number_component' => 8,
         'msc_numbers_container_component' => 19,
         'msc_slider_component' => 3,
-        'video_component' => 4,
+        'msc_welcome_component' => 4,
       ),
       'default_edit_mode' => 'open',
       'entity_translation_sync' => FALSE,
@@ -1919,9 +1919,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_module_container_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_module_container_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_module_container_component',
+  // 'paragraphs_item-msc_modules_container_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_modules_container_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_modules_container_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1968,9 +1968,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_numbers_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_numbers_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_numbers_component',
+  // 'paragraphs_item-msc_number_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_number_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_number_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Number\'s title',
@@ -2017,9 +2017,9 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_numbers_component-field_msc_phrase_text'.
-  $field_instances['paragraphs_item-msc_numbers_component-field_msc_phrase_text'] = array(
-    'bundle' => 'msc_numbers_component',
+  // 'paragraphs_item-msc_number_component-field_msc_phrase_text'.
+  $field_instances['paragraphs_item-msc_number_component-field_msc_phrase_text'] = array(
+    'bundle' => 'msc_number_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Numbers displaying',
@@ -2193,28 +2193,28 @@ function mariecurie_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'button',
       'allowed_bundles' => array(
-        'msc_commu_container_component' => -1,
-        'msc_communities_component' => -1,
+        'msc_communities_container_component' => -1,
+        'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_container_slider_component' => -1,
+        'msc_slider_container_component' => -1,
         'msc_module_component' => -1,
-        'msc_module_container_component' => -1,
-        'msc_numbers_component' => 'msc_numbers_component',
+        'msc_modules_container_component' => -1,
+        'msc_number_component' => 'msc_number_component',
         'msc_numbers_container_component' => -1,
         'msc_slider_component' => -1,
-        'video_component' => -1,
+        'msc_welcome_component' => -1,
       ),
       'bundle_weights' => array(
-        'msc_commu_container_component' => 13,
-        'msc_communities_component' => 10,
+        'msc_communities_container_component' => 13,
+        'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_container_slider_component' => 15,
+        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
-        'msc_module_container_component' => 17,
-        'msc_numbers_component' => 8,
+        'msc_modules_container_component' => 17,
+        'msc_number_component' => 8,
         'msc_numbers_container_component' => 2,
         'msc_slider_component' => 3,
-        'video_component' => 4,
+        'msc_welcome_component' => 4,
       ),
       'default_edit_mode' => 'open',
       'entity_translation_sync' => FALSE,
@@ -2888,9 +2888,9 @@ Go',
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-speakers_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-speakers_component-field_msc_component_title'] = array(
-    'bundle' => 'speakers_component',
+  // 'paragraphs_item-msc_speaker_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_speaker_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_speaker_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -2937,9 +2937,9 @@ Go',
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-speakers_component-field_msc_picture'.
-  $field_instances['paragraphs_item-speakers_component-field_msc_picture'] = array(
-    'bundle' => 'speakers_component',
+  // 'paragraphs_item-msc_speaker_component-field_msc_picture'.
+  $field_instances['paragraphs_item-msc_speaker_component-field_msc_picture'] = array(
+    'bundle' => 'msc_speaker_component',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -3015,9 +3015,9 @@ Go',
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-speakers_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-speakers_component-field_msc_short_text'] = array(
-    'bundle' => 'speakers_component',
+  // 'paragraphs_item-msc_speaker_component-field_msc_short_text'.
+  $field_instances['paragraphs_item-msc_speaker_component-field_msc_short_text'] = array(
+    'bundle' => 'msc_speaker_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -3064,9 +3064,9 @@ Go',
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-video_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-video_component-field_msc_component_title'] = array(
-    'bundle' => 'video_component',
+  // 'paragraphs_item-msc_welcome_component-field_msc_component_title'.
+  $field_instances['paragraphs_item-msc_welcome_component-field_msc_component_title'] = array(
+    'bundle' => 'msc_welcome_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -3145,9 +3145,9 @@ Go',
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-video_component-field_msc_desc'.
-  $field_instances['paragraphs_item-video_component-field_msc_desc'] = array(
-    'bundle' => 'video_component',
+  // Exported field_instance: 'paragraphs_item-msc_welcome_component-field_msc_desc'.
+  $field_instances['paragraphs_item-msc_welcome_component-field_msc_desc'] = array(
+    'bundle' => 'msc_welcome_component',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -3202,9 +3202,9 @@ Go',
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-video_component-field_msc_video'.
-  $field_instances['paragraphs_item-video_component-field_msc_video'] = array(
-    'bundle' => 'video_component',
+  // Exported field_instance: 'paragraphs_item-msc_welcome_component-field_msc_video'.
+  $field_instances['paragraphs_item-msc_welcome_component-field_msc_video'] = array(
+    'bundle' => 'msc_welcome_component',
     'deleted' => 0,
     'description' => '',
     'display' => array(

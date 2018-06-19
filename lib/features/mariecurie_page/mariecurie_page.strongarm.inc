@@ -143,7 +143,7 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_communities_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_community_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -176,12 +176,12 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_communities_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_community_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_commu_container_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_communities_container_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -211,7 +211,7 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_commu_container_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_communities_container_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -292,7 +292,7 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_module_container_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_modules_container_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -322,12 +322,12 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_module_container_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_modules_container_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_numbers_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_number_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -357,7 +357,7 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_numbers_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_number_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -432,7 +432,7 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__video_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_welcome_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -465,7 +465,7 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__video_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_welcome_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

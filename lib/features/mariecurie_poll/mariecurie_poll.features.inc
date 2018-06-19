@@ -26,7 +26,7 @@ function mariecurie_poll_views_api($module = NULL, $api = NULL) {
 function mariecurie_poll_node_info() {
   $items = array(
     'advpoll' => array(
-      'name' => t('Marie Curie Advanced poll'),
+      'name' => t('Marie Curie Poll'),
       'base' => 'node_content',
       'description' => t('Advanced poll adds additional poll functionality, cookie voting, write-ins and voting modes.'),
       'has_title' => '1',
