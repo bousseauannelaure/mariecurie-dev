@@ -60,7 +60,7 @@
     <?php foreach ($items as $delta => $item): ?>
       <div class="field-item ecl-row ecl-u-pv-m <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
           <div class="ecl-col">
-              <?php print render($item); ?><
+              <?php print render($item); ?>
           </div>
       </div>
     <?php endforeach; ?>
