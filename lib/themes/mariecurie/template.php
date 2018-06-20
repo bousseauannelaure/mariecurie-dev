@@ -67,6 +67,8 @@ function mariecurie_preprocess_field(&$variables) {
   if (
     !empty($variables['element']['#field_name']) &&
     $variables['element']['#field_name'] === 'field_msc_date' &&
+    !empty($variables['element']['#bundle']) &&
+    $variables['element']['#bundle'] === 'msc_webinar' &&
     !empty($variables['element']['#view_mode']) &&
     $variables['element']['#view_mode'] === 'teaser'
   ) {
