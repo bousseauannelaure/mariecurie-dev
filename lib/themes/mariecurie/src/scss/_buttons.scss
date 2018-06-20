@@ -1,5 +1,7 @@
-.ecl-button {
-    @extend %shadow;
+.page-content {
+    .ecl-button {
+        @extend %shadow;
+    }
 }
 
 .ecl-button--white {
