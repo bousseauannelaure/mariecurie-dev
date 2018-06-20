@@ -87,6 +87,8 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      border: 1px solid $color-border;
+      border-left: none;
     }
 
     .card-header {
@@ -115,6 +117,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-top: 1px solid $color-border;
+        border-right: 1px solid $color-border;
 
         header {
           font-size: 25px;
@@ -128,7 +132,7 @@
       .card-body {
         display: block;
         border: 1px solid $color-border;
-        border-left: none;
+        border-top: none;
       }
     }
   }
