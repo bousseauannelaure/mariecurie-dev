@@ -5,11 +5,28 @@
  * Theme functions.
  */
 
-/**
- * Implements hook_preprocess_HOOK().
- */
-function mariecurie_preprocess_region(&$variables) {
 
+
+/**
+ * Implements hook_preprocess().
+ */
+function mariecurie_preprocess(&$variables) {
+  if (!empty($variables['paragraphs_item'])) {
+    $suffix = '';
+    if (!empty($variables['field_msc_look_and_feel'])) {
+      $suffix = '__' . $variables['field_msc_look_and_feel'][0]['value'];
+    }
+    elseif (!empty($variables['field_msc_look_and_feel_modules'])) {
+      $suffix = '__' . $variables['field_msc_look_and_feel_modules'][0]['value'];
+    }
+    elseif (!empty($variables['field_msc_look_and_feel_slides'])) {
+      $suffix = '__msc_slide_component__' . $variables['field_msc_look_and_feel_slides'][0]['value'];
+    }
+
+    if (!empty($suffix)) {
+      $variables['theme_hook_suggestions'][] = $variables['theme_hook_suggestions'][0] . $suffix;
+    }
+  }
 }
 
 /**
@@ -20,13 +37,32 @@ function mariecurie_preprocess_page(&$variables) {
     $variables['msc_content_id'] = ' id="home_page"';
     $variables['hide_title'] = TRUE;
   }
-  elseif (!empty($variables['node']->type)) {
-    switch ($variables['node']->type) {
+  elseif (!empty($variables['node']) && ($current_node = $variables['node'])) {
+    switch ($current_node->type) {
+      case 'msc_page':
+        if (!empty($current_node->field_msc_slider)) {
+          $variables['slider'] = field_view_field('node', $current_node, 'field_msc_slider', 'render_programmatically');
+        }
+        break;
       case 'msc_article':
       case 'advpoll':
         $variables['hide_title'] = TRUE;
         break;
     }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function mariecurie_preprocess_field(&$variables) {
+  if (
+    !empty($variables['element']['#field_name']) &&
+    $variables['element']['#field_name'] === 'field_msc_video' &&
+    !empty($variables['items'][0]) &&
+    array_key_exists('#image_style', $variables['items'][0]['file'])
+  ) {
+    $variables['items'][0]['file']['#image_style'] = '552x335';
   }
 }
 

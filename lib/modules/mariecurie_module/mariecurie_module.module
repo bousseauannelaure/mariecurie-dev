@@ -32,10 +32,6 @@ for assigning a block to a region, and for controlling the order of blocks withi
  * Implements hook_list_option_info().
  */
 function mariecurie_module_list_option_info() {
-  $info['look_and_feel'] = [
-    'label' => t('Default Look and Feel'),
-    'callback' => 'mariecurie_module_look_and_feel_options',
-  ];
   $info['look_and_feel_module'] = [
     'label' => t('Look and Feel for Modules'),
     'callback' => 'mariecurie_module_look_and_feel_module_options',
@@ -46,16 +42,6 @@ function mariecurie_module_list_option_info() {
   ];
 
   return $info;
-}
-
-/**
- * Implements _look_and_feel_options().
- */
-function mariecurie_module_look_and_feel_options() {
-  $options['bg_grey'] = t('Background Grey');
-  $options['bg_white'] = t('Background White');
-
-  return $options;
 }
 
 /**
@@ -78,52 +64,6 @@ function mariecurie_module_look_and_feel_slides_options() {
   $options['s_box_title'] = t('Box with title');
 
   return $options;
-}
-
-/**
- * Implements hook_preprocess().
- */
-function mariecurie_module_preprocess(&$variables) {
-  if (!empty($variables['paragraphs_item'])) {
-    $suffix = '';
-    if (!empty($variables['field_msc_look_and_feel'])) {
-      $suffix = '__' . $variables['field_msc_look_and_feel'][0]['value'];
-    }
-    elseif (!empty($variables['field_msc_look_and_feel_modules'])) {
-      $suffix = '__' . $variables['field_msc_look_and_feel_modules'][0]['value'];
-    }
-    elseif (!empty($variables['field_msc_look_and_feel_slides'])) {
-      $suffix = '__msc_slide_component__' . $variables['field_msc_look_and_feel_slides'][0]['value'];
-    }
-
-    if (!empty($suffix)) {
-      $variables['theme_hook_suggestions'][] = $variables['theme_hook_suggestions'][0] . $suffix;
-    }
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK().
- */
-function mariecurie_module_preprocess_page(&$variables) {
-  if (!empty($variables['node']) && ($current_node = $variables['node']) && $current_node->type === 'msc_page'
-    && $current_node->field_msc_slider) {
-    $variables['slider'] = field_view_field('node', $current_node, 'field_msc_slider', 'render_programmatically');
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK().
- */
-function mariecurie_module_preprocess_field(&$variables) {
-  if (
-    !empty($variables['element']['#field_name']) &&
-    $variables['element']['#field_name'] === 'field_msc_video' &&
-    !empty($variables['items'][0]) &&
-    array_key_exists('#image_style', $variables['items'][0]['file'])
-  ) {
-    $variables['items'][0]['file']['#image_style'] = '552x335';
-  }
 }
 
 /**
@@ -234,28 +174,28 @@ function mariecurie_module_block_configure($delta = '') {
       '#title' => t('Number of recent content items to display'),
       '#default_value' => variable_get('mariecurie_module_', 10),
       '#options' => drupal_map_assoc([
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        25,
-        30,
-      ]
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          25,
+          30,
+        ]
       ),
     ];
   }
