@@ -24,5 +24,7 @@ features[features_api][] = api:2
 features[menu_custom][] = menu-left-footer-menu
 features[menu_custom][] = menu-middle-footer-menu
 features[menu_custom][] = menu-right-footer-menu
+features[variable][] = default_ds_field_settings
+features[variable][] = default_ds_layout_settings
 features[views_view][] = related
 project path = ../lib/features

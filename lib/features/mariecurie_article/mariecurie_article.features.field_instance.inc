@@ -41,8 +41,10 @@ function mariecurie_article_field_default_field_instances() {
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'settings' => array(
+          'trim_length' => 300,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 3,
       ),
     ),
@@ -180,7 +182,7 @@ function mariecurie_article_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image_url_formatter',
         'settings' => array(
           'image_link' => '',
