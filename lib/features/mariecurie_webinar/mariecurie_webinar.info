@@ -32,6 +32,7 @@ features[variable][] = comment_form_location_msc_webinar
 features[variable][] = comment_msc_webinar
 features[variable][] = comment_preview_msc_webinar
 features[variable][] = comment_subject_field_msc_webinar
+features[variable][] = date_format_timestamp
 features[variable][] = diff_enable_revisions_page_node_msc_webinar
 features[variable][] = diff_show_preview_changes_node_msc_webinar
 features[variable][] = diff_view_mode_preview_node_msc_webinar

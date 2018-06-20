@@ -47,8 +47,15 @@ function mariecurie_webinar_field_default_field_instances() {
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'date',
-        'settings' => array(),
-        'type' => 'date_plain',
+        'settings' => array(
+          'format_type' => 'timestamp',
+          'fromto' => 'value',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+        ),
+        'type' => 'date_default',
         'weight' => 0,
       ),
     ),
