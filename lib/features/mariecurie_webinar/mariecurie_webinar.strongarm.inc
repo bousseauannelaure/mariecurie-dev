@@ -62,13 +62,6 @@ function mariecurie_webinar_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_format_timestamp';
-  $strongarm->value = 'U';
-  $export['date_format_timestamp'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'diff_enable_revisions_page_node_msc_webinar';
   $strongarm->value = 1;
   $export['diff_enable_revisions_page_node_msc_webinar'] = $strongarm;

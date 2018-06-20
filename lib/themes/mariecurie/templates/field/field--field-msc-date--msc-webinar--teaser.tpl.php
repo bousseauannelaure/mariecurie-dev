@@ -50,21 +50,10 @@
  *
  * @ingroup themeable
  */
-//echo "<pre>";
-//var_dump(get_defined_vars());
-//die;
 ?>
-
-<?php if (!$label_hidden): ?>
-  <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
-<?php endif; ?>
-<?php foreach ($items as $delta => $item): ?>
-  <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-    <?php $date = render($item); ?>
-    <?php $date = strip_tags($date); ?>
-    <?php $date = date_create($date); ?>
-    <strong><?php print (date_format($date, 'd')); ?></strong>
-    <span><?php print (date_format($date, 'M Y')); ?></span>
-    <span><?php print (date_format($date, 'h:i A')); ?></span>
-  </div>
-<?php endforeach; ?>
+<div class="list-item--date field-item odd"<?php print $item_attributes[$delta]; ?>>
+  <?php $date = strtotime($element['#items'][0]['value']); ?>
+  <strong><?php print date('d', $date); ?></strong>
+  <span><?php print date('M Y', $date); ?></span>
+  <span><?php print date('h:i A', $date); ?></span>
+</div>
