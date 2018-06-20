@@ -5,7 +5,7 @@
  * Contains template file.
  */
 ?>
-<a href="#listing-date-two-1" class="ecl-link ecl-list-item__link">
+<a href="<?php print $node_url; ?>" class="ecl-link ecl-list-item__link">
     <div class="ecl-list-item__primary">
         <?php print render($content['field_msc_publishing_date']); ?>
     </div>
