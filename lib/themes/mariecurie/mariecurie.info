@@ -23,6 +23,7 @@ regions[footer_middle] = Footer middle
 regions[footer_right] = Footer right
 
 
+scripts[] = assets/scripts/init.js
 scripts[] = assets/scripts/europa.js
 scripts[] = assets/scripts/mariecurie.js
 
