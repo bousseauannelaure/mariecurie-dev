@@ -38,4 +38,5 @@ features[variable][] = node_options_msc_events
 features[variable][] = node_preview_msc_events
 features[variable][] = node_submitted_msc_events
 features[variable][] = pathauto_node_msc_events_pattern
+features[views_view][] = events
 project path = ../lib/features
