@@ -54,5 +54,6 @@ features[variable][] = node_options_advpoll
 features[variable][] = node_preview_advpoll
 features[variable][] = node_submitted_advpoll
 features[variable][] = pathauto_node_advpoll_pattern
+features[views_view][] = poll_list
 features_exclude[dependencies][ctools] = ctools
 project path = ../lib/features

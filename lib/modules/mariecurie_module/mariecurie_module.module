@@ -212,3 +212,18 @@ function mariecurie_module_block_save($delta = '', $edit = []) {
     variable_set('node_recent_block_count', $edit['node_recent_block_count']);
   }
 }
+
+/**
+ * hook_blockreference_blocks_pre_alter()
+ */
+function mariecurie_module_blockreference_blocks_pre_alter(&$blocks, $context) {
+  $available_blocks = [
+    'views:poll_list-block',
+    'views:events-block',
+  ];
+  foreach ($blocks as $id => $block) {
+    if (!in_array($id, $available_blocks)) {
+      unset($blocks[$id]);
+    }
+  }
+}
