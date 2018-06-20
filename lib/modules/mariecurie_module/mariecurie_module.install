@@ -95,7 +95,9 @@ function mariecurie_module_install() {
 
   // Attach the webform to the node.
   $node->webform = [
-    'confirmation' => '<p>You are registered to newsletter</p>',
+    'confirmation' => '<p>Thanks for signing up! An email confirming your
+ subscription has been sent to you (you might need to check your spam). We will
+ keep you up to date with upcoming polls and new content.</p>',
     'confirmation_format' => 'full_html',
     'redirect_url' => '<none>',
     'status' => '1',
