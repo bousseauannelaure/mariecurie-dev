@@ -50,6 +50,9 @@
  *
  * @ingroup themeable
  */
+//echo "<pre>";
+//var_dump(get_defined_vars());
+//die;
 ?>
 
 <?php if (!$label_hidden): ?>
@@ -57,9 +60,11 @@
 <?php endif; ?>
 <?php foreach ($items as $delta => $item): ?>
   <div class="list-item--date field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-      <?php $date = date_create(render($item)); ?>
-      <strong><?php print (date_format($date, 'd')); ?></strong>
-      <span><?php print (date_format($date, 'M Y')); ?></span>
-      <span><?php print (date_format($date, 'h:i A')); ?></span>
+    <?php $date = render($item); ?>
+    <?php $date = strip_tags($date); ?>
+    <?php $date = date_create($date); ?>
+    <strong><?php print (date_format($date, 'd')); ?></strong>
+    <span><?php print (date_format($date, 'M Y')); ?></span>
+    <span><?php print (date_format($date, 'h:i A')); ?></span>
   </div>
 <?php endforeach; ?>
