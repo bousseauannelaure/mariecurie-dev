@@ -25,7 +25,7 @@ $url = drupal_get_path_alias($alias);
                 <header class="hidden-xs"><?php print $title; ?></header>
                 <time class="hidden-xs">Published on <?php print format_date($node->created, 'custom', 'd/M/Y', 'article'); ?></time>
               <?php print render($content['field_msc_desc']); ?>
-                <a href="<?php print $url; ?>" class="cta"><strong>Read
+                <a href="/<?php print $url; ?>" class="cta"><strong>Read
                         more</strong></a>
             </div>
         </div>
