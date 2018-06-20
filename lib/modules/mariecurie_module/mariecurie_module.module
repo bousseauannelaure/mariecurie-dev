@@ -220,6 +220,7 @@ function mariecurie_module_blockreference_blocks_pre_alter(&$blocks, $context) {
   $available_blocks = [
     'views:poll_list-block',
     'views:events-block',
+    'views:blog-block',
   ];
   foreach ($blocks as $id => $block) {
     if (!in_array($id, $available_blocks)) {
