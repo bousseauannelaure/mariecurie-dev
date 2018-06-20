@@ -64,6 +64,14 @@ function mariecurie_preprocess_field(&$variables) {
   ) {
     $variables['items'][0]['file']['#image_style'] = '552x335';
   }
+  if (
+    !empty($variables['element']['#field_name']) &&
+    $variables['element']['#field_name'] === 'field_msc_date' &&
+    !empty($variables['element']['#view_mode']) &&
+    $variables['element']['#view_mode'] === 'teaser'
+  ) {
+    $variables['theme_hook_suggestions'][] = 'field__field_msc_date__msc_webinar__teaser';
+  }
 }
 
 /**
