@@ -49,7 +49,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => 'msc_commu_container_component',
         'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
         'msc_form_component' => 'msc_form_component',
         'msc_list_elements_component' => 'msc_list_elements_component',
         'msc_module_component' => -1,
@@ -64,7 +63,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => -17,
         'msc_community_component' => -21,
         'msc_container_component' => -20,
-        'msc_slider_container_component' => -16,
         'msc_form_component' => -12,
         'msc_list_elements_component' => 19,
         'msc_module_component' => -19,
@@ -178,7 +176,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => -1,
         'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
         'msc_form_component' => -1,
         'msc_module_component' => -1,
         'msc_modules_container_component' => -1,
@@ -192,7 +189,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => 3,
         'msc_community_component' => 2,
         'msc_container_component' => 4,
-        'msc_slider_container_component' => 5,
         'msc_form_component' => 6,
         'msc_module_component' => 7,
         'msc_modules_container_component' => 8,
@@ -348,7 +344,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => -1,
         'msc_community_component' => 'msc_community_component',
         'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
         'msc_module_component' => -1,
         'msc_modules_container_component' => -1,
         'msc_number_component' => -1,
@@ -360,7 +355,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => 2,
         'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
         'msc_modules_container_component' => 17,
         'msc_number_component' => 8,
@@ -861,176 +855,6 @@ function mariecurie_page_field_default_field_instances() {
       ),
       'msc_full_width' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_short_text',
-    'label' => 'Intro',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 2,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_slider_container_component-field_msc_component_title'.
-  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_component_title'] = array(
-    'bundle' => 'msc_slider_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Optional title',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_component_title',
-    'label' => 'Title',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_slider_container_component-field_msc_multiple_component'.
-  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_multiple_component'] = array(
-    'bundle' => 'msc_slider_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 2,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'msc_full_width',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 2,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_multiple_component',
-    'label' => 'Slides',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'button',
-      'allowed_bundles' => array(
-        'msc_community_component' => -1,
-        'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
-        'msc_module_component' => -1,
-        'msc_number_component' => -1,
-        'msc_slide_component' => 'msc_slide_component',
-        'msc_welcome_component' => -1,
-      ),
-      'bundle_weights' => array(
-        'msc_community_component' => 10,
-        'msc_container_component' => 13,
-        'msc_slider_container_component' => 2,
-        'msc_module_component' => 7,
-        'msc_number_component' => 8,
-        'msc_slide_component' => 3,
-        'msc_welcome_component' => 4,
-      ),
-      'default_edit_mode' => 'open',
-      'entity_translation_sync' => FALSE,
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_slider_container_component-field_msc_short_text'.
-  $field_instances['paragraphs_item-msc_slider_container_component-field_msc_short_text'] = array(
-    'bundle' => 'msc_slider_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'msc_full_width' => array(
-        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -1883,7 +1707,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => -1,
         'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
         'msc_module_component' => 'msc_module_component',
         'msc_modules_container_component' => -1,
         'msc_number_component' => -1,
@@ -1895,7 +1718,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => 13,
         'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
         'msc_modules_container_component' => 2,
         'msc_number_component' => 8,
@@ -2196,7 +2018,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => -1,
         'msc_community_component' => -1,
         'msc_container_component' => -1,
-        'msc_slider_container_component' => -1,
         'msc_module_component' => -1,
         'msc_modules_container_component' => -1,
         'msc_number_component' => 'msc_number_component',
@@ -2208,7 +2029,6 @@ function mariecurie_page_field_default_field_instances() {
         'msc_commu_container_component' => 13,
         'msc_community_component' => 10,
         'msc_container_component' => 14,
-        'msc_slider_container_component' => 15,
         'msc_module_component' => 7,
         'msc_modules_container_component' => 17,
         'msc_number_component' => 8,
@@ -3145,7 +2965,8 @@ Go',
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-msc_welcome_component-field_msc_desc'.
+  // Exported field_instance:
+  // 'paragraphs_item-msc_welcome_component-field_msc_desc'.
   $field_instances['paragraphs_item-msc_welcome_component-field_msc_desc'] = array(
     'bundle' => 'msc_welcome_component',
     'default_value' => NULL,
@@ -3202,7 +3023,8 @@ Go',
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-msc_welcome_component-field_msc_video'.
+  // Exported field_instance:
+  // 'paragraphs_item-msc_welcome_component-field_msc_video'.
   $field_instances['paragraphs_item-msc_welcome_component-field_msc_video'] = array(
     'bundle' => 'msc_welcome_component',
     'deleted' => 0,
@@ -3311,7 +3133,6 @@ Go',
   t('Select components for Marie Curie page');
   t('Short Text');
   t('Slider');
-  t('Slides');
   t('Subtitle');
   t('Title');
   t('Video/image');

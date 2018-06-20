@@ -85,11 +85,6 @@ function mariecurie_page_paragraphs_info() {
       'bundle' => 'msc_container_component',
       'locked' => '1',
     ),
-    'msc_slider_container_component' => array(
-      'name' => 'Slider Container Component',
-      'bundle' => 'msc_slider_container_component',
-      'locked' => '1',
-    ),
     'msc_form_component' => array(
       'name' => 'Form Component',
       'bundle' => 'msc_form_component',

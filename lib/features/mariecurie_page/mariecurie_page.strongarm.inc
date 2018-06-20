@@ -119,9 +119,6 @@ function mariecurie_page_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
-      'render_programmatically_' => array(
-        'custom_settings' => TRUE,
-      ),
       'render_programmatically' => array(
         'custom_settings' => TRUE,
       ),
@@ -254,6 +251,41 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_modules_container_component';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'paragraphs_editor_preview' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'full_width_1_col' => array(
+        'custom_settings' => FALSE,
+      ),
+      'full_width_2_col' => array(
+        'custom_settings' => FALSE,
+      ),
+      'msc_full_width' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_paragraphs_item__msc_modules_container_component'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_module_component';
   $strongarm->value = array(
     'view_modes' => array(
@@ -292,7 +324,7 @@ function mariecurie_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_modules_container_component';
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_numbers_container_component';
   $strongarm->value = array(
     'view_modes' => array(
       'paragraphs_editor_preview' => array(
@@ -322,7 +354,7 @@ function mariecurie_page_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_paragraphs_item__msc_modules_container_component'] = $strongarm;
+  $export['field_bundle_settings_paragraphs_item__msc_numbers_container_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -358,41 +390,6 @@ function mariecurie_page_strongarm() {
     ),
   );
   $export['field_bundle_settings_paragraphs_item__msc_number_component'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_paragraphs_item__msc_numbers_container_component';
-  $strongarm->value = array(
-    'view_modes' => array(
-      'paragraphs_editor_preview' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-      'full_width_1_col' => array(
-        'custom_settings' => FALSE,
-      ),
-      'full_width_2_col' => array(
-        'custom_settings' => FALSE,
-      ),
-      'msc_full_width' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_paragraphs_item__msc_numbers_container_component'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
