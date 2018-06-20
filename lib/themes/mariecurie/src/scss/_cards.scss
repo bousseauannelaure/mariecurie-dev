@@ -127,6 +127,8 @@
 
       .card-body {
         display: block;
+        border: 1px solid $color-border;
+        border-left: none;
       }
     }
   }

@@ -14,8 +14,8 @@ $url = drupal_get_path_alias($alias);
 
 ?>
 <div class="col-xs-12">
-    <div class="card card-news card-purple raised">
-        <div class="row">
+    <div class="card card-news card-purple">
+        <div class="row raised">
             <div class="col-xs-5 col-sm-3 card-header" <?php print $style_attr; ?>></div>
             <div class="col-xs-7 card-sm-header hidden-sm hidden-md hidden-lg hidden-xl">
                 <header class="mb-15"><?php print $title; ?></header>
