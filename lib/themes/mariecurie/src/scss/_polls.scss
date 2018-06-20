@@ -1,6 +1,8 @@
 .poll-header,
 .poll-body {
   padding: 20px;
+  border: 1px solid $color-border;
+  border-top: none;
 }
 
 .poll-header {
