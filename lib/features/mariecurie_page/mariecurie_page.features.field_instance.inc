@@ -263,45 +263,6 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_commu_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_commu_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_commu_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_key',
-        'weight' => 3,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and feel',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-msc_commu_container_component-field_msc_multiple_component'.
   $field_instances['paragraphs_item-msc_commu_container_component-field_msc_multiple_component'] = array(
     'bundle' => 'msc_commu_container_component',
@@ -720,51 +681,6 @@ function mariecurie_page_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_key',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and feel',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
     ),
   );
 
@@ -1620,51 +1536,6 @@ function mariecurie_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-msc_modules_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_modules_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_modules_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_key',
-        'weight' => 3,
-      ),
-      'msc_full_width' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and feel',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-msc_modules_container_component-field_msc_multiple_component'.
   $field_instances['paragraphs_item-msc_modules_container_component-field_msc_multiple_component'] = array(
     'bundle' => 'msc_modules_container_component',
@@ -1933,45 +1804,6 @@ function mariecurie_page_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-msc_numbers_container_component-field_msc_look_and_feel'.
-  $field_instances['paragraphs_item-msc_numbers_container_component-field_msc_look_and_feel'] = array(
-    'bundle' => 'msc_numbers_container_component',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_key',
-        'weight' => 3,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_msc_look_and_feel',
-    'label' => 'Look and feel',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
     ),
   );
 
