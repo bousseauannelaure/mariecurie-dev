@@ -44,7 +44,8 @@
   }
 
   .ecl-navigation-menu__item--active {
-      background-color: $color-blue-dark;
+    font-weight: normal;
+    background-color: $color-blue-dark;
   }
 
   .ecl-navigation-menu__group {
@@ -55,6 +56,7 @@
     background-color: transparent;
   }
 
+  .ecl-site-header,
   .ecl-navigation-menu__group {
     ul li.leaf {
       list-style: none;

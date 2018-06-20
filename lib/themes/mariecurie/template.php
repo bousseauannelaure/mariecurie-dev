@@ -35,7 +35,8 @@ function mariecurie_preprocess_page(&$variables) {
     $variables['msc_content_id'] = ' id="home_page"';
     $variables['hide_title'] = TRUE;
   }
-  elseif (!empty($variables['node']) && ($current_node = $variables['node'])) {
+
+  if (!empty($variables['node']) && ($current_node = $variables['node'])) {
     switch ($current_node->type) {
       case 'msc_page':
         if (!empty($current_node->field_msc_slider)) {
