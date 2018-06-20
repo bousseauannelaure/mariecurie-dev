@@ -5,8 +5,10 @@
  * Contains template file.
  */
 ?>
-<div class="poll-container raised">
-  <div class="poll-header">
-    <?php print $title; ?>
+<a href="<?php $node_url; ?>">
+  <div class="poll-container raised">
+    <div class="poll-header">
+      <?php print $title; ?>
+    </div>
   </div>
-</div>
+</a>
