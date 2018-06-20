@@ -1,3 +1,7 @@
+.ecl-button {
+    @extend %shadow;
+}
+
 .ecl-button--white {
     border-color: #fff;
     background-color: #fff;

@@ -44,7 +44,8 @@
   }
 
   .ecl-navigation-menu__item--active {
-      background-color: $color-blue-dark;
+    font-weight: normal;
+    background-color: $color-blue-dark;
   }
 
   .ecl-navigation-menu__group {
@@ -61,6 +62,12 @@
     }
   }
 
+}
+
+.ecl-site-header {
+  ul li.leaf {
+    list-style: none;
+  }
 }
 
 ul li.leaf {
