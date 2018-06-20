@@ -5,8 +5,6 @@
  * Theme functions.
  */
 
-
-
 /**
  * Implements hook_preprocess().
  */
@@ -44,6 +42,7 @@ function mariecurie_preprocess_page(&$variables) {
           $variables['slider'] = field_view_field('node', $current_node, 'field_msc_slider', 'render_programmatically');
         }
         break;
+
       case 'msc_article':
       case 'advpoll':
         $variables['hide_title'] = TRUE;

@@ -173,7 +173,8 @@ function mariecurie_module_block_configure($delta = '') {
       '#type' => 'select',
       '#title' => t('Number of recent content items to display'),
       '#default_value' => variable_get('mariecurie_module_', 10),
-      '#options' => drupal_map_assoc([
+      '#options' => drupal_map_assoc(
+        [
           2,
           3,
           4,
