@@ -1,14 +1,11 @@
 <?php
 /**
  * @file
- * components_content_type_controler.views_default.inc
+ * mariecurie_events.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
- */
-/**
- * Implements hook_action_info().
  */
 function mariecurie_events_views_default_views() {
   $export = array();
@@ -45,6 +42,11 @@ function mariecurie_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Date -  start date (field_msc_date) */
+  $handler->display->display_options['sorts']['field_msc_date_value']['id'] = 'field_msc_date_value';
+  $handler->display->display_options['sorts']['field_msc_date_value']['table'] = 'field_data_field_msc_date';
+  $handler->display->display_options['sorts']['field_msc_date_value']['field'] = 'field_msc_date_value';
+  $handler->display->display_options['sorts']['field_msc_date_value']['order'] = 'DESC';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -63,6 +65,7 @@ function mariecurie_events_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'msc_events' => 'msc_events',
+    'msc_webinar' => 'msc_webinar',
   );
 
   /* Display: Page */
