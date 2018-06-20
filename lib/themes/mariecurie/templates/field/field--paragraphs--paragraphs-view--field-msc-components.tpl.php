@@ -58,7 +58,11 @@
   <?php endif; ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <div class="field-item ecl-row ecl-u-pv-m <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
+      <div class="field-item ecl-row ecl-u-pv-m <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+          <div class="ecl-col">
+              <?php print render($item); ?><
+          </div>
+      </div>
     <?php endforeach; ?>
   </div>
 </div>
