@@ -2,7 +2,7 @@
 # ---------------------
 
 # The site name.
-subsite.name = Marie Curie
+subsite.name = MSCA Learning Hub
 
 # The make file containing the dependencies of the subsite.
 subsite.make = ${subsite.resources.dir}/site.make
