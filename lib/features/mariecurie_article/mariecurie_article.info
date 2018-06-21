@@ -1,4 +1,4 @@
-name = Marie Curie Article Entity
+name = Marie Curie Article
 core = 7.x
 package = Marie Curie Features
 version = 7.x-1.0
