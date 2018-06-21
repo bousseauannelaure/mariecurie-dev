@@ -60,7 +60,6 @@ features[field_instance][] = paragraphs_item-msc_container_component-field_msc_c
 features[field_instance][] = paragraphs_item-msc_container_component-field_msc_multiple_component
 features[field_instance][] = paragraphs_item-msc_container_component-field_msc_short_text
 features[field_instance][] = paragraphs_item-msc_form_component-field_msc_form_reference
-features[field_instance][] = paragraphs_item-msc_list_elements_component-field_msc_component_title
 features[field_instance][] = paragraphs_item-msc_list_elements_component-field_msc_list_reference
 features[field_instance][] = paragraphs_item-msc_list_elements_component-field_msc_short_text
 features[field_instance][] = paragraphs_item-msc_module_component-field_msc_back_img_component
