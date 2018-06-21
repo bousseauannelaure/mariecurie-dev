@@ -9,11 +9,6 @@
     <?php print render($breadcrumb); ?>
     <div class="ecl-page-header__body">
         <div class="ecl-container">
-<!--            --><?php //if (!empty($identity)): ?>
-<!--                <div class="ecl-page-header__identity">-->
-<!--                    --><?php //print render($identity); ?>
-<!--                </div>-->
-<!--            --><?php //endif; ?>
             <?php if (!empty($meta)): ?>
                 <div class="ecl-page-header__meta">
                     <?php print render($meta); ?>
