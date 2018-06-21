@@ -16,6 +16,9 @@ function mariecurie_module_install() {
   module_enable(['nexteuropa_ecl_migrate']);
   _nexteuropa_ecl_migrate_blocks();
 
+  // Enable show title in breadcrumb.
+  variable_set('easy_breadcrumb-include_title_segment', 1);
+
   // Enable custom feature.
   module_enable(['mariecurie_global_configuration']);
 
@@ -95,9 +98,9 @@ function mariecurie_module_install() {
 
   // Attach the webform to the node.
   $node->webform = [
-    'confirmation' => '<p>Thanks for signing up! An email confirming your
- subscription has been sent to you (you might need to check your spam). We will
- keep you up to date with upcoming polls and new content.</p>',
+    'confirmation' => '<p>Thanks for signing up! An email confirming your 
+     subscription has been sent to you (you might need to check your spam). We 
+     will keep you up to date with upcoming polls and new content.</p>',
     'confirmation_format' => 'full_html',
     'redirect_url' => '<none>',
     'status' => '1',
