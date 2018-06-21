@@ -43,13 +43,29 @@
             text-decoration: none;
         }
 
+        .back {
+            a {
+                display: table;
+            }
+        }
+
         .description {
+            display: table-cell;
+            vertical-align: middle;
+            height: 200px;
             padding: 10px;
             min-height: 100%;
             p {
+                margin: 0;
                 color: #fff;
                 font-size: 1em;
                 font-weight: normal;
+                &.module-sm {
+                    font-size: 0.6em;
+                }
+                &.module-md {
+                    font-size: 0.8em;
+                }
             }
         }
 
@@ -82,6 +98,7 @@
             width: 100%;
             border-top: 2px solid white;
             p {
+                margin: 0.7em 0;
                 color: #fff;
             }
         }
