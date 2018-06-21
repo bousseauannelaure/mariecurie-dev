@@ -20,6 +20,7 @@ features[field_instance][] = node-msc_module-field_msc_section_ref
 features[field_instance][] = node-msc_module-field_msc_video
 features[node][] = msc_module
 features[taxonomy][] = section
+features[user_role][] = msc_module
 features[variable][] = comment_anonymous_msc_module
 features[variable][] = comment_default_mode_msc_module
 features[variable][] = comment_default_per_page_msc_module

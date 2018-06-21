@@ -51,9 +51,9 @@
  * @ingroup themeable
  */
 ?>
-
-    <span class="article-title ecl-u-pt-l"><?php print t("About the speakers:"); ?>
-    </span>
+<span class="article-title ecl-u-pt-l"><?php print t("About the speakers:"); ?></span>
+<div class="image-list ecl-u-pt-l">
 <?php foreach ($items as $delta => $item): ?>
     <div class="ecl-row ecl-u-pb-xxl"><?php print render($item); ?></div>
 <?php endforeach; ?>
+</div>

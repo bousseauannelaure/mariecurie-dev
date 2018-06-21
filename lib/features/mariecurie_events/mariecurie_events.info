@@ -20,6 +20,7 @@ features[features_api][] = api:2
 features[field_instance][] = node-msc_events-field_msc_desc
 features[field_instance][] = node-msc_events-field_msc_publishing_date
 features[node][] = msc_events
+features[user_role][] = msc_event
 features[variable][] = comment_anonymous_msc_events
 features[variable][] = comment_default_mode_msc_events
 features[variable][] = comment_default_per_page_msc_events

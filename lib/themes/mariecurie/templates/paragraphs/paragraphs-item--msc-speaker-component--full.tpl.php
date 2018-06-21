@@ -30,6 +30,9 @@
   <?php print render($content['field_msc_picture']); ?>
 </div>
 <div class="ecl-col-7 ecl-col-md-8 ecl-col-lg-10 ecl-u-d-flex ecl-u-d-md-block ecl-u-align-items-center ecl-u-align-items-md-start">
-    <h3 class="ecl-heading text-blue-light"><?php print render($content['field_msc_component_title']); ?></h3>
-    <div class="ecl-u-d-md-block ecl-u-d-none"><?php print render($content['field_msc_short_text']); ?></div>
+  <?php print render($content['field_msc_component_title']); ?>
+  <p class="ecl-u-d-md-block ecl-u-d-none"><?php print render($content['field_msc_short_text']); ?></p>
+</div>
+<div class="ecl-col-12 ecl-u-d-md-none ecl-u-d-block ecl-u-pt-xxs">
+  <?php print render($content['field_msc_short_text']); ?>
 </div>

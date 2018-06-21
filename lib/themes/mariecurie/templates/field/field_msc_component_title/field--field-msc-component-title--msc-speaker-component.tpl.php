@@ -51,9 +51,6 @@
  * @ingroup themeable
  */
 ?>
-<div class="list-item--date field-item odd"<?php print $item_attributes[$delta]; ?>>
-  <?php $date = strtotime($element['#items'][0]['value']); ?>
-  <strong><?php print date('d', $date); ?></strong>
-  <span><?php print date('M Y', $date); ?></span>
-  <span><?php print date('h:i A', $date); ?></span>
-</div>
+<?php foreach ($items as $delta => $item): ?>
+  <h3 class="ecl-heading text-blue-light"><?php print render($item); ?></h3>
+<?php endforeach; ?>

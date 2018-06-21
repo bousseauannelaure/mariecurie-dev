@@ -53,7 +53,6 @@
 ?>
 
 <?php foreach ($items as $delta => $item) : ?>
-    <p>
-      <?php print t('Comming soon:') . render($item); ?>
-    </p>
+  <?php $date = strtotime($element['#items'][0]['value']); ?>
+    <p><?php print t('Coming soon:') . ' ' . date('M d Y', $date) . '...'; ?></p>
 <?php endforeach; ?>

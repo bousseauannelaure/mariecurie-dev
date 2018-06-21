@@ -103,6 +103,7 @@ features[paragraphs][] = msc_numbers_container_component
 features[paragraphs][] = msc_slide_component
 features[paragraphs][] = msc_speaker_component
 features[paragraphs][] = msc_welcome_component
+features[user_role][] = msc_page
 features[variable][] = comment_anonymous_msc_page
 features[variable][] = comment_default_mode_msc_page
 features[variable][] = comment_default_per_page_msc_page

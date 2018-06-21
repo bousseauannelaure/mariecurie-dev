@@ -46,6 +46,7 @@ function mariecurie_preprocess_page(&$variables) {
 
       case 'msc_article':
       case 'advpoll':
+      case 'msc_webinar':
         $variables['hide_title'] = TRUE;
         break;
     }

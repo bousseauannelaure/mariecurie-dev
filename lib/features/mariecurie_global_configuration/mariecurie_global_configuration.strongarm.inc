@@ -17,6 +17,7 @@ function mariecurie_global_configuration_strongarm() {
   $strongarm->value = array(
     'node|msc_article|teaser' => TRUE,
     'node|msc_events|teaser' => TRUE,
+    'paragraphs_item|msc_speaker_component|default' => TRUE,
   );
   $export['default_ds_field_settings'] = $strongarm;
 
@@ -27,6 +28,7 @@ function mariecurie_global_configuration_strongarm() {
   $strongarm->value = array(
     'node|msc_article|teaser' => TRUE,
     'node|msc_events|teaser' => TRUE,
+    'paragraphs_item|msc_speaker_component|default' => TRUE,
   );
   $export['default_ds_layout_settings'] = $strongarm;
 
