@@ -119,9 +119,6 @@ function mariecurie_webinar_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
-      'render_programmatically' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -158,7 +155,8 @@ function mariecurie_webinar_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_msc_webinar';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_msc_webinar'] = $strongarm;
 

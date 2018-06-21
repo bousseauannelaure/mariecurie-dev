@@ -16,9 +16,6 @@
 <div class="ecl-row">
   <div class="ecl-col">
     <div class="poll-container raised">
-      <div class="poll-header">
-        <?php print $title; ?>
-      </div>
       <div class="poll-body">
         <?php print render($content['advpoll_choice']); ?>
       </div>
