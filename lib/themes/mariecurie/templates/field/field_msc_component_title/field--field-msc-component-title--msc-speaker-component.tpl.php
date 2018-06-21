@@ -51,8 +51,6 @@
  * @ingroup themeable
  */
 ?>
-
-<?php foreach ($items as $delta => $item) : ?>
-  <?php $date = strtotime($element['#items'][0]['value']); ?>
-    <p><?php print t('Coming soon:') . ' ' . date('M d Y', $date) . '...'; ?></p>
+<?php foreach ($items as $delta => $item): ?>
+  <h3 class="ecl-heading text-blue-light"><?php print render($item); ?></h3>
 <?php endforeach; ?>

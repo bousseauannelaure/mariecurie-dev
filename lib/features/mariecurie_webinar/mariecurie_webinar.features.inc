@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function mariecurie_webinar_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -28,5 +31,19 @@ function mariecurie_webinar_node_info() {
     ),
   );
   drupal_alter('node_info', $items);
+  return $items;
+}
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function mariecurie_webinar_paragraphs_info() {
+  $items = array(
+    'msc_speaker_component' => array(
+      'name' => 'Speaker Component',
+      'bundle' => 'msc_speaker_component',
+      'locked' => '1',
+    ),
+  );
   return $items;
 }

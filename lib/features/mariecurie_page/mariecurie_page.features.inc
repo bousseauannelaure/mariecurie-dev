@@ -120,11 +120,6 @@ function mariecurie_page_paragraphs_info() {
       'bundle' => 'msc_slide_component',
       'locked' => '1',
     ),
-    'msc_speaker_component' => array(
-      'name' => 'Speaker Component',
-      'bundle' => 'msc_speaker_component',
-      'locked' => '1',
-    ),
     'msc_welcome_component' => array(
       'name' => 'Welcome Component',
       'bundle' => 'msc_welcome_component',
