@@ -60,11 +60,11 @@
                 color: #fff;
                 font-size: 1em;
                 font-weight: normal;
-                &.module-sm {
-                    font-size: 0.6em;
-                }
                 &.module-md {
                     font-size: 0.8em;
+                }
+                &.module-sm {
+                    font-size: 0.6em;
                 }
             }
         }
@@ -199,11 +199,11 @@
 
         .module-title{
             color: $color-blue-light;
-            font-size: 1.8em;
+            font-size: 1.6em;
             margin: .5em 0;
 
             @media (min-width: 480px) {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             @media (min-width: 768px) {
@@ -213,13 +213,13 @@
         }
 
         .module-description {
-            font-size: 1.4em;
+            font-size: 1.2em;
             color: $color-blue;
             margin: .5em 0;
 
 
             @media (min-width: 480px) {
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             @media (min-width: 768px) {
@@ -229,11 +229,25 @@
         }
 
         .module-link {
-            font-size: 20px;
-            font-family: $ec-square-medium;
-            color: $color-blue-light;
-            text-decoration: underline;
+            a {
+                font-size: 20px;
+                font-family: $ec-square-medium;
+                color: $color-blue-light;
+                text-decoration: underline;
+
+                @media (min-width: 480px) {
+                    font-size: 1.4em;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 1.8em;
+                }
+            }
+
         }
+
+
+
     }
 
 
