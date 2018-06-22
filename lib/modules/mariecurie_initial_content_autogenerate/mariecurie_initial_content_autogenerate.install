@@ -1,0 +1,240 @@
+<?php
+
+/**
+ * @file
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function mariecurie_initial_content_autogenerate_install() {
+  // Create webform for newsletter.
+  $newsletter = new stdClass();
+  $newsletter->type = 'webform';
+  node_object_prepare($newsletter);
+  $newsletter->title = 'Newsletter';
+  $newsletter->language = LANGUAGE_NONE;
+  $newsletter->body[LANGUAGE_NONE][0]['value'] = '';
+  $newsletter->body[LANGUAGE_NONE][0]['format'] = 'full_html';
+  $newsletter->uid = 1;
+  $newsletter->promote = 0;
+  $newsletter->comment = 0;
+
+  // Create the webform components.
+  $components = [
+    [
+      'name' => 'Register to the Newsletter',
+      'form_key' => 'register_newsletter',
+      'type' => 'fieldset',
+      'weight' => 0,
+      'pid' => 0,
+      'extra' => [
+        'description_above' => 0,
+        'private' => 0,
+        'css_classes' => '',
+        'title_display' => 0,
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'description' => '',
+      ],
+    ],
+    [
+      'name' => 'Email address',
+      'form_key' => 'email',
+      'type' => 'email',
+      'required' => 1,
+      'page_num' => 1,
+      'weight' => 25,
+      'pid' => 0,
+      'value' => '[current-user:mail]',
+      'extra' => [
+        'title_display' => 'none',
+        'description_above' => 0,
+        'private' => 0,
+        'wrapper_classes' => 'text-center',
+        'css_classes' => 'ecl-text-input',
+        'placeholder' => 'Email Address',
+        'unique' => 1,
+        'multiple' => 0,
+        'format' => 'short',
+        'width' => '',
+        'disabled' => 0,
+        'description' => '',
+        'attributes' => [],
+        'analysis' => FALSE,
+      ],
+    ],
+  ];
+
+  // Setup notification email.
+  $emails = [
+    [
+      'subject' => 'Registered to Marie Curie Newsletter',
+      'from_name' => 'default',
+      'from_address' => 'default',
+      'template' => 'You are registered on [submission:date:long]',
+      'excluded_components' => [],
+      'html' => '0',
+      'attachments' => '0',
+      'exclude_empty' => '0',
+      'extra' => FALSE,
+      'status' => '1',
+    ],
+  ];
+
+  // Attach the webform to the node.
+  $newsletter->webform = [
+    'confirmation' => '<p>Thanks for signing up! An email confirming your 
+     subscription has been sent to you (you might need to check your spam). We 
+     will keep you up to date with upcoming polls and new content.</p>',
+    'confirmation_format' => 'full_html',
+    'redirect_url' => '<none>',
+    'status' => '1',
+    'block' => '0',
+    'teaser' => '0',
+    'allow_draft' => '0',
+    'auto_save' => '0',
+    'submit_notice' => '1',
+    'submit_text' => '',
+    'submit_limit' => '-1',
+    'submit_interval' => '-1',
+    'total_submit_limit' => '-1',
+    'total_submit_interval' => '-1',
+    'record_exists' => TRUE,
+    'roles' => [
+      0 => '1',
+      1 => '2',
+    ],
+    'emails' => $emails,
+    'components' => $components,
+  ];
+
+  // Save the node.
+  node_save($newsletter);
+
+  $homepage = new stdClass();
+  $homepage->type = 'msc_page';
+  node_object_prepare($homepage);
+  $homepage->title = 'MSCA Learning Hub';
+  $homepage->language = 'en';
+  $homepage->uid = 1;
+  $homepage->promote = 0;
+  $homepage->comment = 0;
+  $homepage->sticky = 0;
+  $homepage->workbench_moderation_state_current = 'published';
+  $homepage->workbench_moderation_state_new = 'published';
+
+  node_save($homepage);
+
+  variable_set('site_frontpage', 'node/' . $homepage->nid);
+
+  $paragraph_welcome = entity_create(
+    'paragraphs_item',
+    [
+      'field_name' => 'field_msc_components',
+      'bundle' => 'msc_welcome_component',
+    ]
+  );
+  $paragraph_welcome->is_new = TRUE;
+  $paragraph_welcome->setHostEntity('node', $homepage);
+  $paragraph_welcome->field_msc_component_title = [
+    LANGUAGE_NONE => [
+      0 => [
+        'value' => '<strong>WELCOME</strong> to MSCA Learning Hub',
+        'format' => 'basic_html',
+      ],
+    ],
+  ];
+  $paragraph_welcome->field_msc_desc = [
+    LANGUAGE_NONE => [
+      0 => [
+        'value' => 'This exclusive training and learning platform for Marie 
+        Skłodowska-Curie fellows provides training material and toolkits to 
+        support your daily work, including useful information for your host 
+        organisation. &nbsp;This great new platform highlights skills and 
+        knowledge that are essential for a successful career. Watch the video 
+        below for more details!',
+        'format' => 'full_html',
+      ],
+    ],
+  ];
+  $obj = new MediaInternetOEmbedHandler(
+    'https://www.youtube.com/watch?v=ZEV4KJBJvEg'
+  );
+  $file = $obj->getFileObject();
+  $file->filemime = 'video/oembed';
+  $file->display = 1;
+  file_save($file);
+  $paragraph_welcome->field_msc_video[LANGUAGE_NONE][] = (array) $file;
+  $paragraph_welcome->save();
+
+  $events_list = new stdClass();
+  $events_list->type = 'msc_page';
+  node_object_prepare($events_list);
+  $events_list->title = 'Events list';
+  $events_list->language = 'en';
+  $events_list->uid = 1;
+  $events_list->promote = 0;
+  $events_list->comment = 0;
+  $events_list->sticky = 0;
+  $events_list->workbench_moderation_state_current = 'published';
+  $events_list->workbench_moderation_state_new = 'published';
+
+  node_save($events_list);
+
+  $paragraph_events = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
+  $paragraph_events->is_new = TRUE;
+  $paragraph_events->setHostEntity('node', $events_list);
+  $paragraph_events->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:events-block';
+  $paragraph_events->save();
+
+  $blog = new stdClass();
+  $blog->type = 'msc_page';
+  node_object_prepare($blog);
+  $blog->title = 'Blog';
+  $blog->language = 'en';
+  $blog->uid = 1;
+  $blog->promote = 0;
+  $blog->comment = 0;
+  $blog->sticky = 0;
+  $blog->workbench_moderation_state_current = 'published';
+  $blog->workbench_moderation_state_new = 'published';
+
+  node_save($blog);
+
+  $paragraph_blog = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
+  $paragraph_blog->is_new = TRUE;
+  $paragraph_blog->setHostEntity('node', $blog);
+  $paragraph_blog->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:blog-block';
+  $paragraph_blog->save();
+
+  $polls = new stdClass();
+  $polls->type = 'msc_page';
+  node_object_prepare($polls);
+  $polls->title = 'Polls list';
+  $polls->language = 'en';
+  $polls->uid = 1;
+  $polls->promote = 0;
+  $polls->comment = 0;
+  $polls->sticky = 0;
+  $polls->workbench_moderation_state_current = 'published';
+  $polls->workbench_moderation_state_new = 'published';
+
+  node_save($polls);
+
+  $paragraph_polls = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
+  $paragraph_polls->is_new = TRUE;
+  $paragraph_polls->setHostEntity('node', $polls);
+  $paragraph_polls->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:poll_list-block';
+  $paragraph_polls->save();
+}
