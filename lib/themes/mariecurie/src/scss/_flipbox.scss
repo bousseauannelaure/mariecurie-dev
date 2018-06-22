@@ -55,5 +55,19 @@
 
 /* IE 11 HACK */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .panel .front { z-index: 1001; }
+    .panel .front {
+        z-index: 1001;
+    }
+
+    .panel .back {
+        transform: rotateY(180deg);
+    }
+
+    .panel.flip .front  {
+        transform: rotateY(180deg);
+    }
+
+    .panel.flip .back {
+        transform: rotateY(0deg);
+    }
 }
