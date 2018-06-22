@@ -40,7 +40,7 @@
     -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out, z-index .2s;
 }
 .panel.flip .front {
     z-index: 900;
@@ -57,10 +57,12 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .panel .front {
         z-index: 1001;
+        transition: transform .4s ease-in-out, z-index .2s;
     }
 
     .panel .back {
         transform: rotateY(180deg);
+        transition: transform .4s ease-in-out, z-index .2s;
     }
 
     .panel.flip .front  {
