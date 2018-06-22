@@ -158,7 +158,6 @@ function mariecurie_initial_content_autogenerate_install() {
       ],
     ],
   ];
-  $paragraph_welcome->field_msc_desc[LANGUAGE_NONE][0]['value'] = '';
   $obj = new MediaInternetOEmbedHandler(
     'https://www.youtube.com/watch?v=ZEV4KJBJvEg'
   );
