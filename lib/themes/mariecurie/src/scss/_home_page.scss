@@ -15,7 +15,7 @@
     }
     .module-flex-item {
         position: relative;
-        margin: 5px;
+        margin: 15px;
         color: white;
         font-weight: bold;
         font-size: 1.2em;
@@ -202,13 +202,13 @@
             font-size: 1.6em;
             margin: .5em 0;
 
-            @media (min-width: 480px) {
+            /*@media (min-width: 480px) {
                 font-size: 1.8em;
             }
 
             @media (min-width: 768px) {
                 font-size: 2em;
-            }
+            }*/
 
         }
 
@@ -217,14 +217,14 @@
             color: $color-blue;
             margin: .5em 0;
 
-
+            /*
             @media (min-width: 480px) {
                 font-size: 1.4em;
             }
 
             @media (min-width: 768px) {
                 font-size: 1.6em;
-            }
+            }*/
 
         }
 
@@ -235,13 +235,14 @@
                 color: $color-blue-light;
                 text-decoration: underline;
 
+                /*
                 @media (min-width: 480px) {
                     font-size: 1.4em;
                 }
 
                 @media (min-width: 768px) {
                     font-size: 1.6em;
-                }
+                }*/
             }
 
         }
