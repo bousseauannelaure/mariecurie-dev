@@ -9,8 +9,8 @@
 <div class="slider-wrapper <?php print $classes; ?>"<?php print $attributes; ?>>
     <div class="content slider"<?php print $content_attributes; ?>>
         <div class="arrows">
-            <a class="previous ecl-icon ecl-icon--left"></a>
-            <a class="next ecl-icon ecl-icon--right"></a>
+            <a class="previous fa fa-angle-left"></a>
+            <a class="next fa fa-angle-right"></a>
         </div>
         <div class="slides">
           <?php foreach ($items as $delta => $item): ?>
