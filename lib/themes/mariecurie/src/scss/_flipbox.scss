@@ -52,3 +52,8 @@
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
 }
+
+/* IE 11 HACK */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .panel .front { z-index: 1001; }
+}
