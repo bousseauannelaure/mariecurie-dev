@@ -15,7 +15,7 @@
     }
     .module-flex-item {
         position: relative;
-        margin: 10px;
+        margin: 7px;
         color: white;
         font-weight: bold;
         font-size: 1em;
@@ -39,7 +39,7 @@
             height: 100%;
             background-color: rgba(0,0,0,0.2);
             font-family: $ec-square-medium;
-            padding-top: 40px;
+            padding-top: 24px;
         }
         a {
             text-decoration: none;
@@ -107,7 +107,7 @@
 
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
         .module-flex-item {
             margin: 15px;
             font-size: 1.2em;
