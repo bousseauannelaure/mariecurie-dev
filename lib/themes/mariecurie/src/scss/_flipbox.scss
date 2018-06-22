@@ -57,16 +57,15 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .panel .front {
         z-index: 1001;
-        transition: all .2s;
+        transition: z-index .2s;
     }
 
     .panel .back {
-        transform: rotateY(90deg);
-        transition: all .2s .2s;
+        transform: rotateY(180deg);
     }
 
     .panel.flip .front  {
-        transform: rotateY(90deg);
+        transform: rotateY(180deg);
     }
 
     .panel.flip .back {
