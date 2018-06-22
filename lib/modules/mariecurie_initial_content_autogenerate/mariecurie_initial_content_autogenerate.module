@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Empty file.
+ */
+
+/**
+ * Implements hook_preprocess().
+ */
+function mariecurie_initial_content_autogenerate_preprocess(&$variables, $hook) {
+  global $msc_node_created;
+
+  if (empty($msc_node_created)) {
+
+    $msc_node_created = TRUE;
+//    $obj = new MediaInternetOEmbedHandler('https://www.youtube.com/watch?v=ZEV4KJBJvEg');
+//    $file = $obj->getFileObject();
+//    file_save($file);
+//    echo "<pre>";
+//    var_dump($node);
+//    die;
+    /*$events_list = new stdClass();
+    $events_list->type = 'msc_page';
+    node_object_prepare($events_list);
+    $events_list->title = 'Events list';
+    $events_list->language = 'en';
+    $events_list->uid = 1;
+    $events_list->promote = 0;
+    $events_list->comment = 0;
+    $events_list->sticky = 0;
+    $events_list->workbench_moderation_state_current = 'published';
+    $events_list->workbench_moderation_state_new = 'published';
+
+    node_save($events_list);
+
+    $paragraph = new ParagraphsItemEntity(array('field_name' => 'field_msc_components', 'bundle' => 'msc_list_elements_component'));
+    $paragraph->is_new = TRUE;
+    $paragraph->setHostEntity('node', $events_list);
+    $paragraph->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:events-block';
+    $paragraph->save();*/
+  }
+  /*$events_list = new stdClass();
+  $events_list->type = 'msc_page';
+  node_object_prepare($events_list);
+  $events_list->title = 'Events list';
+  $events_list->language = 'en';
+  $events_list->uid = 1;
+  $events_list->promote = 0;
+  $events_list->comment = 0;
+  $events_list->sticky = 0;
+//
+//  node_save($events_list);
+  $events_list->workbench_moderation['updating_live_revision'] = 1;
+  $events_list->workbench_moderation_state_current = 'published';
+  $events_list->workbench_moderation_state_new = 'published';
+//  $events_list->is_draft_revision = true;
+//  $events_list->is_current = false;
+  node_save($events_list);
+//  echo "<pre>";
+//  var_dump($events_list);
+  die;*/
+}
