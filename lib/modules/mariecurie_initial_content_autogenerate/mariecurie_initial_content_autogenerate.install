@@ -129,27 +129,39 @@ function mariecurie_initial_content_autogenerate_install() {
 
   variable_set('site_frontpage', 'node/' . $homepage->nid);
 
-  /*$default_file = (array) file_load(2);
-  $paragraph_slides = entity_create('paragraphs_item', array('field_name' => 'field_msc_slider', 'bundle' => 'msc_slide_component'));
-  $paragraph_slides->is_new = TRUE;
-  $paragraph_slides->setHostEntity('node', $homepage);
-  $paragraph_slides->field_msc_back_img_component[LANGUAGE_NONE][0] = $default_file;
-  $paragraph_slides->field_msc_component_title[LANGUAGE_NONE][0]['value'] = 'Slide 1';
-  $paragraph_slides->field_msc_subtitle[LANGUAGE_NONE][0]['value'] = 'Slide subtitle 1';
-  $paragraph_slides->field_msc_short_text[LANGUAGE_NONE][0]['value'] = 'Short Text 1';
-  $paragraph_slides->field_msc_free_link[LANGUAGE_NONE][0]['url'] = 'content/newsletter';
-  $paragraph_slides->field_msc_free_link[LANGUAGE_NONE][0]['title'] = 'Read more';
-  $paragraph_slides->field_msc_picture[LANGUAGE_NONE][0] = $default_file;
-  $paragraph_slides->field_msc_look_and_feel_slides[LANGUAGE_NONE][0]['value'] = 's_media_left';
-  $paragraph_slides->save();*/
-
-  $paragraph_welcome = entity_create('paragraphs_item', array('field_name' => 'field_msc_components', 'bundle' => 'msc_welcome_component'));
+  $paragraph_welcome = entity_create(
+    'paragraphs_item',
+    [
+      'field_name' => 'field_msc_components',
+      'bundle' => 'msc_welcome_component',
+    ]
+  );
   $paragraph_welcome->is_new = TRUE;
   $paragraph_welcome->setHostEntity('node', $homepage);
-  $paragraph_welcome->field_msc_component_title[LANGUAGE_NONE][0]['value'] = '<strong>WELCOME</strong> to MSCA Learning Hub';
-  $paragraph_welcome->field_msc_component_title[LANGUAGE_NONE][0]['format'] = 'basic_html';
-  $paragraph_welcome->field_msc_desc[LANGUAGE_NONE][0]['value'] = 'This exclusive training and learning platform for Marie Skłodowska-Curie fellows provides training material and toolkits to support your daily work, including useful information for your host organisation. &nbsp;This great new platform highlights skills and knowledge that are essential for a successful career. Watch the video below for more details!';
-  $obj = new MediaInternetOEmbedHandler('https://www.youtube.com/watch?v=ZEV4KJBJvEg');
+  $paragraph_welcome->field_msc_component_title = [
+    LANGUAGE_NONE => [
+      0 => [
+        'value' => '<strong>WELCOME</strong> to MSCA Learning Hub',
+        'format' => 'basic_html',
+      ],
+    ],
+  ];
+  $paragraph_welcome->field_msc_desc = [
+    LANGUAGE_NONE => [
+      0 => [
+        'value' => 'This exclusive training and learning platform for Marie 
+        Skłodowska-Curie fellows provides training material and toolkits to 
+        support your daily work, including useful information for your host 
+        organisation. &nbsp;This great new platform highlights skills and 
+        knowledge that are essential for a successful career. Watch the video 
+        below for more details!',
+      ],
+    ],
+  ];
+  $paragraph_welcome->field_msc_desc[LANGUAGE_NONE][0]['value'] = '';
+  $obj = new MediaInternetOEmbedHandler(
+    'https://www.youtube.com/watch?v=ZEV4KJBJvEg'
+  );
   $file = $obj->getFileObject();
   $file->filemime = 'video/oembed';
   $file->display = 1;
@@ -171,7 +183,10 @@ function mariecurie_initial_content_autogenerate_install() {
 
   node_save($events_list);
 
-  $paragraph_events = new ParagraphsItemEntity(array('field_name' => 'field_msc_components', 'bundle' => 'msc_list_elements_component'));
+  $paragraph_events = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
   $paragraph_events->is_new = TRUE;
   $paragraph_events->setHostEntity('node', $events_list);
   $paragraph_events->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:events-block';
@@ -191,7 +206,10 @@ function mariecurie_initial_content_autogenerate_install() {
 
   node_save($blog);
 
-  $paragraph_blog = new ParagraphsItemEntity(array('field_name' => 'field_msc_components', 'bundle' => 'msc_list_elements_component'));
+  $paragraph_blog = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
   $paragraph_blog->is_new = TRUE;
   $paragraph_blog->setHostEntity('node', $blog);
   $paragraph_blog->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:blog-block';
@@ -211,7 +229,10 @@ function mariecurie_initial_content_autogenerate_install() {
 
   node_save($polls);
 
-  $paragraph_polls = new ParagraphsItemEntity(array('field_name' => 'field_msc_components', 'bundle' => 'msc_list_elements_component'));
+  $paragraph_polls = new ParagraphsItemEntity([
+    'field_name' => 'field_msc_components',
+    'bundle' => 'msc_list_elements_component',
+  ]);
   $paragraph_polls->is_new = TRUE;
   $paragraph_polls->setHostEntity('node', $polls);
   $paragraph_polls->field_msc_list_reference[LANGUAGE_NONE][0]['moddelta'] = 'views:poll_list-block';
