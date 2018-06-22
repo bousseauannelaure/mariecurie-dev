@@ -30,6 +30,8 @@
             background: $color-blue;
         }
 
+
+
         .deactivated {
             position: absolute;
             top: 0;
@@ -103,6 +105,40 @@
             }
         }
 
+    }
+
+    @media (min-width: 480px) {
+        .module-flex-item {
+            margin: 10px;
+            font-size: 1em;
+            height: 150px;
+            flex: 0 0 150px;
+
+            .back,
+            .front {
+                width: 150px;
+                height: 150px;
+            }
+
+            .deactivated {
+                padding-top: 30px;
+            }
+
+            .description {
+                height: 150px;
+                padding: 7px;
+
+                p {
+                    font-size: .8em;
+                    &.module-md {
+                        font-size: .65em;
+                    }
+                    &.module-sm {
+                        font-size: .5em;
+                    }
+                }
+            }
+        }
     }
 
     .module-flex-item:nth-child(even) {
