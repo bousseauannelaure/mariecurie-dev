@@ -155,6 +155,7 @@ function mariecurie_initial_content_autogenerate_install() {
         organisation. &nbsp;This great new platform highlights skills and 
         knowledge that are essential for a successful career. Watch the video 
         below for more details!',
+        'format' => 'full_html',
       ],
     ],
   ];
