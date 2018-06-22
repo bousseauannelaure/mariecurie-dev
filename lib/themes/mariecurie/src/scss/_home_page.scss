@@ -256,6 +256,10 @@
     .interesting-numbers {
         .circle-col {
             align-items: center;
+
+            &.ecl-col-lg-3 {
+                flex: 0;
+            }
         }
         .circle {
             margin: auto;
@@ -292,7 +296,7 @@
             text-align: center;
             p {
                 color: $color-purple;
-                font-size: 2em;
+                margin-top: .5em;
             }
         }
 
