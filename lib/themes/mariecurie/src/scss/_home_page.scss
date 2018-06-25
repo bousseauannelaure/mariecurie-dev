@@ -109,35 +109,7 @@
 
     @media (min-width: 768px) {
         .module-flex-item {
-            margin: 15px;
-            font-size: 1.1em;
-            height: 180px;
-            flex: 0 0 180px;
-
-            .back,
-            .front {
-                width: 180px;
-                height: 180px;
-            }
-
-            .deactivated {
-                padding-top: 35px;
-            }
-
-            .description {
-                height: 180px;
-                padding: 10px;
-
-                p {
-                    font-size: 1em;
-                    &.module-md {
-                        font-size: .8em;
-                    }
-                    &.module-sm {
-                        font-size: .6em;
-                    }
-                }
-            }
+            margin: 10px;
         }
     }
 
