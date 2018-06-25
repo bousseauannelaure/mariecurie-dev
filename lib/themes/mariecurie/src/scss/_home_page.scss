@@ -110,6 +110,12 @@
     @media (min-width: 768px) {
         .module-flex-item {
             margin: 15px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .module-flex-item {
+            margin: 15px;
             font-size: 1.2em;
             height: 200px;
             flex: 0 0 200px;
@@ -229,7 +235,7 @@
 
             }
 
-            @media (min-width: 768px) {
+            @media (min-width: 992px) {
                 .circle {
                     width: 200px;
                     height: 200px;
