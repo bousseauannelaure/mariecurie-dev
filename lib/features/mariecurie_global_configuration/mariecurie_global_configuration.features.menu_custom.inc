@@ -18,6 +18,14 @@ function mariecurie_global_configuration_menu_default_menu_custom() {
     'language' => 'und',
     'i18n_mode' => 0,
   );
+  // Exported menu: menu-main-footer-menu.
+  $menus['menu-main-footer-menu'] = array(
+    'menu_name' => 'menu-main-footer-menu',
+    'title' => 'Main footer menu',
+    'description' => '',
+    'language' => 'und',
+    'i18n_mode' => 0,
+  );
   // Exported menu: menu-middle-footer-menu.
   $menus['menu-middle-footer-menu'] = array(
     'menu_name' => 'menu-middle-footer-menu',
@@ -37,6 +45,7 @@ function mariecurie_global_configuration_menu_default_menu_custom() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Left footer menu');
+  t('Main footer menu');
   t('Middle footer menu');
   t('Right footer menu');
 
