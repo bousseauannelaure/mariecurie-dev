@@ -28,10 +28,10 @@
 ?>
 <div class="slide-content-wrapper">
     <div class="ecl-row ecl-u-align-items-center ecl-u-justify-content-center">
-        <div class="ecl-col-10 ecl-col-md-4">
+        <div class="ecl-col-10 ecl-col-sm-4 ecl-col-md-2">
             <?php print render($content['field_msc_short_text']); ?>
         </div>
-        <div class="ecl-col-10 ecl-col-md-6">
+        <div class="ecl-col-10 ecl-col-sm-6 ecl-col-md-8">
             <?php print render($content['field_msc_component_title']); ?>
             <?php print render($content['field_msc_subtitle']); ?>
             <?php print render($content['field_msc_free_link']); ?>
