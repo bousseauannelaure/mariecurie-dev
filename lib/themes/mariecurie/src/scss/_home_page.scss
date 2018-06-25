@@ -141,6 +141,12 @@
         }
     }
 
+    @media (min-width: 992px) {
+        .module-flex-item {
+            margin: 15px 10px;
+        }
+    }
+
     .module-flex-item:nth-child(even) {
         .back,
         .front {

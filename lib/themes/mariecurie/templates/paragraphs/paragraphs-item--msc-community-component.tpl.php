@@ -26,7 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="ecl-col-12 ecl-col-md-6 module-item ecl-u-pa-s">
+<div class="ecl-col-12 ecl-col-lg-6 module-item ecl-u-pa-s">
   <?php print render($content['field_msc_picture']); ?>
   <div>
     <?php print render($content['field_msc_component_title']); ?>
