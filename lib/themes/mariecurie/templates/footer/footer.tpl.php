@@ -14,6 +14,7 @@
             <div class="col-md-2 col-xs-6 footer-global--box">
               <?php
               $menu = menu_load('menu-main-footer-menu');
+              print '<h4>' . $menu['title'] . '</h4>';
               $menu = menu_tree($menu['menu_name']);
               print render($menu);
               ?>
@@ -37,6 +38,7 @@
             <div class="col-md-2 col-xs-6 footer-global--box">
               <?php
               $menu = menu_load('menu-right-footer-menu');
+              print '<h4>' . $menu['title'] . '</h4>';
               $menu = menu_tree('menu-right-footer-menu');
               print render($menu);
               ?>

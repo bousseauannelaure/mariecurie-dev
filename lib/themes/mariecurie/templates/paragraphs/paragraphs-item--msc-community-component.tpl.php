@@ -28,7 +28,7 @@
 ?>
 <div class="ecl-col-12 ecl-col-lg-6 module-item ecl-u-pa-s">
   <?php print render($content['field_msc_picture']); ?>
-  <div>
+  <div class="module-content">
     <?php print render($content['field_msc_component_title']); ?>
     <?php print render($content['field_msc_short_text']); ?>
     <?php print render($content['field_msc_link_to_module']); ?>
