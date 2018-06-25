@@ -22,6 +22,7 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[menu_custom][] = menu-left-footer-menu
+features[menu_custom][] = menu-main-footer-menu
 features[menu_custom][] = menu-middle-footer-menu
 features[menu_custom][] = menu-right-footer-menu
 features[variable][] = default_ds_field_settings

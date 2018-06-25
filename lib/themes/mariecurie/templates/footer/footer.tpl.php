@@ -11,6 +11,13 @@
       <section id="block-block-4" class="block block-block mc-footer1 clearfix">
         <div class="block__content">
           <div class="footer-one-wrapper col-md-12 col-xs-12">
+            <div class="col-md-2 col-xs-6 footer-global--box">
+              <?php
+              $menu = menu_load('menu-main-footer-menu');
+              $menu = menu_tree($menu['menu_name']);
+              print render($menu);
+              ?>
+            </div>
             <div class="col-md-3 col-xs-6 footer-global--box">
               <?php
               $menu = menu_load('menu-left-footer-menu');
@@ -19,11 +26,18 @@
               print render($menu);
               ?>
             </div>
-            <div class="col-md-3 col-xs-6 footer-global--box">
+            <div class="col-md-2 col-xs-6 footer-global--box">
               <?php
               $menu = menu_load('menu-middle-footer-menu');
               print '<h4>' . $menu['title'] . '</h4>';
               $menu = menu_tree($menu['menu_name']);
+              print render($menu);
+              ?>
+            </div>
+            <div class="col-md-2 col-xs-6 footer-global--box">
+              <?php
+              $menu = menu_load('menu-right-footer-menu');
+              $menu = menu_tree('menu-right-footer-menu');
               print render($menu);
               ?>
             </div>
@@ -44,14 +58,6 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <div class="col-md-3 col-xs-6 footer-global--box">
-              <?php
-              $menu = menu_load('menu-right-footer-menu');
-              print '<h4>' . $menu['title'] . '</h4>';
-              $menu = menu_tree('menu-right-footer-menu');
-              print render($menu);
-              ?>
             </div>
           </div>
         </div>

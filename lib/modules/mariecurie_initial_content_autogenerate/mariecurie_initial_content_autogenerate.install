@@ -45,7 +45,7 @@ function mariecurie_initial_content_autogenerate_install() {
       'type' => 'email',
       'required' => 1,
       'page_num' => 1,
-      'weight' => 25,
+      'weight' => 1,
       'pid' => 0,
       'value' => '[current-user:mail]',
       'extra' => [
@@ -63,6 +63,21 @@ function mariecurie_initial_content_autogenerate_install() {
         'description' => '',
         'attributes' => [],
         'analysis' => FALSE,
+      ],
+    ],
+    [
+      'name' => 'GDPR Consent',
+      'form_key' => 'msc_gdpr',
+      'type' => 'select',
+      'required' => 1,
+      'weight' => 2,
+      'pid' => 0,
+      'extra' => [
+        'title_display' => 'none',
+        'private' => 0,
+        'items' => "1|GDPR Consent",
+        'aslist' => 0,
+        'multiple' => 1,
       ],
     ],
   ];
