@@ -5,7 +5,7 @@
  * Contains template file.
  */
 ?>
-<div class="newsletter-frame ecl-u-pa-xxl">
+<div class="newsletter-frame">
   <form<?php print $atomium['attributes']['element']->append('class', 'ecl-form'); ?>>
     <div class="text-center">
       <?php print render($element['submitted']['register_newsletter']); ?>

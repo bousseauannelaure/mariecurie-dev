@@ -390,6 +390,17 @@
         width: 100%;
     }
     .newsletter-frame {
+        padding: 1em;
+
+        @media (min-width: 480px) {
+            padding: 2em;
+        }
+
+        @media (min-width: 768px) {
+            padding: 3em;
+        }
+
+
         border: 1px solid $color-blue-light;
 
         .ecl-paragraph {
