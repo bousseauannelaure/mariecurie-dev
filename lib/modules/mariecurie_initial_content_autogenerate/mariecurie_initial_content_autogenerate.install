@@ -149,12 +149,7 @@ function mariecurie_initial_content_autogenerate_install() {
   $paragraph_welcome->field_msc_desc = [
     LANGUAGE_NONE => [
       0 => [
-        'value' => 'This exclusive training and learning platform for Marie 
-        Skłodowska-Curie fellows provides training material and toolkits to 
-        support your daily work, including useful information for your host 
-        organisation. &nbsp;This great new platform highlights skills and 
-        knowledge that are essential for a successful career. Watch the video 
-        below for more details!',
+        'value' => 'This exclusive training and learning platform for Marie Skłodowska-Curie fellows provides training material and toolkits to support your daily work, including useful information for your host organisation. &nbsp;This great new platform highlights skills and knowledge that are essential for a successful career. Watch the video below for more details!',
         'format' => 'full_html',
       ],
     ],
