@@ -34,7 +34,7 @@
             <?php print render($content['field_msc_short_text']); ?>
             <?php print render($content['field_msc_free_link']); ?>
         </div>
-        <div class="ecl-col-10 ecl-col-md-2">
+        <div class="ecl-col-10 ecl-col-md-4">
             <?php print render($content['field_msc_picture']); ?>
         </div>
     </div>

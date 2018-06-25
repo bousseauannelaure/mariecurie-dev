@@ -28,7 +28,7 @@
 ?>
 <div class="slide-content-wrapper">
     <div class="ecl-row ecl-u-align-items-center ecl-u-justify-content-center">
-        <div class="ecl-col-10 ecl-col-md-2">
+        <div class="ecl-col-10 ecl-col-md-4">
             <?php print render($content['field_msc_short_text']); ?>
         </div>
         <div class="ecl-col-10 ecl-col-md-6">

@@ -11,7 +11,9 @@
       <?php print render($element['submitted']['register_newsletter']); ?>
       <?php print render($element['submitted']['email']); ?>
       <?php print render($element['actions']); ?>
-      <?php print render($element['submitted']['msc_gdpr']); ?>
+      <div class="gdpr-checkbox">
+          <?php print render($element['submitted']['msc_gdpr']); ?>
+      </div>
     </div>
     <?php print render($element['form_id']); ?>
     <?php print render($element['form_build_id']); ?>
