@@ -110,12 +110,6 @@
     @media (min-width: 768px) {
         .module-flex-item {
             margin: 10px;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .module-flex-item {
-            margin: 15px 10px;
             font-size: 1.2em;
             height: 200px;
             flex: 0 0 200px;
@@ -144,6 +138,12 @@
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .module-flex-item {
+            margin: 15px 10px;
         }
     }
 
