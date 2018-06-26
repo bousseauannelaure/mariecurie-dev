@@ -187,6 +187,7 @@
     }
 
     .module-item {
+        padding-bottom: 3em;
         .module-circle{
             margin-right: 20px;
             .circle {
@@ -240,14 +241,14 @@
         }
 
         .module-content {
-            padding-left: 130px;
+            padding-left: 145px;
 
             @media (min-width: 480px) {
-                padding-left: 200px;
+                padding-left: 215px;
             }
 
             @media (min-width: 992px) {
-                padding-left: 220px;
+                padding-left: 240px;
             }
 
         }
@@ -388,7 +389,23 @@
     .entity-paragraphs-item {
         width: 100%;
     }
+
     .newsletter-frame {
+        padding: 1em;
+
+        @media (min-width: 480px) {
+            padding: 2em;
+        }
+
+        @media (min-width: 768px) {
+            padding: 3em;
+        }
+
+
+        .gdpr-checkbox {
+            padding: 2em 0;
+        }
+
         border: 1px solid $color-blue-light;
 
         .ecl-paragraph {
