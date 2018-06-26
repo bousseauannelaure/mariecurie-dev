@@ -22,6 +22,11 @@
     #edit-show-results--2 {
         float:right;
     }
+
+    #message,
+    .poll-message {
+        margin: 1rem 0;
+    }
 }
 
 .poll-header {
@@ -39,6 +44,3 @@
   }
 }
 
-.poll-message {
-  margin: 1rem 0;
-}
