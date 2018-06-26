@@ -36,9 +36,3 @@ projects[special_menu_items][version] = "2.0"
 ; ======
 ; Themes
 ; ======
-projects[atomium][type] = theme
-projects[atomium][version] = 2.10
-projects[ec_europa][type] = theme
-projects[ec_europa][download][type] = git
-projects[ec_europa][download][url] = https://github.com/ec-europa/ec_europa.git
-projects[ec_europa][download][tag] = 0.0.11
