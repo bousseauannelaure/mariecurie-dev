@@ -1,8 +1,26 @@
 .poll-header,
 .poll-body {
-  padding: 20px;
+  padding: 20px 40px;
   border: 1px solid $color-border;
   border-top: none;
+
+  .ecl-form-label{
+    position: relative;
+    display: block;
+
+    &:before {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .ecl-button--form {
+    padding: .5rem 1.5rem;
+  }
+
+  #edit-show-results {
+    float:right;
+  }
 }
 
 .poll-header {
