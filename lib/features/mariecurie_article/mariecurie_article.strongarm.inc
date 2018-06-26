@@ -42,7 +42,7 @@ function mariecurie_article_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_msc_article';
-  $strongarm->value = '0';
+  $strongarm->value = '2';
   $export['comment_msc_article'] = $strongarm;
 
   $strongarm = new stdClass();

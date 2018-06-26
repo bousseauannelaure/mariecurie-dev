@@ -17,3 +17,4 @@
     </div>
   </div>
 </article>
+<?php print render($content['comments']); ?>

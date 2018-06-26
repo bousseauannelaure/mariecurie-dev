@@ -186,7 +186,7 @@ function mariecurie_initial_content_autogenerate_install() {
   $events_list->language = 'en';
   $events_list->uid = 1;
   $events_list->promote = 0;
-  $events_list->comment = 0;
+  $events_list->comment = 2;
   $events_list->sticky = 0;
   $events_list->workbench_moderation_state_current = 'published';
   $events_list->workbench_moderation_state_new = 'published';
@@ -209,7 +209,7 @@ function mariecurie_initial_content_autogenerate_install() {
   $blog->language = 'en';
   $blog->uid = 1;
   $blog->promote = 0;
-  $blog->comment = 0;
+  $blog->comment = 2;
   $blog->sticky = 0;
   $blog->workbench_moderation_state_current = 'published';
   $blog->workbench_moderation_state_new = 'published';
@@ -232,7 +232,7 @@ function mariecurie_initial_content_autogenerate_install() {
   $polls->language = 'en';
   $polls->uid = 1;
   $polls->promote = 0;
-  $polls->comment = 0;
+  $polls->comment = 2;
   $polls->sticky = 0;
   $polls->workbench_moderation_state_current = 'published';
   $polls->workbench_moderation_state_new = 'published';
