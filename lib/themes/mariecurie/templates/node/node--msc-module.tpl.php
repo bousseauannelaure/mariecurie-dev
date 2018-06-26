@@ -21,3 +21,4 @@
 <div class="row">
   <?php print views_embed_view('articles_section', 'block'); ?>
 </div>
+<?php print render($content['comments']); ?>

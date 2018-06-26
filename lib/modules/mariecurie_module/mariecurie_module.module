@@ -71,24 +71,21 @@ function mariecurie_module_look_and_feel_slides_options() {
  */
 function mariecurie_module_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
-    case 'advpoll_cancel_vote_form':
-
-      $form['actions']['show_results'] = [
-        '#type' => 'submit',
-        '#value' => t('View results'),
-        '#weight' => 15,
-        '#submit' => ['mariecurie_module_go_to_results_cancel'],
-      ];
-      break;
-
     case 'advpoll_choice_form':
 
-      $form['actions']['show_results'] = [
-        '#type' => 'submit',
-        '#value' => t('View results'),
-        '#weight' => 15,
-        '#submit' => ['mariecurie_module_go_to_results'],
-      ];
+      $node = $form_state['build_info']['args'][0];
+      $criteria = array();
+      $criteria['entity_id'] = $node->nid;
+      $criteria['entity_type'] = 'node';
+      $results = votingapi_select_votes($criteria);
+      if (!empty($results)) {
+        $form['actions']['show_results'] = [
+          '#type' => 'submit',
+          '#value' => t('View results'),
+          '#weight' => 15,
+          '#submit' => ['mariecurie_module_go_to_results'],
+        ];
+      }
       break;
   }
 }
@@ -97,15 +94,7 @@ function mariecurie_module_form_alter(&$form, &$form_state, $form_id) {
  * Implements _go_to_results().
  */
 function mariecurie_module_go_to_results($form, &$form_state) {
-  $results_path = 'node/' . $form_state['build_info']['args'][0]->nid . '/results';
-  drupal_goto($results_path);
-}
-
-/**
- * Implements _go_to_results_cancel().
- */
-function mariecurie_module_go_to_results_cancel($form, &$form_state) {
-  $results_path = 'node/' . $form_state['build_info']['args'][0] . '/results';
+  $results_path = 'node/' . $form_state['build_info']['args'][0]->nid . '/advpoll/results';
   drupal_goto($results_path);
 }
 

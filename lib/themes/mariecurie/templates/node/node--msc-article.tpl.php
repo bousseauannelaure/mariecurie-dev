@@ -15,3 +15,4 @@
   <?php print views_embed_view('articles_section', 'related'); ?>
 
 </div>
+<?php print render($content['comments']); ?>
