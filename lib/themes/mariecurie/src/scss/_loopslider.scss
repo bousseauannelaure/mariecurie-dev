@@ -66,6 +66,15 @@
 	background-repeat: no-repeat;
 }
 
+.slide-content-wrapper {
+	height: 350px;
+	position: relative;
+	.ecl-row {
+		position: absolute;
+		top: 0;
+	}
+}
+
 .slider-container {
 
 	.slider-title {
