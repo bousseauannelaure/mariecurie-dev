@@ -26,5 +26,6 @@ regions[footer_right] = Footer right
 scripts[] = assets/scripts/init.js
 scripts[] = assets/scripts/europa.js
 scripts[] = assets/scripts/mariecurie.js
+scripts[] = assets/scripts/jquery.loopslider.min.js
 
-stylesheets[all][] = assets/styles/mariecurie.css
+stylesheets[all][] = assets/styles/mariecurie.min.css

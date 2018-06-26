@@ -1,8 +1,10 @@
+@import "reboot";
 @import "variables";
 @import "typography";
 @import "../../node_modules/font-awesome/scss/font-awesome";
 
-@import "slider";
+//@import "slider";
+@import "loopslider";
 @import "buttons";
 @import "cards";
 @import "header_menu";
