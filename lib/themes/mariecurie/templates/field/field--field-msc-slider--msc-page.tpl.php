@@ -15,7 +15,7 @@
       //$url = trim(strip_tags(drupal_render($slide['field_msc_back_img_component'])));
     }
     ?>
-      <figure class="<?php print ($delta === 0 ? ' active' : ''); ?>"<?php print $style_attr; ?>>
+      <figure class="slide <?php print ($delta === 0 ? ' active' : ''); ?>"<?php print $style_attr; ?>>
         <!--  <img src="<?php print $url; ?>" alt="" /> -->
         <?php print render($item); ?>
       </figure>
